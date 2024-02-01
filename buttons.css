@@ -1,0 +1,45 @@
+.fixedButton{
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+    padding: 20px;
+}
+.roundedFixedBtn{
+  height: 60px;
+  line-height: 80px;  
+  width: 60px;  
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 50%;
+  
+  cursor: pointer;
+}
+
+a {    
+text-decoration: none;
+display: inline-block;
+padding: 8px 16px;
+}
+
+
+
+.previous {
+position: fixed;
+position: fixed;
+    bottom: -5px;
+    right: 30px; 
+
+}
+
+.next {
+
+position: fixed;
+position: fixed;
+    bottom: 30px;
+    right: -10px; 
+
+}
+
+.round {
+border-radius: 50%;
+}
