@@ -1,7 +1,7 @@
 .previous {
 position: fixed;
-    bottom:4vh;
-    right:3vw; 
+    bottom:6vh;
+    right:2.5vw; 
     width:5vw;
     height: 4vh;
 }
@@ -9,8 +9,8 @@ position: fixed;
 .next {
 
 position: fixed;
-    bottom:10vh;
-    right: 0vw; 
+    bottom:12vh;
+    right: -0.5vw; 
     width: 4vw;
     height: 4vh;
 }
