@@ -13,9 +13,11 @@ body{
 h1{
     text-align: center;
     color: whitesmoke;
+    font-size: 3vw;
   }
   h4{
     margin-top: -2vh;
+    font-size: 1.8vw;
   }
   .pics{
     display: flex;
