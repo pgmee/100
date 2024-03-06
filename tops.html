@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="buttons.css">
     <title>100 години ПГМЕЕ</title>
     <style>
     *{
@@ -17,29 +18,31 @@
         padding: 0px;
     } 
         body{
-        background-image: url("images/202.jpg");
+        background-image: url("images/trophy.jpg");
+        background-color: #020911;
         background-position:top;
-        background-size:cover;
+        background-size:85%;
         background-repeat: no-repeat;
+        background-attachment: fixed;
         font-family: "Philosopher", sans-serif;
         font-weight: 700;
         font-style: normal;
-        background-color: #0C172B;
+        
         }
        main{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        margin-top: 1vh;
+        margin-top: -1vh;
        }
         section{
         width: 21%;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-content:center;
-        margin: -2vh 4vw 2vh;
+        margin: 1vh 4vw 1vh;
     }
       
         h3{
@@ -50,6 +53,7 @@
       -webkit-background-clip: text; /* for Safari */
       background-clip: text;
       color: transparent; /* Make the text transparent so that the gradient shows through */ 
+
         }
        
          h3:hover {
@@ -65,54 +69,57 @@
     .card{
      background-color: transparent;
      border: none;
+     margin: 7vh;
             }
+    h1{
+    text-align: center;
+    color: #F5E283;
+    font-size: 5vw;
+    margin-top: 2vh;
+  }
+  img{
+    height: 10.5vh;
+  }
     </style>
 </head>
 <body>
-    <main>
+    <h1>Покорени върхове</h1>
+       <main>
         <section>
-            
-            <a class="card " href="hroniki.html">
-                <img class="buttons" src="images/buttons7.png">
-                <h3 class="card-img-overlay shadow-lg" style="padding-top:0.8vh ;" >ХРОНИКИТЕ НА <br>МЕХАНОТО </h3>
-            </a>
-            <a class="card " href="home2.html">
-                <img class="buttons" src="images/buttons7.png">
-                <h3 class="card-img-overlay shadow-lg" style="padding-top:0.8vh ;"  > ЛИЧНОСТИТЕ НА <br>МЕХАНОТО  </h3>
-            </a>
-            <a class="card " href="home1.html">
-                <img class="buttons" src="images/buttons7.png">
-                <h3 class="card-img-overlay shadow-lg"  style="padding-top:3vh ;" >МИНАЛОТО ДНЕС </h3>
+            <a class="card " href="#">
+                <img class="buttons" src="images/buttons2.png" >
+                <h3 class="card-img-overlay shadow-lg " style="padding-top:3.5vh ;" >Математика и ИТ</h3>
             </a>
             <a class="card " href="#">
-                <img class="buttons" src="images/buttons7.png" >
-                <h3 class="card-img-overlay shadow-lg " style="padding-top:0.8vh ;" >МЕХАНОТО <br>ПРАЗНУВА</h3>
+                <img class="buttons" src="images/buttons2.png">
+                <h3 class="card-img-overlay shadow-lg"  style="padding-top:1.3vh ;">Обществени науки</h3>
             </a>
+            <a class="card " href="#">
+                <img class="buttons" src="images/buttons2.png">
+                <h3 class="card-img-overlay shadow-lg" style="padding-top:3.5vh ;"  >Природни науки</h3>
+            </a>
+ 
         </section>
-        
-        <img class="shadow-lg" src="images/moneta1.png" style="width: 33%;  margin:20vh auto ; ">
-        
+   
         <section>
-            <a class="card " href="tops.html">
-                <img class="buttons" src="images/buttons7.png">
-                <h3 class="card-img-overlay shadow-lg" style="padding-top:0.8vh ;"  >ПОКОРЕНИ <br>ВЪРХОВЕ</h3>
+          
+            <a class="card " href="#">
+                <img class="buttons" src="images/buttons2.png">
+                <h3 class="card-img-overlay shadow-lg" style="padding-top:3.5vh ;"  >Литература</h3>
             </a>
             <a class="card " href="#">
-                <img class="buttons" src="images/buttons7.png">
-                <h3 class="card-img-overlay shadow-lg" style="padding-top:0.8vh ;"  >ГОЛЯМОТО СЪРЦЕ<br> НА МЕХАНОТО</h3>
+                <img class="buttons" src="images/buttons2.png">
+                <h3 class="card-img-overlay shadow-lg" style="padding-top:3.5vh ;"  >Езици</h3>
             </a>
-            <a class="card " href="#">
-                <img class="buttons" src="images/buttons7.png">
-                <h3 class="card-img-overlay shadow-lg" style="padding-top:0.8vh ;"  >ОТ ЧИНА<br> ДО КАТЕДРАТА</h3>
-            </a>
-            <a class="card " href="#">
-                <img class="buttons" src="images/buttons7.png">
-                <h3 class="card-img-overlay shadow-lg" style="padding-top:3vh ;"  >ПРОЕКТИ</h3>
+            <a class="card " href="stem.html">
+                <img class="buttons" src="images/buttons2.png">
+                <h3 class="card-img-overlay shadow-lg" style="padding-top:0.8vh ;"  >Професионална подготовка</h3>
             </a>
            
         </section>
     </main>
-   
-  
+    
+    <a href="home.html" class="previous round"><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
+    
 </body>
 </html>
