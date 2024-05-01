@@ -77,7 +77,12 @@
             background-position:top;
             background-size:cover;
             z-index: 1000;
+            padding:2px;
+            border-radius: 10px;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
         }
+
         .popupNe {
             display: none;
             position: fixed;
@@ -91,9 +96,19 @@
             background-position:top;
             background-size:cover;
             z-index: 1000;
+            padding:2px;
+            border-radius: 10px;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
         }
-
-
+    @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 </style>
 </head>
 <body>
