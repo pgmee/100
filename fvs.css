@@ -1,0 +1,94 @@
+body{
+    background-image: url('');
+    background-color:#F5F5F1;
+   /* background-color: #F7F8F6;*/
+    background-position:top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 1.3vw;
+    text-align: justify;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: normal;   
+ }
+
+h1{
+    text-align: center;
+    color: black;
+    font-size: 2.7vw;
+    margin: 1vh;
+  }
+  h4{
+    margin:1vh auto;
+    font-size: 1.5vw;
+    font-weight: 700;
+  }
+  .pics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:2vh auto 5vh;
+    width:100%;
+  }
+ 
+  .card{
+    width: 25vw;
+    padding: 0px;
+    transition:  transform 2s;
+  }
+ img{
+    width:100%;
+ }
+ a{
+  text-decoration: none;
+  text-align: center;
+  color: black;
+ }
+ .card:hover{
+                transform: scale(1.1);    
+            }
+  #handbal{
+   display: none;
+  }
+  .handbal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+    width: 88%;
+  }
+
+  .handbal2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:auto;
+    width: 40%;
+  }
+
+  .container {
+    position: relative; /* Настройте контейнера като относително позициониран */
+    max-width: 50%;
+  }
+  
+  .divider {
+    position: absolute; /* Настройте линиите като абсолютно позиционирани */
+    top: 50%; /* Поставете горната част на линията в средата на контейнера */
+    height: 1px; /* Височина на линията */
+    background-color: #000; /* Цвят на линията */
+    width: 50%; /* Ширина на линията */
+  }
+  
+  .left {
+    left: 0; /* Поставете левия край на линията в началото на контейнера */
+    transform: translateX(-50%); /* Центрирайте линията хоризонтално */
+  }
+  
+  .right {
+    right: 0; /* Поставете десния край на линията в края на контейнера */
+    transform: translateX(50%); /* Центрирайте линията хоризонтално */
+  }
