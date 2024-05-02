@@ -49,9 +49,8 @@ h1{
  .card:hover{
                 transform: scale(1.1);    
             }
-  #handbal{
-    background-color:#F5F5F1;
-   /* display: none;*/
+  /* #handbal{
+    display: none;
   }
   .handbal{
     display: flex;
@@ -69,7 +68,7 @@ h1{
     align-items:center;
     margin:auto;
     width: 44%;
-  }
+  }*/
 
   .container {
     position: relative; /* Настройте контейнера като относително позициониран */
