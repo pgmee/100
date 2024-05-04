@@ -60,7 +60,7 @@ main{
       </div>
 
         <a href="tops.html" class="previous "><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
-        <a href="#" class="next " ><img src="images/arrow-up-chrome.gif"  style="width:90%;"></a>
+        <a href="#" class="next " onclick="hide()"><img src="images/arrow-up-chrome.gif"  style="width:90%;"></a>
 </main>
 
 <section class="container-fluid " id="atletika">
@@ -97,6 +97,9 @@ main{
     if(index==1){
     document.getElementById('atletika').style.display = 'block'; 
   }
+}
+function hide(){
+    document.getElementById('atletika').style.display = 'none';  
 }
 </script>
 </body>
