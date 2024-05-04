@@ -15,7 +15,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 <link rel="icon" href="images/LOGO_PGMEE_1_nov.png">
     <style>
-
+main{
+  background-image: url('images/sport10.jpg');
+  background-position:top;
+  background-color:#E5E5E5;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 2vh;
+}
     </style>
 </head>
 <body >
@@ -45,7 +52,7 @@
             <h4 class="card-title" >ТЕНИС НА МАСА/ШАХМАТ</h4> </a>
         </div>
           <div class="card shadow-lg ">
-              <a href="#"><img src="sport/лекаатлетика.jpg" class="card-img-top shadow-lg " >  
+              <a href="#atletika" onclick="show(1)"><img src="sport/лекаатлетика.jpg" class="card-img-top shadow-lg " >  
               <h4 class="card-title" >ЛЕКА АТЛЕТИКА</h4></a>
           </div>
           
@@ -56,8 +63,41 @@
         <a href="#" class="next " ><img src="images/arrow-up-chrome.gif"  style="width:90%;"></a>
 </main>
 
+<section class="container-fluid " id="atletika">
+  <div class="container">
+    <div class="divider left"></div>
+    <h1 >ЛЕКА АТЛЕТИКА</h1> 
+    <div class="divider right"></div>
+  </div>
+  <h1> 2023/2024г. </h1>
+<div class="atletika">
+  <div class="atletika2" >
+    <div class="card-img-top" >
+    <img src="sport/la1.jpg" class="shadow-lg"></div>
+<div class="card-title" >
+<h4>Трето място на  Общинско ученическо първенство по лека атлетика 8-10 клас 2017/2018г.</h4>
+</div></div><div class="atletika2">
+  <div class="card-img-top">
+  <img src="sport/la2.jpg" class="shadow-lg"></div>
+<div class="card-title" >
+<h4>Второ място в лекоатлетическа щафета, организирана от Община Бургас</h4>
+</div></div>
+</div>
+<h1> 2011г. </h1>
+<div style="display: flex; flex-direction: column; align-items: center;">
+  <h4>Първо място Общинско първенство по лека атлетика 8-10 клас </h4>
+  <h4>Първо място Областно първенство по лека атлетика 8-10 клас  </h4>
+  <h4>Първо място Зонално първенство по лека атлетика 8-10 клас</h4>
+</div>
+</section>
 
-
-
+<script>
+  let index
+  function show(index){
+    if(index==1){
+    document.getElementById('atletika').style.display = 'block'; 
+  }
+}
+</script>
 </body>
 </html>
