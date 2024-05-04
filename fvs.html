@@ -48,17 +48,15 @@ main{
               <h4 class="card-title" >БАДМИНТОН</h4> </a>
           </div> 
           <div class="card shadow-lg"  >
-            <a href="#"><img src="sport/tenis.png" class="card-img-top shadow-lg "  >     
+            <a href="#tenis" onclick="show(2)"><img src="sport/tenis.png" class="card-img-top shadow-lg "  >     
             <h4 class="card-title" >ТЕНИС НА МАСА/ШАХМАТ</h4> </a>
         </div>
           <div class="card shadow-lg ">
               <a href="#atletika" onclick="show(1)"><img src="sport/лекаатлетика.jpg" class="card-img-top shadow-lg " >  
               <h4 class="card-title" >ЛЕКА АТЛЕТИКА</h4></a>
-          </div>
-          
-     
+          </div>  
       </div>
-
+      
         <a href="tops.html" class="previous "><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
         <a href="#" class="next " onclick="hide()"><img src="images/arrow-up-chrome.gif"  style="width:90%;"></a>
 </main>
@@ -91,15 +89,45 @@ main{
 </div>
 </section>
 
+<section class="container-fluid " id="tenis" style="display: none;">
+  <div class="container">
+    <div class="divider left"></div>
+    <h1 >ТЕНИС НА МАСА</h1> 
+    <div class="divider right"></div>
+  </div>
+  
+<div class="atletika">
+  <div class="card-img-top" style="width: 50%;">
+    <img src="sport/tenis.png" >
+  </div>
+  <div class="card-title" style="width: 45%;">
+  <h4>Общинско първенство по тенис на маса 8-10 клас – I място за отбора на ПГМЕЕ – 2011г. </h4><br>
+  <h4>Първо място Областно първенство по тенис на маса 8-10 клас – 2011г.</h4><br>
+  <h4>Общинско първенство по тенис на маса 8-10 клас – I място за отбора на ПГМЕЕ – 2010г. </h4><br>
+  <h4>Второ място Областно първенство по тенис на маса 8-10 клас – 2010г.</h4><br>
+  <h4>Второ място Зонално първенство по тенис на маса 8-10 клас – 2010г.</h4><br>
+  </div>
+  </div>  
+  <div class="container">
+    <div class="divider left"></div>
+    <h1 >ШАХМАТ</h1> 
+    <div class="divider right"></div>
+  </div>
+  <h4 style="text-align: center; margin-bottom: 3vh;">Общинско първенство по шахмат – II място за отбора на ПГМЕЕ – 2013/2014г.</h4><br>
+  </section>
 <script>
   let index
   function show(index){
     if(index==1){
     document.getElementById('atletika').style.display = 'block'; 
   }
+  if(index==2){
+    document.getElementById('tenis').style.display = 'block'; 
+  }
 }
 function hide(){
     document.getElementById('atletika').style.display = 'none';  
+    document.getElementById('tenis').style.display = 'none';  
 }
 </script>
 </body>
