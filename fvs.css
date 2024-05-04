@@ -1,17 +1,17 @@
 body{
-    background-image: url('');
-    background-color:#F5F5F1;
-   /* background-color: #F7F8F6;*/
-    background-position:top;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    font-size: 1.3vw;
-    text-align: justify;
-    font-family: "Philosopher", sans-serif;
-    font-weight: 700;
-    font-style: normal;   
- }
+  background-image: url('images/sport10.jpg');
+  background-position:top;
+  background-color:#F5F5F1;
+  /* background-color: #F7F8F6;*/
+ /* background-attachment: fixed;*/
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-size: 1.3vw;
+  text-align: justify;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-style: normal;   
+}
 
 h1{
     text-align: center;
@@ -31,6 +31,7 @@ h1{
     align-items: center;
     margin:2vh auto 5vh;
     width:100%;
+  
   }
  
   .card{
@@ -79,8 +80,9 @@ h1{
     position: absolute; /* Настройте линиите като абсолютно позиционирани */
     top: 50%; /* Поставете горната част на линията в средата на контейнера */
     height: 1px; /* Височина на линията */
-    background-color: #000; /* Цвят на линията */
+    background-color:  #172029; /* Цвят на линията */
     width: 50%; /* Ширина на линията */
+   
   }
   
   .left {
