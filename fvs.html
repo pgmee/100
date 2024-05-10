@@ -34,7 +34,7 @@ main{
           <h4 class="card-title" >ХАНДБАЛ</h4> </a> 
         </div> 
         <div class="card shadow-lg ">
-              <a href="#"><img src="sport/КОЛАЖ ВОЛЕЙБОЛ.jpg" class="card-img-top shadow-lg " >  
+              <a href="#voleyball" onclick="show(3)"><img src="sport/КОЛАЖ ВОЛЕЙБОЛ.jpg" class="card-img-top shadow-lg " >  
             <h4 class="card-title" >ВОЛЕЙБОЛ</h4></a>
         </div>
         <div class="card shadow-lg"  >
@@ -60,7 +60,62 @@ main{
         <a href="tops.html" class="previous "><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
         <a href="#" class="next " onclick="hide()"><img src="images/arrow-up-chrome.gif"  style="width:90%;"></a>
 </main>
-
+<section class="container-fluid " id="voleyball" style="display: none;" >
+  <div class="container">
+    <div class="divider left"></div>
+    <h1 >ВОЛЕЙБОЛ</h1> 
+    <div class="divider right"></div>
+  </div>
+  <div class="atletika">
+    <div class="atletika2" class="shadow-lg">
+      <h1>2022/2023г.</h1>
+      <div class="card-img-top" >
+      <img src="sport/v4.jpg" ></div>
+  <div class="card-title" >
+  <h4>Първо място Общинско първенство по волейбол 11-12 клас.</h4>
+  </div></div>
+  <div class="atletika2"class="shadow-lg">
+    <h1>2016/2017г.</h1>
+    <div class="card-img-top">
+    <img src="sport/v18.jpg" ></div>
+  <div class="card-title" >
+  <h4>Първо място на Републиканско първенство по волейбол 11-12 клас </h4>
+  </div></div></div>
+  <div class="atletika">
+  <div class="voley"class="shadow-lg">
+  <div class="card-title" >
+    <h1>2015/2016г.</h1>
+  <h4>Трето място на Републиканско първенство на ученически игри по волейбол 11-12 клас<br> Първо място на Областно първенство по волейбол 11-12 клас<br>Първо място на Общинско първенство по волейбол 11-12 клас <br>Първо място на Зонално първенство по волейбол 11-12 клас<br></h4>
+  </div></div>
+  <div class="voley"class="shadow-lg">
+    <div class="card-title" >
+      <h1>2016/2017г.</h1>
+    <h4>Първо място в Областно първенство по волейбол 11-12 клас.<br> Първо място в Зонално първенство по волейбол 11-12 клас  </h4>
+    </div></div>
+  </div>
+  <div class="atletika">
+    <div class="atletika2" class="shadow-lg">
+      <h1>2014/2015г.</h1>
+      <div class="card-img-top" >
+      <img src="sport/v23.jpg" ></div>
+  <div class="card-title" >
+    <br>
+  <h4>Четвърто място на Републиканско първенство по волейбол 11-12 клас в гр. Приморско <br>Първо място на Областно първенство по волейбол 11-12 клас <br>Първо място на Общинско първенство по волейбол 11-12 клас<br>Първо място  Зонално първенство по волейбол 11-12 клас
+  </h4>
+  </div></div>
+  <div class="voley"class="shadow-lg">
+  <div class="card-title" >
+    <h1>2013/2014г.</h1>
+  <h4>Първо място на Общинско първенство по волейбол 8-10 клас, Първо място на Общинско първенство по волейбол 11-12 клас</h4>
+  <h1>2012/2013г.</h1>
+  <h4>Седмо място на Републиканско първенство по волейбол 8-10 клас<br>Първо място на Областно първенство по волейбол 8-10 клас<br>Първо място на Общинско първенство по волейбол 8-10 клас<br>Първо място на Зонално първенство по волейбол 8-10 клас</h4>
+  <h1>2011</h1>
+  <h4>Първо място на Общинско първенство по волейбол 11-12 клас </h4>
+  <h1>2010</h1>
+  <h4>Първо място на Областно първенство по волейбол 8-10 клас <br>Второ място на Зонално първенство по волейбол 8-10 клас </h4>
+  </div>
+</div></div>
+</section>
 <section class="container-fluid " id="atletika" >
   <div class="container">
     <div class="divider left"></div>
@@ -124,10 +179,14 @@ main{
   if(index==2){
     document.getElementById('tenis').style.display = 'block'; 
   }
+  if(index==3){
+    document.getElementById('voleyball').style.display = 'block'; 
+  }
 }
 function hide(){
     document.getElementById('atletika').style.display = 'none';  
     document.getElementById('tenis').style.display = 'none';  
+    document.getElementById('voleyball').style.display = 'none'; 
 }
 </script>
 </body>
