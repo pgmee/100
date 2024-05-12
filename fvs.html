@@ -7,9 +7,7 @@
     <title>Покорени спортни върхове</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-   
-    <link rel="stylesheet" href="buttons.css">
-    <link rel="stylesheet" href="fvs.css">
+       <link rel="stylesheet" href="fvs.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -29,6 +27,8 @@ main{
   background-attachment: fixed;
   background-color:#E5E5E5;
   background-size:100%; 
+  margin:-1vh auto 0px;
+  padding-top: 1vh;
 }
 #atletika{
   background-image: url('sport/atl.avif');
@@ -36,7 +36,8 @@ main{
   background-attachment: fixed;
   background-color:#E5E5E5;
   background-size:cover; 
-  margin: 0px auto;
+  margin:-1vh auto 0px;
+  padding-top: 1vh;
 }
 #tenis{
   background-image: url('sport/ttb.jpg');
@@ -44,12 +45,13 @@ main{
   background-attachment: fixed;
   background-color:#E5E5E5;
   background-size:cover; 
-  margin: 0px auto;
+  margin: -1vh auto 0px;
+  padding-top: 1vh;
 }
     </style>
 </head>
 <body >
-  <main onmouseover="hide()">
+  <main id="sports" onmouseover="hide()">
     <h1 style="margin-top: 0px;">Покорени спортни върхове</h1>  
     <div class="row row-cols-1 row-cols-md-3  pics ">      
         <div class="card shadow-lg"  >
@@ -81,7 +83,7 @@ main{
       </div>
       
         <a href="tops.html" class="previous "><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
-        <a href="#" class="next " onclick="hide()"><img src="images/arrow-up-chrome.gif"  style="width:90%;"></a>
+        
 </main>
 <section class="container-fluid " id="voleyball" style="display: none;" >
   <div class="container">
@@ -138,6 +140,7 @@ main{
   <h4>Първо място на Областно първенство по волейбол 8-10 клас <br>Второ място на Зонално първенство по волейбол 8-10 клас </h4>
   </div>
 </div></div>
+<a href="#" class="next " onclick="showSports()"><img src="images/left.png"  style="width:120%;"></a>
 </section>
 <section class="container-fluid " id="atletika" >
   <div class="container">
@@ -166,6 +169,7 @@ main{
   <h4>Първо място Зонално първенство по лека атлетика 8-10 клас</h4>
   <br>   <br>  
 </div>
+<a href="#" class="next " onclick="showSports()"><img src="images/left.png"  style="width:120%;"></a>
 </section>
 
 <section class="container-fluid " id="tenis" style="display: none;">
@@ -193,24 +197,29 @@ main{
     <div class="divider right"></div>
   </div>
   <h4 style="text-align: center; margin-bottom: 3vh;">Общинско първенство по шахмат – II място за отбора на ПГМЕЕ – 2013/2014г.</h4><br>
+  <a href="#" class="next " onclick="showSports()"><img src="images/left.png"  style="width:120%;"></a>
   </section>
 <script>
   let index
   function show(index){
     if(index==1){
     document.getElementById('atletika').style.display = 'block'; 
+    document.getElementById('sports').style.display = 'none'; 
   }
   if(index==2){
-    document.getElementById('tenis').style.display = 'block'; 
+    document.getElementById('tenis').style.display = 'block';
+    document.getElementById('sports').style.display = 'none';  
   }
   if(index==3){
     document.getElementById('voleyball').style.display = 'block'; 
+    document.getElementById('sports').style.display = 'none'; 
   }
 }
-function hide(){
+function showSports(){
     document.getElementById('atletika').style.display = 'none';  
     document.getElementById('tenis').style.display = 'none';  
     document.getElementById('voleyball').style.display = 'none'; 
+    document.getElementById('sports').style.display = 'block'; 
 }
 </script>
 </body>
