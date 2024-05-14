@@ -46,6 +46,14 @@ body{
   background-size:100%;
   background-attachment: fixed;
 }
+#pn{
+  display: none;
+ /* background-image: url('images/s5.jpg');
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:100%;
+  background-attachment: fixed;*/
+}
 .card{
   width: 30vw;
   height: 20vh;
@@ -171,27 +179,53 @@ p{
      <img src="images/z8.jpg"   >            
     </div>    
 </div>
-        <a href="#" class="previous " onclick="hide()"><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
+<div  class="row" style="margin-top: 2vh; align-items: center;">
+    <div  style="width: 34%; height: auto; display: block;"  >       
+        <p  >Участие в областен кръг на Олимпиада по История и цивилизация 2020г. - Стоян Стоянов  10 з клас<br>Участие на областен кръг на Олимпиада по История и цивилизация 2024г. - Христо Ненов 
+        </p> <br><hr style="color: white;"><br>
+        <p>Участие в изложба по повод: “110 год.  от Балканските войни”- 10 кл./ 2023г.      >>></p></div>
+    <div class="card shadow-lg" style="width: 40%; height: auto; margin-top: 1vh;"  >
+     <img src="images/z12.jpg"   >            
+    </div>      
+</div>
+<div  class="row" style="margin-top: 2vh; padding-bottom: 4vh;">
+    <div  style="width: 47%; height: auto; display: block;"  >       
+        <p >Национален  конкурс „Мадарски конник - Символ на историческото минало и европейското бъдеще на България“-  II място Юлиан Киров 10з клас.</p>
+        <div class="card " style="width: 95%; height: auto; "  >
+      <img class="shadow-lg" src="images/z11.jpg"  >   </div>  
+    </div> 
+    <div class="card shadow-lg" style="width: 27%; height: auto; margin-top: 2vh;"  >
+     <img src="images/z10.jpg"   >            
+    </div>    
+</div>
+<a href="#" class="previous " onclick="hide()"><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
+<a href="#on" class="next " ><img src="images/arrow-up-chrome.gif"  style="width:90%;"></a>
         
   
 </section>
+
+<section id="pn">
+    
+      
+    <a href="#" class="previous " onclick="hide()"><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
+</section>
 <script>
-  let index
-  function show(index){
-    if(index==1){
-    document.getElementById('on').style.display = 'block'; 
-    document.getElementById('nauki').style.display = 'none'; 
+    let index
+    function show(index){
+      if(index==1){
+      document.getElementById('on').style.display = 'block'; 
+      document.getElementById('nauki').style.display = 'none'; 
+    }
+    if(index==2){
+      document.getElementById('pn').style.display = 'block';
+      document.getElementById('nauki').style.display = 'none';  
+    }
   }
-  if(index==2){
-    document.getElementById('pn').style.display = 'block';
-    document.getElementById('nauki').style.display = 'none';  
-  }
-}
 function hide(){
-    document.getElementById('on').style.display = 'none';  
-    document.getElementById('pn').style.display = 'none';  
-    document.getElementById('nauki').style.display = 'block'; 
-}
+      document.getElementById('on').style.display = 'none';  
+      document.getElementById('pn').style.display = 'none';    
+      document.getElementById('nauki').style.display = 'block'; 
+  }
 </script>
 </body>
 </html>
