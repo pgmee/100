@@ -30,9 +30,9 @@ body{
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
-   
 }
 #nauki{
+  height:100vh;
   background-image: url('images/nauki1.jpg');
   background-position:center;
   background-repeat: no-repeat;
@@ -42,34 +42,51 @@ body{
   background-image: url('images/s5.jpg');
   background-position:center;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size:100%;
+  background-attachment: fixed;
 }
 .card{
   width: 30vw;
   height: 20vh;
   background-color: transparent;
-
+  padding: 0px;
 }
 .container-fluid{ 
     width: 100%;
-    height: 100vh;
+    
 }
 h1{
     font-size: 3vw;
     text-align: center;
     margin:auto ;
 }
+h4{
+  font-size: 1.7vw;
+  font-weight: 700;
+  text-align: center;
+}
+
 a{
     text-decoration: none;
     color: #FDE8B7;
     margin-top:2%;
+}
+.row{
+ justify-content: space-evenly;
+  
+  margin: auto;
+}
+.card-text{
+  width: 70%;
+  color: white;
+  padding: 2vh 4vw ;
 }
     </style>
 </head>
 <body >
   <section class="container-fluid " id="nauki"> 
     <div class="nauki">      
-      <a href="#on" >   <div class="card shadow-lg"  >
+      <a href="#on" onclick="show(1)">   <div class="card shadow-lg"  >
           
           <h1 class="card-title" >ОБЩЕСТВЕНИ НАУКИ</h1> 
             </div>   </a> 
@@ -83,14 +100,58 @@ a{
         
 </section>
   <section class="container-fluid" id="on"> 
-    <div  class="nauki">
-      
-      
+    <div class="card-text">
+      <h4  >2017 г.</h4>
+      <p>Ученическа конференция в гр. Котел по случай „150 години от смъртта на Георги Стойков Раковски“. <br>
+        Учениците от ПГМЕЕ: Стоян Маджаров, Мирослав Желев и Атанас Янакиев представиха достойно своето училище чрез своите есета.
+        Стоян Маджаров получи грамота за най-добро историческо есе.<br>
+        Ръководител: Светозар Люцканов 
+        </p>
+      </div>
+    <div  class="row">
+      <div class="card shadow-lg" style="width: 47%; height: auto;"  >
+        <img src="images/z1.jpg"  >     
+      </div> 
+      <div class="card shadow-lg" style="width: 40%; height: auto;"  >
+       <img src="images/z2.jpg"   >     
+          
+      </div>    
   </div>
-      
-        <a href="tops.html" class="previous "><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
+  <div class="card-text">
+    <h4  >Януари 2020 г. </h4>
+    <p>Участие в конкурс за най-добра мултимедийна презентация на тема „Будителите на моя роден край“. Конкурсът се организира от евродепутата от ЕНП -Асим Адемов, съвместно с РУО. Трима ученика взеха участие, като Гергана Димитрова от 12 ж получи грамота и поощрителна награда и бе избрана непосредствено преди победителката. Участие взеха и Дилян Папанчев от 12з и Патрик Петков от 12д клас ,които получиха сертификати за участие.  </p>
+    </div>
+  <div  class="row">
+    <div class="card shadow-lg" style="width: 43%; height: auto;"  >
+      <img src="images/z3.jpg"  >     
+    </div> 
+    <div class="card shadow-lg" style="width: 43%; height: auto;"  >
+     <img src="images/z4.jpg"   >     
+        
+    </div>  
+</div>
+  
+        <a href="#" class="previous " onclick="hide()"><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
         
   
 </section>
+<script>
+  let index
+  function show(index){
+    if(index==1){
+    document.getElementById('on').style.display = 'block'; 
+    document.getElementById('nauki').style.display = 'none'; 
+  }
+  if(index==2){
+    document.getElementById('pn').style.display = 'block';
+    document.getElementById('nauki').style.display = 'none';  
+  }
+}
+function hide(){
+    document.getElementById('on').style.display = 'none';  
+    document.getElementById('pn').style.display = 'none';  
+    document.getElementById('nauki').style.display = 'block'; 
+}
+</script>
 </body>
 </html>
