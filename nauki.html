@@ -30,56 +30,67 @@ body{
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
-    background-image: url('');
    
 }
-
+#nauki{
+  background-image: url('images/nauki1.jpg');
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#on{
+  background-image: url('images/s5.jpg');
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
 .card{
-width: 30%;
-margin-top: 7%;
+  width: 30vw;
+  height: 20vh;
+  background-color: transparent;
+
 }
 .container-fluid{ 
     width: 100%;
     height: 100vh;
-    background-image: url('images/2021.jpg');
-  background-position:bottom;
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-color: #162538;
 }
 h1{
     font-size: 3vw;
     text-align: center;
-    margin: 35% 1vw;
+    margin:auto ;
 }
 a{
     text-decoration: none;
     color: #FDE8B7;
+    margin-top:2%;
 }
     </style>
 </head>
 <body >
-  <section class="container-fluid" > 
+  <section class="container-fluid " id="nauki"> 
     <div class="nauki">      
-        <div class="card text-bg-dark shadow-lg"  >
-          <a href="#on" >  <img src="images/bgcard.jpg " class="card-img shadow-lg "  >    
-            <div class="card-img-overlay">
+      <a href="#on" >   <div class="card shadow-lg"  >
+          
           <h1 class="card-title" >ОБЩЕСТВЕНИ НАУКИ</h1> 
             </div>   </a> 
-        </div>  
-        <div class="card text-bg-dark shadow-lg"  >
-          <a href="" >  <img src="images/bgcard.jpg " class="card-img shadow-lg "  >    
-            <div class="card-img-overlay">
+        
+        <a href="#" > <div class="card  shadow-lg"  >  
           <h1 class="card-title" >ПРИРОДНИ <br> НАУКИ</h1> 
             </div> </a> 
         </div>
-    </div>
       
         <a href="tops.html" class="previous "><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
         
-  </section>
-<section id="on">
-
+</section>
+  <section class="container-fluid" id="on"> 
+    <div  class="nauki">
+      
+      
+  </div>
+      
+        <a href="tops.html" class="previous "><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
+        
+  
 </section>
 </body>
 </html>
