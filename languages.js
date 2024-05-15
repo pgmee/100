@@ -39,7 +39,7 @@ function openPopup(index) {
   } else if(index==10){
     document.getElementById('popupContainer(10)').style.display = 'block';
   } else if(index==11){
-    document.getElementById('popupContainer(10)').style.display = 'block';
+    document.getElementById('popupContainer(11)').style.display = 'block';
   } 
   };
   
