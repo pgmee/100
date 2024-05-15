@@ -38,6 +38,8 @@ function openPopup(index) {
     document.getElementById('popupContainer(9)').style.display = 'block';
   } else if(index==10){
     document.getElementById('popupContainer(10)').style.display = 'block';
+  } else if(index==11){
+    document.getElementById('popupContainer(10)').style.display = 'block';
   } 
   };
   
@@ -62,5 +64,7 @@ function openPopup(index) {
     document.getElementById('popupContainer(9)').style.display = 'none';
   }else if(index==10){
     document.getElementById('popupContainer(10)').style.display = 'none';
+  }else if(index==11){
+    document.getElementById('popupContainer(11)').style.display = 'none';
   }
 }

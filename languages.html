@@ -48,7 +48,7 @@ margin-top: 7%;
     background-color: #162538;
     background-attachment: fixed;
 }
-#ae{
+#ae, #ne{
     display: none;
     width: 100%;
     height: auto; 
@@ -76,10 +76,6 @@ h4{
     font-size: 1.7vw;
     font-weight: 700;
 }
-
-#ne{
-    display: none;
-}
 .pic{
     width: 29%;
     /*transition: transform 2s;*/
@@ -94,7 +90,7 @@ padding: 7vh 4vw 1vh;
 .popup {
             display: none;
             position: fixed;
-            width: 45%;
+            width: 50%;
             top: 50%;
             left:50%;
             transform: translate(-50%, -50%);
@@ -247,85 +243,60 @@ padding: 7vh 4vw 1vh;
 </section>
 
 <section id="ne">
-    <h2>Английски език</h2>
+    <h2>Немски език</h2>
     <div class="lang" >      
         <div class="card pic text-bg-dark shadow-lg"  >
            <img src="images/bgcard.jpg " class="card-img shadow-lg "  >    
-            <div class="card-img-overlay" >
-          <h4 class="card-title" >2011-2012</h4> 
-          <p>На организирания от Европейската комисия международен конкурс за писмен превод „Juvenes Translatores” под ръководството на учителката по английски език Димитринка Евтимова участват 5 ученици, които получават грамоти от Брюксел.</p>
+            <div class="card-img-overlay"  onmouseover="openPopup(6)" onmouseout="closePopup(6)" style="cursor: pointer;">
+          <h4 class="card-title" >18.01.2020г.</h4> 
+          <p>7-мо Национално състезание по немски език на издателство Клет гр. Ловеч - Васил Колев от 9 б клас, специалност Мехатроника и Петрос Симонян от 10 б, специалност Мехатроника, с ръководител Надя Г. Николова.</p>
+          <img src="images/n1.jpg" alt="" style="width:25%; margin:-1vh 35% 3vh">
             </div> 
         </div>  
         <div class="card  ae text-bg-dark shadow-lg"  >
           <img src="images/bgcard.jpg " class="card-img shadow-lg "  >    
-            <div class="card-img-overlay">
-          <h4 class="card-title" >2016-2017</h4> 
-          <p>ДЗИ АЕ Oтличен 6.00 – Стоян Златозаров Колев 12з, Калоян Чавдаров Кехайов 12и, Петър Неделчев Друмев 12и</p>
-          <hr>
-          <h4 class="card-title" >2017-2018</h4> 
-          <p>ДЗИ АЕ - Димитър Атанасов Куманов 12и – Oтличен 5.99</p>
+            <div class="card-img-overlay"  onmouseover="openPopup(7)" onmouseout="closePopup(7)" style="cursor: pointer;">
+          <h4 class="card-title" >02.09.2020г.</h4> 
+          <p>Конкурс „Бургас харесва младите преводачи” - превод на приказка от български на немски език. С медал и първо място бе отличен Радослав Кръстев от 10Д клас за уникалния превод на немски език, за усърдието и избора на текст с изключителна сериозност и трудност.</p>
+          <img src="images/n3.jpg" alt="" style="width:20%; margin:-6vh 40% 3vh">
             </div> 
         </div>
-        <div class="card ae text-bg-dark shadow-lg"  >
+        <div class="card  ae text-bg-dark shadow-lg"  >
             <img src="images/bgcard.jpg " class="card-img shadow-lg "  >    
-              <div class="card-img-overlay" onmouseover="openPopup(1)" onmouseout="closePopup(1)" style="cursor: pointer;">
-                <h4 class="card-title" >2019-2020</h4> 
-                <p>Национално състезание по речеви и комуникативни умения на английски език- Величко Иванов от 9е кл.с ръководител Г. Гешев се класира за националния кръг на състезанието. Представителя на нашето училище е единственият участник от професионална гимназия.</p>
-                <img src="images/величко2.jpg" alt="" style="width:20%; margin:-4vh 40% 3vh">
-              </div> 
+            <div class="card-img-overlay"  onmouseover="openPopup(8)" onmouseout="closePopup(8)" style="cursor: pointer;">     
+            <p>На конкурса „Бургас харесва младите преводачи”, организиран от Община Бургас участаваха и учениците: Данаил Динев 10Б, Ерхан Ибрям 9Г, Любомир Лазаров 9Б и Николай Ников 9Б клас, с ръководители Радостина Славова, Надя Георгиева и Златина Панайотова. За положените усилия младите преводачи получиха грамоти за участие.</p>
+            <img src="images/n2.jpg" alt="" style="width:30%; margin:-6vh 1vw 5vh 60%">
+            </div> 
           </div>
     </div>
     <div class="lang" >      
         <div class="card pic text-bg-dark shadow-lg"  >
            <img src="images/bgcard.jpg " class="card-img shadow-lg "  >    
-           <div class="card-img-overlay" onmouseover="openPopup(2)" onmouseout="closePopup(2)" style="cursor: pointer;">
-          <h4 class="card-title" >2020-2021</h4> 
-          <p>Ивета Димитрова – финалист на Национално състезание по творческо писане на английски език.</p>
-          <img src="images/СертификатИвета.jpg" alt="" style="width:20%; margin:-3vh 40% 3vh">
-          <p>ДЗИ АЕ Ивета Димитрова Димитрова 12з, Иван Михайлов Митев 12и – Отличен 6.00</p>
+           <div class="card-img-overlay" onmouseover="openPopup(9)" onmouseout="closePopup(9)" style="cursor: pointer;">
+          <h4 class="card-title" >29.05.2021г.</h4> 
+          <p>8-мо Национално състезание по немски език на издателство Клет в гр. Ловеч, участваха Мирослав Георгиев от 9 б клас и Данаил Динев от 10 б, специалност Мехатроника, с ръководител Надя Г. Николова.</p>
+          <img src="images/n4.jpg" alt="" style="width:22%; margin:-3vh 37% 3vh">
             </div> 
         </div>  
         <div class="card pic text-bg-dark shadow-lg"  >
             <img src="images/bgcard.jpg " class="card-img shadow-lg "  >    
-            <div class="card-img-overlay" onmouseover="openPopup(3)" onmouseout="closePopup(3)" style="cursor: pointer;">
-           <h4 class="card-title" >2020-2021</h4> 
-           <p>„Бургас харесва младите преводачи” - превод на приказка от български на чужд език - Ангел Янев от 10 З, Георги Танев от 10 З, Николай Георгиев от 9 А и Христо Минчев от 9 А грамоти за участие.</p>
-           <img src="images/prevodachi.webp" alt="" style="width:20%; margin:0px 40% 3vh">
+            <div class="card-img-overlay" onmouseover="openPopup(10)" onmouseout="closePopup(10)" style="cursor: pointer;">
+           <h4 class="card-title" >28.01.2023г.</h4> 
+           <p>12- то Национално състезание по немски език на издателство Клет в гр. Ловеч, Стоян Христов от 9г клас, класиран в “златната среда” сред многобройните участници с брой точки, близки до тези на спечелилите първите места, ръководител Галя Петрова.</p>
+           <img src="images/n6.jpg" alt="" style="width:22%; margin:-3vh 40% 3vh">
              </div> 
          </div>
         <div class="card ae text-bg-dark shadow-lg"  >
             <img src="images/bgcard.jpg " class="card-img shadow-lg "  >    
-              <div class="card-img-overlay" onmouseover="openPopup(4)" onmouseout="closePopup(4)" style="cursor: pointer;">
-                <h4 class="card-title" >2021-2022</h4> 
-                <p>Димитър Чучулиев – 12и - отличен резултат на ДЗИ по АЕ по желание.</p>
-                <img src="images/Чучулиев.png" alt="" style="width:20%; margin:-4vh 40% 0px">
-                <p>Състезание по английски език „Pearson Competition” – класирани на национален кръг: Александър Ристовски 8б, Александър Йорданов 8и, Мартин Домусчиев 9и клас.</p>  
+              <div class="card-img-overlay" onmouseover="openPopup(11)" onmouseout="closePopup(11)" style="cursor: pointer;">
+                <h4 class="card-title" >30.11.2023г.</h4> 
+                <p>Участие в Училищно състезание по писмен превод, организирано от СОУ „Н.Й.Вапцаров“ гр. Айтос, първо място за Стоян Христов – 10 г с ръководител Галя Петрова.</p>
+                <img src="images/n5.jpg" alt="" style="width:35%; margin:1vh 35% 0px">
               </div> 
           </div>
     </div>
-    <div class="lang" >      
-        <div class="card pic text-bg-dark shadow-lg"  >
-           <img src="images/bgcard.jpg " class="card-img shadow-lg "  >    
-            <div class="card-img-overlay" >
-          <h4 class="card-title" >2022-2023</h4> 
-          <p>Състезание по английски език „Pearson Competition” – 3ма ученици класирани на национален кръг - Янчо Данданов 10и, Радостин Колев 9з, Стоян Калоянов 8и клас.</p>
-            </div> 
-        </div>  
-        <div class="card  ae text-bg-dark shadow-lg"  >
-          <img src="images/bgcard.jpg " class="card-img shadow-lg "  >    
-            <div class="card-img-overlay">
-          <h4 class="card-title" >2023-2024</h4> 
-          <p>Състезание по английски език „Pearson Competition” – 3ма ученици класирани на национален кръг: Кристиан Георгиев 8з, Стоян Калоянов 9и, Александър Ристовски, Велизар Вълков 10б, Михалис Белос 11з клас.</p>
-        </div> 
-        </div>
-        <div class="card ae text-bg-dark shadow-lg"  >
-            <img src="images/bgcard.jpg " class="card-img shadow-lg "  >    
-        <div class="card-img-overlay" onmouseover="openPopup(5)" onmouseout="closePopup(5)" style="cursor: pointer;">
-            <h4 class="card-title" >2023-2024</h4> 
-             <p>Училищно състезание по писмен превод, СОУ „Н.Й.Вапцаров“, гр. Айтос - поощрителни награди за Радостин Колев - 10з,Николай Илиев - 10з, Велизар Вълков - 10б, Божидар Узунов - 10а клас.</p>
-            <img src="images/състезаниеАйтос.jpg" alt="" style="width:20%; margin:0px 40% 3vh">
-            </div> 
-        </div>
+    
+        
     </div>
 
     <a href="#ne" class="next " ><img src="images/arrow-up-chrome.gif"  style="width:90%;"></a>
@@ -358,29 +329,36 @@ padding: 7vh 4vw 1vh;
       <img src="images/състезаниеАйтос.jpg" alt="" style="width: 100%;">
     </div>
 </div>
-
-<div id="popupContainer(6)" class="popupNe">
+<div id="popupContainer(6)" class="popup">
     <div class="popup-content">
       <img src="images/n1.jpg" alt="" style="width: 100%; ">
     </div>
 </div>
 <div id="popupContainer(7)" class="popupNe">
     <div class="popup-content">
-      <img src="images/n3.webp" alt="" style="width: 100%;">
+      <img src="images/n3.jpg" alt="" style="width: 100%;">
     </div>
 </div>
-<div id="popupContainer(8)" class="popupNe">
+<div id="popupContainer(8)" class="popup">
+    <div class="popup-content">
+      <img src="images/n2.jpg" alt="" style="width: 100%;">
+    </div>
+</div>
+<div id="popupContainer(9)" class="popup">
     <div class="popup-content">
       <img src="images/n4.jpg" alt="" style="width: 100%;">
     </div>
 </div>
-<div id="popupContainer(9)" class="popupNe">
+<div id="popupContainer(10)" class="popupNe">
     <div class="popup-content">
       <img src="images/n6.jpg" alt="" style="width: 100%;">
     </div>
 </div>
-
-
+<div id="popupContainer(11)" class="popup">
+    <div class="popup-content">
+      <img src="images/n5.jpg" alt="" style="width: 100%;">
+    </div>
+</div>
 
    <script src="languages.js"></script> 
  
