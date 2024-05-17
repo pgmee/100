@@ -13,17 +13,16 @@ body{
  h1{
      text-align: center;
      color: white;
-     font-size: 3.7vw;
+     font-size: 4vw;
      position: fixed;
-     top: 43%;
-     left:37%;
+     top: 40%;
+     left:35%;
            
    }
    h4{
      margin:1vh auto;
      font-size: 1.7vw;
      font-weight: 700;
-     color: #FCFED5;
    }
    .pics{
      display: flex;
@@ -51,7 +50,12 @@ body{
      width: 22vw;
      padding: 1vh;
      transition:  transform 2s;
-     background-color: #FCFED5;
+     background-color: transparent;
+     border: 0.2vw inset #D5DBAD;
+     
+   }
+   .card-title{
+    color: #D5DBAD;
    }
   img{
      width:100%;
