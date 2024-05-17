@@ -12,11 +12,11 @@ body{
  
  h1{
      text-align: center;
-     color: white;
+     color: #D5DBAD;
      font-size: 4vw;
      position: fixed;
-     top: 40%;
-     left:35%;
+     top: 60%;
+     left:36.5%;
            
    }
    h4{
@@ -30,7 +30,7 @@ body{
      justify-content: space-between;
      margin: auto;
      position: fixed;
-     top: 3vh;
+     top: 2.7vh;
      left: 9vw;
      width:82%; 
      
@@ -41,7 +41,7 @@ body{
     justify-content: space-between;
     margin:auto;
     position: fixed;
-    bottom: 5vh;
+    bottom: 4.1vh;
     left: 9vw; 
     width:82%; 
   }
