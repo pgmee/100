@@ -1,0 +1,108 @@
+body{
+    background-image: url('images/37.jpg ');
+    background-position:top;
+    background-repeat:repeat-y ;
+    background-size: 100%;
+    font-size: 1.3vw;
+   text-align: justify;
+   font-family: "Philosopher", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+ }
+ 
+ h1{
+     text-align: center;
+     color: white;
+     font-size: 3.7vw;
+     position: fixed;
+     top: 43%;
+     left:37%;
+           
+   }
+   h4{
+     margin:1vh auto;
+     font-size: 1.7vw;
+     font-weight: 700;
+     color: #FCFED5;
+   }
+   .pics{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin: auto;
+     position: fixed;
+     top: 3vh;
+     left: 9vw;
+     width:82%; 
+     
+   }
+   .picss{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:auto;
+    position: fixed;
+    bottom: 5vh;
+    left: 9vw; 
+    width:82%; 
+  }
+  
+   .card{
+     width: 22vw;
+     padding: 1vh;
+     transition:  transform 2s;
+     background-color: #FCFED5;
+   }
+  img{
+     width:100%;
+  }
+  a{
+   text-decoration: none;
+   text-align: center;
+   color: black;
+  }
+  .card:hover{
+                 transform: scale(1.1);    
+             }
+  
+   .container {
+     position: relative; /* Настройте контейнера като относително позициониран */
+     max-width: 50%;
+   }
+   
+   .divider {
+     position: absolute; /* Настройте линиите като абсолютно позиционирани */
+     top: 50%; /* Поставете горната част на линията в средата на контейнера */
+     height: 1px; /* Височина на линията */
+     background-color:  #172029; /* Цвят на линията */
+     width: 50%; /* Ширина на линията */
+    
+   }
+   
+   .left {
+     left: 0; /* Поставете левия край на линията в началото на контейнера */
+     transform: translateX(-50%); /* Центрирайте линията хоризонтално */
+   }
+   
+   .right {
+     right: 0; /* Поставете десния край на линията в края на контейнера */
+     transform: translateX(50%); /* Центрирайте линията хоризонтално */
+   }
+ 
+   .previous {
+     position: fixed;
+         bottom:48vh;
+         left:2vw; 
+         width:5vw;
+         height: 4vh;
+     }
+     
+     .next {
+     
+     position: fixed;
+         bottom:10vh;
+         right: 1.5vw; 
+         width: 5vw;
+         height: 4vh;
+     }
+     
