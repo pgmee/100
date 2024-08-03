@@ -145,6 +145,12 @@ a{
     justify-content: space-between;
     align-items: center;
 }
+.column{
+    width: 45%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 img{
     transition: transform 2s;
 }
@@ -231,10 +237,76 @@ img:hover{
         
 </section>
 
-<section id="ne">
+<section class="container-fluid" id="ne">
     <h2>Дарения от ПГМЕЕ </h2>
-    
-         
+    <div class="lang" >          
+        <div class="card  shadow-lg" style="background-color: #E6B167 ; " >
+        <div class="card-title">
+          <h4 onmouseover="openPopup(7)" onmouseout="closePopup(7)"  >Кръводаряване Випуск 2023/2024, 2022/2023, 2021/2022, 2019/2020</h4> 
+          <div class="row">
+         <img src="images/снимка1.jpg" style="width: 42%;">
+         <img src="images/снимка1_1.jpg" style="width: 58%;">
+            </div> </div>
+        </div>
+        <div class="card ae  shadow-lg"  style="background-color: #6E9CD0;  height: 47vh;">     
+              <div class="card-title" >
+              <h4  onmouseover="openPopup(8)" onmouseout="closePopup(8)" >„Доброто продължава – инициатива училище - село Дебелт“</h4> 
+                <p>„Когато сме заедно, можем повече“, това доказаха нашите деветокласници. Всички те, с подкрепата на своите родители и учители, организираха благотворителна инициатива и събраха средства, с които закупиха най-необходимите учебни пособия за своите съученици от ОУ „Антон Страшимиров“ село Дебелт, в което се обучават деца от първи до седми клас. </p>  
+              </div> 
+          </div>
+    </div>   
+    <div class="lang" >             
+        <div class="card  shadow-lg"  style="background-color: #6E9CD0;  ">     
+              <div class="card-title" >
+              <h4  onmouseover="openPopup(10)" onmouseout="closePopup(10)" >„Благотворителен волейболен мач“</h4> 
+               <img src="images/снимка4.jpg" width="100%">
+              </div> 
+          </div>
+          <div class="card  shadow-lg" style="background-color: #E6B167 ; " >
+            <div class="card-title">
+              <h4 onmouseover="openPopup(9)" onmouseout="closePopup(9)"  >„Елха на доброто“ 2023/2024; 2023/2023</h4> 
+              <div class="row">
+             <img src="images/снимка3.jpg" style="width: 44%;">
+             <img src="images/снимка11.jpg" style="width: 56%;">
+                </div> </div>
+            </div>
+    </div>        
+    <div class="lang" >          
+        <div class="card  shadow-lg" style="background-color: #E6B167 ; width: 77%; " >
+        <div class="card-title">
+          <h4>„Да дариш усмивка“ - За пореден път ученици от ПГМЕЕ показаха най – великата човешка добродетел, а именно – СЪПРИЧАСТНОСТ! </h4> 
+          <div class="row">
+         <img src="images/снимка5.jpg" style="width: 20%;">
+         <img src="images/снимка5_7.jpg" style="width: 20%;">
+         <img src="images/снимка7.jpg" style="width: 20%;">
+         <p style="width: 40%;">Всички осмокласниците на Механото отвориха своите сърца и се включиха в благотворителната кампания на сдружение “Усмивка”. Те вярват, че са успели да зарадват децата и възрастните хора в нужда, като се надяват тази Коледа да е незабравима. Нашите възпитаници дариха усмивки, доброта и надежда….Надежда, че ДОБРОТО РАЖДА ДОБРО! </p>
+            </div> </div>
+        </div> 
+    </div>   
+    <div class="lang" >   
+        <div class="column" >     
+        <div class="card  shadow-lg" style="background-color: #6E9CD0; width: 100%; margin-bottom: 3vh;" >
+        <div class="card-title">
+          <h4 onmouseover="openPopup(11)" onmouseout="closePopup(11)"  >„Механо – за по-чист свят“</h4> 
+          <div class="row">
+         <img src="images/снимка 8.jpg" style="width: 47%;">
+         <img src="images/снимка 9.jpg" style="width: 53%;">
+            </div> </div>
+        </div>
+        <div class="card  shadow-lg" style="background-color: #E6B167; width: 100%;" >
+        <div class="card-title">
+          <h4 onmouseover="openPopup(12)" onmouseout="closePopup(12)"  >„Нека върнем усмивката на съучениците ни“</h4> 
+         <img src="images/снимка 14.png" style="width: 95%; ">
+            </div> 
+        </div>
+    </div>  
+        <div class="card shadow-lg"  style="background-color: #6E9CD0;">     
+              <div class="card-title row" >
+              <h4 >Благотворителна акция,организирана от УС на ПГМЕЕ  за пострадалите при земетресенията в Турция и Сирия  </h4> 
+              <img src="images/снимка 10.jpg" style="width: 90%; margin: auto;">
+              </div> 
+          </div>
+    </div>  
 
     <a href="#ne" class="next " ><img src="images/arrow-up-chrome.gif"  style="width:90%;"></a>
     <a href="#lang" class="previous " onclick="hide()"><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
@@ -274,29 +346,39 @@ img:hover{
         </p>
     </div>
 </div>
-<div id="popupContainer(7)" class="popupNe">
+<div id="popupContainer(7)" class="popup">
     <div class="popup-content">
-      <img src="images/n3.jpg" alt="" style="width: 100%;">
+      <p>Като инициатива посветена на празничната седмица на училището през месец април, ученици от випуск XII клас от ПГМЕЕ ежегодно даряват кръв. Тяхната младост, здраве и енергия ги правят идеални кандидати за тази благородна дейност. Кръводаряването е важна дейност за обществото и нашите участници, като активни членове на общността, допринесоха за спасяването на човешки живот. Надяваме се това, което поредният випуск абитуриенти прави, да остави у тях такова впечатление, че да ги накара да се върнат в Сектор кръводаряване гр.Бургас или като част от инициативата на следващия випуск или самостоятелно. </p>
     </div>
 </div>
-<div id="popupContainer(8)" class="popup">
-    <div class="popup-content">
-      <img src="images/n2.jpg" alt="" style="width: 100%;">
+<div id="popupContainer(8)" class="popup" >
+    <div class="popup-content" >
+      <img src="images/снимка2.jpg" alt="" style="width:100%;">
     </div>
 </div>
 <div id="popupContainer(9)" class="popup">
     <div class="popup-content">
-      <img src="images/n4.jpg" alt="" style="width: 100%;">
+        <p>Благотворителната инициатива „Елха на доброто” в Областна администрация Бургас 2 поредни години радва десетки деца от социално слаби семействата, както и деца, настанени в приемни семейства, в навечерието на Коледа и Нова година. </p>
     </div>
 </div>
-<div id="popupContainer(10)" class="popupNe">
+<div id="popupContainer(10)" class="popup">
     <div class="popup-content">
-      <img src="images/n6.jpg" alt="" style="width: 100%;">
+     <p>За пореден път ученици и учители от ПГМЕЕ се включиха в благотворителна инициатива. Кампанията този път бе организирана от ПГЧЕ „Васил Левски” и ПГСАГ „Кольо Фичето”, чиято кауза беше да се съберат средства за децата с церебрална парализа и да се подпомогне лечението на Мишо. На благотворителния волейболен мач присъстваха над 230 ученици и учители от Механото, които аплодираха спортистите и танцьорите от двете училища и изразиха подкрепата си за Мишо и всички деца като него. Докато има хора с ДОБРИ сърца, ще  ги има и НАДЕЖДАТА, и ЧУДЕСАТА, и ЛЮБОВТА! </p>
     </div>
 </div>
 <div id="popupContainer(11)" class="popup">
     <div class="popup-content">
-      <img src="images/n5.jpg" alt="" style="width: 100%;">
+   <p>На 24.10.23г. Ученическият съвет на нашето училище реализира инициативата “Механо за по-чист свят”, финансирана от Младежки международен център – Бургас по проект за младежки инициативи написан и спечелен от Калоян Велев – ученик от 12з клас. В инициативата взеха участие 43 ученици, като основната им цел беше да съберат възможно най-много отпадъци замърсяващи природата. Благодарение на г-н Димитров, учениците успяха да се докоснат до историята на региона и неговата култура. Той разкри интересни подробности относно бита на хората и лесовъдството. Доброволците, съвместно с ръководителите им: Мария Бедрова, Габриела Демирева, Таня Згурова, Вени Овчарова и представителите от Младежкия център – Жулиета и Венци, събраха голямо количество боклук, изхвърлен от емигрантите по време на тяхното преминаване през селото и Чурка ряка. </p>
+    </div>
+</div>
+<div id="popupContainer(12)" class="popup">
+    <div class="popup-content">
+   <p>Демонстративна среща по баскетбол с благотворителна цел, по идея на Ученическия съвет при  ПГМЕЕ, с която те спечелиха проект „Нека върнем усмивката на съучениците ни“, който се реализира с финансовата подкрепа на Община Бургас, чрез пилотното издание на „Общински младежки грант“, по повод Европейска година на младежта. Благотворителност проявяват и всички ученици на ПГМЕЕ, дарявайки по 2 лева за каузата и обединени около идеята усмивките на нашите дванадесетокласници в неравностойно положение да не стихват.</p>
+    </div>
+</div>
+<div id="popupContainer(13)" class="popup">
+    <div class="popup-content">
+        <img src="images" alt="" style="width:100%;">
     </div>
 </div>
 

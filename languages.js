@@ -40,7 +40,9 @@ function openPopup(index) {
     document.getElementById('popupContainer(10)').style.display = 'block';
   } else if(index==11){
     document.getElementById('popupContainer(11)').style.display = 'block';
-  } 
+  } else if(index==12){
+  document.getElementById('popupContainer(12)').style.display = 'block';
+} 
   };
   
   function closePopup(index) {
@@ -66,5 +68,7 @@ function openPopup(index) {
     document.getElementById('popupContainer(10)').style.display = 'none';
   }else if(index==11){
     document.getElementById('popupContainer(11)').style.display = 'none';
+  }  else if(index==12){
+    document.getElementById('popupContainer(12)').style.display = 'none';
   }
 }
