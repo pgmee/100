@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Покорени върхове</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="icon" href="images/LOGO_PGMEE_1_nov.png">
+<link rel="stylesheet" href="buttons.css">
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+body{
+  font-size: 1.3vw;
+  text-align: justify;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-style: normal;   
+  
+}
+.lang{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3vh auto;
+}
+
+.card{
+width: 45%;
+border: none;
+background-color: transparent;
+cursor: pointer;
+
+}
+.container-fluid{ 
+    width: 100%;
+    height: 100vh; 
+    background-size:cover;
+}
+#lang{
+    background-image: url('images/blue1.png');
+    background-position:center;  
+    background-color: #162538;
+    background-attachment: fixed;
+    background-size: 77%;
+}
+#ae, #ne{
+    display: none;
+    width: 100%;
+    height: auto; 
+    background-image: url('images/blue1.png');
+    background-position:center;
+    background-color: #162538;
+    background-attachment: fixed;
+    padding-bottom: 3vh;
+}
+h1{
+    font-size: 3vw;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: 700;
+    padding: 5vh 0px 0px;
+    color: white;
+}
+h4{
+    text-align: center;
+    font-size: 1.7vw;
+    font-weight: 700; 
+}
+.pic{
+    width: 29%;
+    /*transition: transform 2s;*/
+}
+/*.ne:hover{
+    transform: scale(1.1)
+}*/
+.card-title{
+    padding: 1vh 2vw 1vh;
+    background-color: transparent;
+}
+
+.popup {
+            display: none;
+            position: fixed;
+            width: 50%;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid #ccc;
+            background-color: #fff;
+            background-image: url(" ");
+            background-position:top;
+            background-size:cover;
+            z-index: 1000;
+            padding:2vw;
+            border-radius: 10px;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        .popupNe {
+            display: none;
+            position: fixed;
+            width: 45%;
+            top: 50%;
+            left:24%;
+            transform: translate(-50%, -50%);
+            border: 1px solid #ccc;
+            background-color: #fff;
+            background-image: url(" ");
+            background-position:top;
+            background-size:cover;
+            z-index: 1000;
+            padding:2px;
+            border-radius: 10px;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+        }
+    @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+a{
+    text-decoration: none;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    transition: transform 2s;
+}
+img:hover{
+    transform: scale(1.1)
+}
+    </style>
+</head>
+<body >
+  <section class="container-fluid" id="lang"  > 
+    <h2 style="padding-top: 30vh; font-size: 3.5vw;">ГОЛЯМОТО СЪРЦЕ <br>НА  МЕХАНОТО</h2>  
+    <div class="lang"  >    
+        <div  style="position: fixed; bottom: 15vh; left:5vw;">
+          <a href="#ae" style="color: #E6B167; "  onclick="show(1)">        
+          <h1 class="card-title" style="font-size: 3vw; font-weight: 900;" >ДАРЕНИЯ<br> КЪМ <br>ПГМЕЕ </h1> 
+            </a> 
+        </div>  
+        <div style="position: fixed; bottom: 15vh; right: 7vw;" >
+          <a href="#ne" style="color: #6E9CD0 ; " onclick="show(2)">       
+          <h1 class="card-title" style="font-size: 3vw; font-weight: 900;">ДАРЕНИЯ<br> ОТ<br> ПГМЕЕ</h1> </a> 
+        </div>
+    </div>
+      
+        <a href="home.html" class="previous "><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
+        
+  </section>
+<section class="container-fluid" id="ae">
+    <h2>Дарения към ПГМЕЕ </h2>
+    <div class="lang" >          
+        <div class="card  ae  shadow-lg" style="background-color: #E6B167 ; height: 51vh;" onmouseover="openPopup(1)" onmouseout="closePopup(1)" >
+        <div class="card-title">
+          <h4  >„Бова кар и ПГМЕЕ – заедно в подготовката на учениците за бъдещата им професия“</h4> 
+          <div class="row">
+         <img src="images/снимка46.jpg" style="width: 42%;">
+         <img src="images/снимка47.jpg" style="width: 58%;">
+            </div> </div>
+        </div>
+        <div class="card ae  shadow-lg"  style="background-color: #6E9CD0;  height: 51vh;" onmouseover="openPopup(2)" onmouseout="closePopup(2)" >     
+              <div class="card-title" >
+              <h4 >В подкрепа на Професионална гимназия по Механоелектротехника и Електроника в Бургас, Бова Кар със съдействието на BMW България достави: </h4> 
+                <p>Ново заряднo устройство за акумулаторни батерии с предназначение да поддържа необходимото напрежение по време на диагностика и програмиране на автомобила.  Специализиран инструмент за оборудване и разоборудване на цилиндрови глави. </p>  
+              </div> 
+          </div>
+    </div>
+    <div class="lang" >          
+        <div class="card  ae  shadow-lg" style="background-color: #E6B167 ; " onmouseover="openPopup(3)" onmouseout="closePopup(3)" >
+        <div class="card-title">
+          <h4 >„Годишни награди на ПГМЕЕ“</h4>    
+         <img src="images/снимка44.jpg" style="width: 100%;">
+            </div>
+        </div>
+        <div class="card ae  shadow-lg"  style="background-color: #6E9CD0; " onmouseover="openPopup(4)" onmouseout="closePopup(4)" >     
+              <div class="card-title" >
+              <h4>„Историята на нашия ретро автомобил“</h4> 
+                <p> Октомври 2019 г. гимназията се сдоби с два бракувани, неработещи автомобила: Таврия и BMW. Същите бяха предоставени като дарение от директора на Пристанище Бургас г-н Диян Димов.</p>  
+                <div class="row">
+                    <img src="images/снимка38.jpg" style="width: 60%;">
+                    <img src="images/снимка36.jpg" style="width: 40%;">
+                       </div> 
+              </div> 
+          </div>
+    </div>
+
+        <a href="#lang" class="previous " onclick="hide()"><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
+        <a href="#ae" class="next " ><img src="images/arrow-up-chrome.gif"  style="width:90%;"></a>
+
+        
+</section>
+
+<section id="ne">
+    <h2>Дарения от ПГМЕЕ </h2>
+    
+         
+
+    <a href="#ne" class="next " ><img src="images/arrow-up-chrome.gif"  style="width:90%;"></a>
+    <a href="#lang" class="previous " onclick="hide()"><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
+
+</section>
+
+<div id="popupContainer(1)" class="popup">
+    <div class="popup-content">
+     <p>През 2020 година в рамките на програмата на BMW Group бе доставен учебен автомобил BMW 330i xDrive с цел повишаване на практическата подготовка на учениците в ПГМЕЕ. Новият автомобил се използва по предназначение в часовете по учебни практики. Чрез диагностична апаратура и лаптоп, учениците симулират грешки в системата и се научават да ги отстраняват. На 18.11.2022 г. бяха доставени зарядно устройство за автомобила и инструмент за разглобяване на цилиндрови глави. БМВ е партньор на ПГМЕЕ по проект „В подкрепа на дуалната система на обучение“. Ученици от 12 клас – специалност „Автомобилна мехатроника“ /дуална форма на обучение/ провеждат часове по „Практика в реална работна среда“ във фирмата от 2021 година. Бова Кар подкрепя Професионална гимназия по механоелектротехника и електроника чрез съвместна дейност за повишаване на компетентностите, уменията и навиците на бъдещите техници по транспортна техника. Учениците на гимназията след завършването си стават конкурентноспособни на пазара на труда, добиват самочувствие на знаещи и можещи специалисти. </p>
+    </div>
+</div>
+<div id="popupContainer(2)" class="popup">
+    <div class="popup-content">
+      <img src="images/снимка13.jpg" alt="" style="width: 100%;">
+    </div>
+</div>
+<div id="popupContainer(3)" class="popup">
+    <div class="popup-content">
+        <p>На 21.12.2023 на 164   ученици  в ПГМЕЕ  бяха връчени традиционните годишни награди и коледни изненади  на директора на гимназията за постигнати високи резултати, за преодоляване на достъпа до образование, за спортни постижения, призови места от национални и международни олимпиади, състезания, конкурси и  турнири.
+            На тържественото събитие присъства един много важен партньор за нашето училище – г-н Станимир Бургаски, който е възпитаник на Механото. Той връчи месечни стипендии на 47 ученици от гимназията, избрани по предварително зададени критерии.  Стипендиите, осигурени от г-н Бургаски са сериозен допълнителен стимул за най-добрите ученици на гимназията. Не по-малко ценни за тях  се оказаха и бащинските съвети и препоръки, които той сподели с учениците в препълнената зала: “Запомнете три неща.  Трябва да правим добро. Добрината прави друга добрина. Никога не трябва да се лъже. Проблем с лъжа не се решава. И трето – дръжте си на думата. Това е най-важното за един мъж. Мечтайте. Мечтата е водеща в развитието на човека; създайте си план и постигайте мечтите си”. 
+            </p>
+    </div>
+</div>
+<div id="popupContainer(4)" class="popup">
+    <div class="popup-content">
+     <p>След апел към Бургаската общественост на екипа на ретроклуб в ПГМЕЕ в състав: Пламен Петров, инж. Станимир Христов и ученици от специалности: „Автотранспортна техника“ и „Автомобилна мехатроника“,  И……. започна голямото предизвикателство за учители и ученици. Не ни спря нито тревата в колата, нито пясъка в купето, нито неработещия двигател, нито Ковид 19. С ентусиазъм и борбеност ние всеки ден доказвахме от къде сме и че няма пречки за „Механото“. Реставрирахме цялостно автомобил Таврия /купе, двигател, ходова част, ел. инсталация/ и го превърнахме в действащ ретроавтомобил. Това нямаше да се случи и без помощта на фирма „Енчеви“, които ни осигуриха автомобил-донор, от където се снабдихме с много резервни части. На 17.04.2024  екипът на Ретроклуб с ръководители инж. Емил Ковачев  и Пламен Петров приятно изненадаха директора на ПГМЕЕ гр.Бургас инж. Роза Желева, като й връчиха ключа на ретроавтомобил Таврия. На събитието присъстваше и г-н Джамбазов, председател на Ретроклуб Бургас, който поздрави учениците и техните ръководители за добре свършената работа като отбеляза, че един автомобил се реставрира с много труд за период от 4 до 5 години.  </p>
+    </div>
+</div>
+<div id="popupContainer(5)" class="popup">
+    <div class="popup-content">
+      <img src="images/състезаниеАйтос.jpg" alt="" style="width: 100%;">
+    </div>
+</div>
+<div id="popupContainer(6)" class="popup">
+    <div class="popup-content">
+      <img src="images/n1.jpg" alt="" style="width: 100%; ">
+    </div>
+</div>
+<div id="popupContainer(7)" class="popupNe">
+    <div class="popup-content">
+      <img src="images/n3.jpg" alt="" style="width: 100%;">
+    </div>
+</div>
+<div id="popupContainer(8)" class="popup">
+    <div class="popup-content">
+      <img src="images/n2.jpg" alt="" style="width: 100%;">
+    </div>
+</div>
+<div id="popupContainer(9)" class="popup">
+    <div class="popup-content">
+      <img src="images/n4.jpg" alt="" style="width: 100%;">
+    </div>
+</div>
+<div id="popupContainer(10)" class="popupNe">
+    <div class="popup-content">
+      <img src="images/n6.jpg" alt="" style="width: 100%;">
+    </div>
+</div>
+<div id="popupContainer(11)" class="popup">
+    <div class="popup-content">
+      <img src="images/n5.jpg" alt="" style="width: 100%;">
+    </div>
+</div>
+
+   <script src="languages.js"></script> 
+ 
+</body>
+</html>
