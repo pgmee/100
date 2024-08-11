@@ -15,7 +15,7 @@ let sec
       document.getElementById('lang').style.display = 'block'; 
   }
 function openPopup(index) {
-    for (let i = 1; i <= 20; i++) {
+    for (let i = 1; i <= 50; i++) {
       let popupId = `popupContainer(${i})`;
       if (index === i) {
         document.getElementById(popupId).style.display = 'block';
