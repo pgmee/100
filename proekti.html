@@ -50,7 +50,7 @@ border: transparent;
     background-color:white;
     background-attachment: fixed;
 }
-#op, #ek{
+#op, #ek, #np, #obp{
     display: none;
     width: 100%;
     height: auto; 
@@ -114,7 +114,14 @@ color:  #02658E;
     <iframe style="position:absolute;border:none;width:100%;height:100%;left:0;top:0;" src="https://online.fliphtml5.com/lnuvc/hkow/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe>
     <a href="#lang" class="previous " onclick="hide()"><img src="images/left.png" style="width:100%;"></a>
 </section>
-
+<section class="container-fluid" id="np">
+    <iframe style="position:absolute;border:none;width:100%;height:100%;left:0;top:0;" src=" "  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe>
+        <a href="#lang" class="previous " onclick="hide()"><img src="images/left.png" style="width:100%;"></a>  
+</section>
+<section class="container-fluid" id="obp">
+    <iframe style="position:absolute;border:none;width:100%;height:100%;left:0;top:0;" src="https://online.fliphtml5.com/lnuvc/lakk/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe>
+        <a href="#lang" class="previous " onclick="hide()"><img src="images/left.png" style="width:100%;"></a>  
+</section>
 <script>
     let sec
     function show(sec){
@@ -126,10 +133,20 @@ color:  #02658E;
       document.getElementById('ek').style.display = 'block';
       document.getElementById('lang').style.display = 'none';  
     }
+    if(sec==3){
+      document.getElementById('np').style.display = 'block';
+      document.getElementById('lang').style.display = 'none';  
+    }
+    if(sec==4){
+      document.getElementById('obp').style.display = 'block';
+      document.getElementById('lang').style.display = 'none';  
+    }
   }
   function hide(){
       document.getElementById('op').style.display = 'none';  
-      document.getElementById('ek').style.display = 'none';    
+      document.getElementById('ek').style.display = 'none'; 
+      document.getElementById('np').style.display = 'none';  
+      document.getElementById('obp').style.display = 'none';     
       document.getElementById('lang').style.display = 'block'; 
   }
 </script>
