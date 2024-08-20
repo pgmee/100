@@ -18,23 +18,25 @@
         padding: 0px;
     } 
         body{
-        background-image: url("images/trophy.jpg");
-        background-color: #020911;
-        background-position:top;
-        background-size:85%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         font-family: "Philosopher", sans-serif;
         font-weight: 700;
         font-style: normal;
-        
+        }
+        #main{
+        width: 100%;
+        height: 100vh;
+        background-image: url("images/trophy.jpg");
+        background-color: #020911;
+        background-position:bottom;
+        background-size:73%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         }
        main{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        margin-top: -1vh;
        }
         section{
         width: 21%;
@@ -53,9 +55,7 @@
       -webkit-background-clip: text; /* for Safari */
       background-clip: text;
       color: transparent; /* Make the text transparent so that the gradient shows through */ 
-
-        }
-       
+        }   
          h3:hover {
             transition: transform 0.5s ease; /* Define the property to animate and its duration */
             background-image: linear-gradient(to right, #001C2C, #002043);
@@ -63,30 +63,82 @@
       background-clip: text;
       color: transparent; /* Make the text transparent so that the gradient shows through */ 
             }
-            .card:hover{
+            .card, .card-img-top:hover{
                 transform: scale(1.1);    
             }
-    .card{
+       .card{
      width: 17vw;
      background-color: transparent;
      border: none;
      margin: 6vh;
      transition:  transform 1s;
             }
+        .card-img-top{
+            padding: 2vh 1vw;
+          transition:  transform 1s;   
+          border-radius: 7%;
+        }
     h1{
     text-align: center;
     color: #F5E283;
     font-size: 5vw;
-    margin-top: 2vh;
   }
+  h2{
+    font-size: 2vw;
+    text-align: center;
+}
+
   img{
     height: 10.5vh;
+  }
+  #teachers{
+    display: none;
+    width: 100%;
+    height:auto;
+    background-image: url("images/2021.jpg");
+        background-color: #020911;
+        background-position:center;
+        background-size:100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+  }
+  .big{
+    margin: auto;
+    background-color: #15233E;
+    color: white;
+    margin: 2vh auto;
+    padding: 2vh 1vw;
+    border-radius: 5%;
+}
+.col{
+    width: 45%;
+    height: auto;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  }
+.title{
+  width: 100%;
+  font-size: 1.5vw;
+  color: white;
+  text-align: justify;
+  padding-top: 1vh;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    width: 100%;
+    margin: auto;
   }
     </style>
 </head>
 <body>
+    <div id="main">
     <h1>Покорени върхове</h1>
-       <main>
+       <main >
         <section>
             <a class="card " href="math.html">
                 <img class="buttons" src="images/buttons2.png" >
@@ -94,17 +146,20 @@
             </a>
             <a class="card " href="nauki.html">
                 <img class="buttons" src="images/buttons2.png">
-                <h3 class="card-img-overlay shadow-lg"  style="padding-top:1.3vh ;">Обществени и природни науки</h3>
+                <h3 class="card-img-overlay shadow-lg"  style="padding-top:1.2vh ;">Обществени и природни науки</h3>
             </a>
             <a class="card " href="fvs.html">
                 <img class="buttons" src="images/buttons2.png">
                 <h3 class="card-img-overlay shadow-lg" style="padding-top:3.5vh ;"  >Спорт</h3>
             </a>
- 
         </section>
-   
-        <section>
-          
+        
+        <a class="card " href="#teachers" onclick="show()"  style="width: 23vw;  position:fixed; bottom: 0px; left: 35%; margin-bottom: 0px;">
+            <img class="buttons" src="images/buttons2.png">
+            <h3 class="card-img-overlay shadow-lg" style="padding-top:1.2vh;" >Почетни награди и отличия на учители</h3>
+        </a>
+ 
+        <section>       
             <a class="card " href="bel.html">
                 <img class="buttons" src="images/buttons2.png">
                 <h3 class="card-img-overlay shadow-lg" style="padding-top:3.5vh ;"  >Литература</h3>
@@ -115,13 +170,112 @@
             </a>
             <a class="card " href="professional.html">
                 <img class="buttons" src="images/buttons2.png">
-                <h3 class="card-img-overlay shadow-lg" style="padding-top:0.8vh ;"  >Професионална подготовка</h3>
+                <h3 class="card-img-overlay shadow-lg" style="padding-top:1.2vh;"  >Професионална подготовка</h3>
             </a>
            
         </section>
     </main>
     
     <a href="home.html" class="previous round"><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
+</div> 
+<div id="teachers">
+    <h1 style="font-size: 3vw; padding-top: 2vh;">Почетни награди и отличия на учители</h1>
+    <div class="row row-cols-1 row-cols-md-2 g-2 ">
+    <div class="col"  >    
+        <div class="col "  style="width: 100%;" >
+           <div class=" big ">          
+                <h2  >2024г.</h2>
+                <img src="images/nrET.jpg" class="card-img-top shadow-lg " style="width: 100%; height: auto;" > 
+               <h4  class="title">Номинирана единодушно от целия колектив на ПГМЕЕ, инж. Елена Томицина получи Наградата на МОН- “Неофит Рилски” за доказан висок професионализъм и всеотдайност в педагогическата дейност и за постигнати значими резултати в процеса на обучението.</h4>
+             </div>  
+         </div>
+         <div class="col " style="width: 100%;"  >
+            <div class=" big">          
+                 <h2  >2020г.</h2>
+                 <div class="row" >
+                 <img src="images/nrRG.jpg" class="card-img-top shadow-lg " style="width: 51%; height: auto;" > 
+                 <img src="images/nrRG1.jpg" class="card-img-top shadow-lg " style="width: 49%; height: auto;" ></div>
+                <h4  class="title">През 2019/20 учебна година по повод  най-българския празник – 24 май,  ПГМЕЕ отново има свой лауреат на почетното отличие на МОН – “Неофит Рилски” – Румяна Георгиева, зам.-директор УД. То е връчено за дългогодишна, цялостна високопрофесионална трудова дейност в системата на предучилищното и училищното образование.</h4>
+              </div>  
+          </div>
+          <div class="col " style="width: 100%;" >
+            <div class=" big">          
+                 <h2  >2019г.</h2>
+                 <div class="row" >
+                 <img src="images/nrDR1.jpg" class="card-img-top shadow-lg " style="width: 50%; height: auto;" > 
+                 <img src="images/nrDR2.jpg" class="card-img-top shadow-lg " style="width: 50%; height: auto;" ></div>
+                <h4  class="title">На приема за 24 май г-жа Виолета Илиева – началник на РУО Бургас, връчва почетното отличие на МОН – “Неофит Рилски” за цялостна дейност на г-жа Даниела Русева, учител по биология в нашето училище. </h4>
+              </div>  
+          </div>
+    </div>
+    <div class="col"  > 
+         <div class="col" style="width: 100%;" >
+            <div class=" big">          
+                 <h2  >2021г.</h2>
+                 <img src="images/грамота 1.JPG" class="card-img-top shadow-lg " style="width: 100%; height: auto;" >
+                 <img src="images/грамота2.JPG" class="card-img-top shadow-lg " style="width: 100%; height: auto;" >
+                <h4  class="title">ПГМЕЕ  получава ГРАМОТА ЗА ИЗКЛЮЧИТЕЛНИ ЗАСЛУГИ и постигнати високи резултати  в областта на международните и национални научни и просветни проекти.</h4>
+              </div>  
+          </div>
+          <div class="col" style="width: 100%;" >
+            <div class=" big">          
+                 <h2  >2019г.</h2>
+                 <img src="images/RZh1.jpg" class="card-img-top shadow-lg " style="width: 100%; height: auto;" >
+                <h4  class="title">В навечерието на 24 май на ежегодния тържествен прием за дейците на образованието в града, директорът на ПГМЕЕ инж. Роза Желева получи почетна грамота за проявен висок професионализъм при подготовката и излъчването на ученици – участници в национални кръгове на олимпиади и състезания. </h4>
+                <h4 class="title">Инж. Роза Желева получава и специалната награда на председателя на СБУ в ежегодния конкурс „Учител на годината“.</h4>
+              </div>  
+          </div>
+    </div>
+    </div>
+
+    <div class=" big " style="width: 90%;">          
+    <h2 >2018г.</h2>
+    <h2 > ПЛАКЕТ И ГРАМОТА ЗА ПГМЕЕ ОТ КМЕТА НА ГРАД БУРГАС - ДИМИТЪР НИКОЛОВ ЗА ВЪВЕЖДАНЕ НА ИНОВАЦИИ В ОБРАЗОВАТЕЛНИЯ ПРОЦЕС</h2>
+    <div class="row " > 
+    <img src="images/gramotaPGMEE2.JPG" class="card-img-top shadow-lg " style="width: 32%; height: auto;" >
+    <img src="images/gramotaPGMEE1.jpg" class="card-img-top shadow-lg " style="width: 37%; height: auto;" > 
+    <img src="images/plaket.JPG" class="card-img-top shadow-lg " style="width: 31%; height: auto;" >
+   </div>
+    </div> 
+
+    <div class=" big " style="width: 80%;">          
+        <h2 >ИНЖ. РОЗА ЖЕЛЕВА - НОСИТЕЛ НА НАГРАДАТА  "ДИРЕКТОР НА ГОДИНАТА" 2015г. </h2>
+        <div class="row " > 
+        <img src="images/Директор1.jpg" class="card-img-top shadow-lg " style="width: 50%; height: auto;" >
+        <h4  class="title" style="width: 48%; ">Инж. Роза Желева бе удостоена с наградата „Директор на годината“ от Съюза на работодателите в системата на народната просвета в България по повод Деня на народните будители. Тържествената церемония се състоя на 2 ноември 2015 г. в гр. Пловдив. Престижната награда на директора на ПГМЕЕ-Бургас е за постигнатите образователни резултати на училището на национално ниво и в област Бургас, за екипната работа, и за успешното партньорство с родители, училищното настоятелство и фондации.</h4>
+       </div>
+        </div> 
+    <div class="row row-cols-1 row-cols-md-2 g-2 ">
+        <div class="col"  >
+            <div class=" big ">          
+                 <h2  >2016г.</h2>
+                 <img src="images/nrPM.jpg" class="card-img-top shadow-lg " style="width: 100%; height: auto;" > 
+                <h4  class="title">На 11.05.2016 г. г-жа Пепа Марчева – учител по български език и литература в ПГМЕЕ е удостоена с почетното отличие ”Неофит Рилски” в хуманитарно направление. То и е връчено за цялостната и професионална трудова дейност в системата на народната просвета!</h4>
+              </div> 
+            </div> 
+              <div class="col"  >
+                <div class=" big ">          
+                     <h2  >2014г.</h2>
+                     <img src="images/nagradaVK.JPG" class="card-img-top shadow-lg " style="width: 100%; height: auto;" > 
+                    <h4  class="title">На 09.05.2014 инж. Веселина Кашукеева е удостоена с приз „Учител на годината“ в направление „Професионално образование”.</h4>
+                  </div>  
+              </div>   
+    </div>
+    <a href="tops.html" class="previous "><img src="images/arrow-left-chrome.gif" style="width:80%;"></a>
+    <a href="#" class="next " ><img src="images/arrow-up-chrome.gif"  style="width:80%;"></a>
+</div>
+    <script>
+       
+    function show(){
     
+      document.getElementById('teachers').style.display = 'block'; 
+      document.getElementById('main').style.display = 'none'; 
+   
+}
+function hide(){
+      document.getElementById('teachers').style.display = 'none';     
+      document.getElementById('main').style.display = 'block'; 
+  }
+    </script>
 </body>
 </html>
