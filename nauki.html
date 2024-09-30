@@ -48,11 +48,11 @@ body{
 }
 #pn{
   display: none;
- /* background-image: url('images/s5.jpg');
-  background-position:center;
+  background-image: url('images/pn4.jpg');
+  background-position:top;
   background-repeat: no-repeat;
   background-size:100%;
-  background-attachment: fixed;*/
+  background-attachment: fixed;
 }
 .card{
   width: 30vw;
@@ -77,6 +77,7 @@ h4{
   font-size: 1.7vw;
   font-weight: 700;
   text-align: center;
+  color: white;
 }
 
 a{
@@ -85,8 +86,10 @@ a{
     margin-top:2%;
 }
 .row{
- justify-content: space-evenly;
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; 
+  align-items: center;
   margin: auto;
 }
 .card-text{
@@ -107,7 +110,7 @@ p{
           <h1 class="card-title" >ОБЩЕСТВЕНИ НАУКИ</h1> 
             </div>   </a> 
         
-        <a href="#" > <div class="card  shadow-lg"  >  
+        <a href="#pn" onclick="show(2)" > <div class="card  shadow-lg"  >  
           <h1 class="card-title" >ПРИРОДНИ <br> НАУКИ</h1> 
             </div> </a> 
         </div>
@@ -123,7 +126,7 @@ p{
         Стоян Маджаров получи грамота за най-добро историческо есе.<br>
         Ръководител: Светозар Люцканов 
         </p>
-      </div>
+    </div>
     <div  class="row">
       <div class="card shadow-lg" style="width: 47%; height: auto;"  >
         <img src="images/z1.jpg"  >     
@@ -213,10 +216,42 @@ p{
   
 </section>
 
-<section id="pn">
-    
+<section class="container-fluid" id="pn">
       
-    <a href="#" class="previous " onclick="hide()"><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
+  <div class="card-text" style="width: 100%; height: auto;">
+    <h4  >27.06.2024г.</h4>
+    <h4>Проектът на ПГМЕЕ „БИОЛОГИЯ НА СПОРТА“ Е СРЕД НОМИНИРАНИТЕ В XVI-то ИЗДАНИЕ НА НАЦИОНАЛНИЯ УЧЕНИЧЕСКИ КОНКУРС „ПОСЛАНИЦИ НА ЗДРАВЕТО“.</h4>
+    <div class="row" >
+    <p style="width: 40%;">Националният ученически конкурс „Посланици на здравето“ се провежда в подкрепа на здравословния начин на живот на младите хора. Целта му е превенция на поведенчески и рискови за здравето фактори, свързани с нездравословното хранене, ниската физическа активност, употребата на алкохол и тютюнопушенето.</p>
+    <img src="images/pn1_1.jpg" style="width: 40%;">
+  </div>
+   </div>
+   <div class="card-text" style="width: 100%; height: auto;">
+    <h4  >27.05.2024г.</h4>
+    <h4> I-во и II-ро място на Фотоконкурс „Рибари“</h4>
+    <div class="row" >
+    <img src="images/pn1_2.jpg" style="width: 50%;">
+    <p style="width: 40%;">В рамките на програмата „Черноморски хоризонти“ по повод Европейския ден на морето, бе организиран фотоконкурс „Рибари“. Учениците на Механото участваха активно, като изпратиха свои фотографии и се класираха във конкурса:<br>
+      ⎯	I-во място - Стилиян Кралев – 9-а клас, ПГМЕЕ-Бургас, за фотографията „Петима рибари...“<br>
+      ⎯	II-ро място – Яни Бързев – 9-е клас, ПГМЕЕ-Бургас, за фотографията „В очакване на улова!“<br>
+      ⎯	С грамота за участие беше отличен и Цоньо Цонев – 9-е клас, ПГМЕЕ-Бургас, за фотографията „Мерметосване“. Момчетата бяха наградени и с великолепни, луксозни издания на книги на морска тематика и други предметни награди.<br>
+      </p>
+    
+  </div>
+   </div>
+   <div class="row" style="width: 95%; height: auto;">
+    <img src="images/pn1_3.jpg" style="width: 25%;">
+   <div class="card-text" style="width: 60%;">
+    <h4  >02.04.2024г.</h4>
+    <h4>ПГМЕЕ СЕ ПРИСЪЕДИНЯВА КЪМ ЕЛИТА НА ЕВРОПЕЙСКИТЕ СИНИ УЧИЛИЩА </h4>
+    <p >Чрез тази общност, ПГМЕЕ има достъп до ресурси и дейности от потенциални партньори в платформата EU4Ocean. Приемането на Механото за пълноправен член на тази общност е признание за проекта „Старите рибари разказват…“. В общността има над 400 образователни институции от цяла Европа. Мрежата от европейски сини училища е инициатива на Европейската комисия, подкрепена от DG MARE и е разработена от партньорите на коалицията EU4Ocean. В нея членуват училища, които разработват проекти, свързани с моретата и океаните на Европа.</p>
+  </div>
+   </div>
+
+
+
+  <a href="#nauki" class="previous " onclick="hide()"><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
+  <a href="#pn" class="next " ><img src="images/arrow-up-chrome.gif"  style="width:90%;"></a>
 </section>
 <script>
     let index
