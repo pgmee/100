@@ -79,39 +79,62 @@
   a{
     text-decoration: none;
   }
+  #pdfs{
+    display: none;
+    padding: 0px;
+  }
     </style>
 </head>
 <body>
+    <section class="container-fluid" id="main">
     <h1>Вестниците на Механото</h1>
-       <main>
+       <main id="main">
         <section>
-            <a class="card " href="#">
+            <a class="card " href="#pdfs" onclick="showPDF('pdf1.pdf')">
                 <h3  >"85 ГОДИНИ ПГМЕЕ" 2010г.</h3>
             </a>
-            <a class="card " href="#">
+            <a class="card " href="#pdfs" onclick="showPDF('pdf2.pdf')">
                 <h3  >"ПОСОКИ" 2012г.</h3>
             </a>
-            <a class="card " href="#">
+            <a class="card " href="#pdfs" onclick="showPDF('pdf3.pdf')">
                 <h3 >"ПОСОКИ" 2013г.</h3>
-            </a>
-            
+            </a>           
         </section>
-    
+  
         <section>
-            <a class="card " href="#">
+            <a class="card " href="#pdfs" onclick="showPDF('pdf4.pdf')">
                 <h3  >"ПОСОКИ" 2014г.</h3>
             </a>
-            <a class="card " href="#">
+            <a class="card " href="#pdfs" onclick="showPDF('pdf5.pdf')">
                 <h3 >"90 ГОДИНИ ПГМЕЕ" 2015г.</h3>
             </a>
-            <a class="card " href="#">
+            <a class="card " href="#pdfs" onclick="showPDF('pdf6.pdf')">
                 <h3 >"ПОСОКИ" 2016г.</h3>
             </a>
           
         </section>
+        <a href="hroniki.html" class="previous round"><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
     </main>
-   
-    <a href="hroniki.html" class="previous round"><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
-    
+</section>    
+    <section class="container-fluid" id="pdfs">
+        <iframe id="pdf-viewer" src="pdf1.pdf"  style=" width:100vw ;height:100vh ; border: none;"></iframe>
+
+        <a href="#nauki" class="previous " onclick="hide()"><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
+
+    </section>
+
+    <script>
+        function showPDF(pdfUrl) {
+            document.getElementById('pdfs').style.display = 'block'; 
+            document.getElementById('main').style.display = 'none'; 
+            document.getElementById('pdf-viewer').src = pdfUrl;
+        }
+
+function hide(){
+      document.getElementById('pdfs').style.display = 'none';      
+      document.getElementById('main').style.display = 'block'; 
+  }
+
+    </script>
 </body>
 </html>
