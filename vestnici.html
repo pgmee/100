@@ -19,7 +19,7 @@
     } 
         body{
         background-image: url("images/paper.jpg");
-        background-position:center;
+        background-position:top;
         background-size:cover;
         background-repeat: no-repeat;
         font-family: "Philosopher", sans-serif;
@@ -31,8 +31,7 @@
         display: flex;
         flex-direction: row;
         justify-content:center;
-        width: 100%;
-        margin-top: 5vh;
+        width: 100%;    
        }
         section{
         width: 33%;
@@ -40,14 +39,14 @@
         flex-direction: column;
         justify-content: space-around;
         align-content:center;
-        margin: 0 4vw 0;
+        margin: 1vh 4vw 0;
     }
       
         h3{
-            font-size: 2.5vw;
-            font-weight: 700;
-            text-align:left;
-            background-image: linear-gradient(to right, #4B330F, #000000);
+        font-size: 2.2vw;
+        font-weight: 700;
+        text-align:center;
+        background-image: linear-gradient(to right, #4B330F, #000000);
       -webkit-background-clip: text; /* for Safari */
       background-clip: text;
       color: transparent; /* Make the text transparent so that the gradient shows through */ 
@@ -55,21 +54,24 @@
         }
        
          h3:hover {
-            transition: transform 0.5s ease; /* Define the property to animate and its duration */
-            background-image: linear-gradient(to right, #000000, #4B330F);
+        transition: transform 0.5s ease; /* Define the property to animate and its duration */
+        background-image: linear-gradient(to right, #000000, #4B330F);
       -webkit-background-clip: text; /* for Safari */
       background-clip: text;
       color: transparent; /* Make the text transparent so that the gradient shows through */ 
             }
-            .card:hover{
-                transform: scale(1.1);    
-            }
     .card{
      background-color: transparent;
-     border: none;
-     margin: 7vh ;
+     height: 17vh;
+     margin: 5vh 2vw ;
      transition:  transform 0.5s;
         }
+    .card:hover{
+        transform: scale(1.1);    
+            }
+    .card-img{
+    height: 100%;
+    }
     h1{
     text-align: center;
     color: #4B330F;
@@ -91,29 +93,36 @@
        <main id="main">
         <section>
             <a class="card " href="#pdfs" onclick="showPDF('pdf1.pdf')">
-                <h3  >"85 ГОДИНИ ПГМЕЕ" 2010г.</h3>
+                <img src="images/paper.jpg " class="card-img shadow-lg" >    
+                <div class="card-img-overlay">
+                <h3  >"85 ГОДИНИ ПГМЕЕ"<br> 2010г.</h3></div>
             </a>
             <a class="card " href="#pdfs" onclick="showPDF('pdf2.pdf')">
-                <h3  >"ПОСОКИ" 2012г.</h3>
+                <img src="images/paper.jpg " class="card-img shadow-lg" >    
+                <div class="card-img-overlay"> <h3  >"ПОСОКИ" <br>2012г.</h3></div>
             </a>
             <a class="card " href="#pdfs" onclick="showPDF('pdf3.pdf')">
-                <h3 >"ПОСОКИ" 2013г.</h3>
+                <img src="images/paper.jpg " class="card-img shadow-lg" >    
+                <div class="card-img-overlay">  <h3 >"ПОСОКИ" <br>2013г.</h3></div>
             </a>           
         </section>
   
         <section>
             <a class="card " href="#pdfs" onclick="showPDF('pdf4.pdf')">
-                <h3  >"ПОСОКИ" 2014г.</h3>
+                <img src="images/paper.jpg " class="card-img shadow-lg" >    
+                <div class="card-img-overlay">  <h3  >"ПОСОКИ" <br>2014г.</h3></div>
             </a>
             <a class="card " href="#pdfs" onclick="showPDF('pdf5.pdf')">
-                <h3 >"90 ГОДИНИ ПГМЕЕ" 2015г.</h3>
+                <img src="images/paper.jpg " class="card-img shadow-lg" >    
+                <div class="card-img-overlay"> <h3 >"90 ГОДИНИ ПГМЕЕ"<br>2015г.</h3></div>
             </a>
             <a class="card " href="#pdfs" onclick="showPDF('pdf6.pdf')">
-                <h3 >"ПОСОКИ" 2016г.</h3>
+                <img src="images/paper.jpg " class="card-img shadow-lg" >    
+                <div class="card-img-overlay"><h3 >"ПОСОКИ"<br> 2016г.</h3></div>
             </a>
           
         </section>
-        <a href="hroniki.html" class="previous round"><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
+        <a href="hroniki.html" class="previous round"><img src="images/arrorBack.png" style="width:90%;"></a>
     </main>
 </section>    
     <section class="container-fluid" id="pdfs">
