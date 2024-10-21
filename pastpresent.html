@@ -30,15 +30,13 @@
         margin: 3vh auto 0px;
         font-size: 3vw;
       }
- 
-      .previousbut {
+    .previousbut {
     position: fixed;
     bottom:6vh;
     right:2.5vw; 
     width:5vw;
     height: 4vh;
 }
-
     .nextbut {
     position: fixed;
     bottom:12vh;
@@ -46,20 +44,14 @@
     width: 4vw;
     height: 4vh;
 }
-    .round {
-    border-radius: 50%;
-    }
-
-* {
-  box-sizing: border-box;
-}
 
 .row {
+    width: 95%;
+    margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-evenly;
-    align-items: center;
 }
 
 .card {
@@ -202,10 +194,10 @@ img.hover-shadow {
     <div class="card">
         <img src="pastpresent/4strugarno.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
     </div>
-    <div class="column">
+    <div class="card">
         <img src="pastpresent/5strigarno.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
     </div>
-    <div class="column">
+    <div class="card">
         <img src="pastpresent/6zav.jpg"  onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
     </div>
   </div>
