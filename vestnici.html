@@ -34,7 +34,7 @@
         width: 100%;    
        }
         section{
-        width: 33%;
+        width: 37%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -43,14 +43,14 @@
     }
       
         h3{
-        font-size: 2.2vw;
+        font-size: 2vw;
         font-weight: 700;
         text-align:center;
+        margin-top:-1.5vh;
         background-image: linear-gradient(to right, #4B330F, #000000);
       -webkit-background-clip: text; /* for Safari */
       background-clip: text;
       color: transparent; /* Make the text transparent so that the gradient shows through */ 
-
         }
        
          h3:hover {
@@ -62,8 +62,8 @@
             }
     .card{
      background-color: transparent;
-     height: 17vh;
-     margin: 5vh 2vw ;
+     height: 13vh;
+     margin: 3vh 2vw ;
      transition:  transform 0.5s;
         }
     .card:hover{
@@ -76,7 +76,6 @@
     text-align: center;
     color: #4B330F;
     font-size: 4vw;  
-    padding-top: 2vh;
   }
   a{
     text-decoration: none;
@@ -92,30 +91,52 @@
     <h1>Вестниците на Механото</h1>
        <main id="main">
         <section>
+            <a class="card " href="#pdfs" onclick="showPDF('pdf60.pdf')">
+                <img src="images/paper.jpg " class="card-img shadow-lg" >    
+                <div class="card-img-overlay">
+                <h3  >"60 ГОДИНИ ПГМЕЕ"<br> 1985г.</h3></div>
+            </a>
+            <a class="card " href="#pdfs" onclick="showPDF('pdf00.pdf')">
+                <img src="images/paper.jpg " class="card-img shadow-lg" >    
+                <div class="card-img-overlay">
+                <h3  >"Свободен час" <br> декември 2000г.</h3></div>
+            </a>
             <a class="card " href="#pdfs" onclick="showPDF('pdf1.pdf')">
                 <img src="images/paper.jpg " class="card-img shadow-lg" >    
                 <div class="card-img-overlay">
                 <h3  >"85 ГОДИНИ ПГМЕЕ"<br> 2010г.</h3></div>
             </a>
+            
+            <a class="card " href="#pdfs" onclick="showPDF('pdf3.pdf')">
+                <img src="images/paper.jpg " class="card-img shadow-lg" >    
+                <div class="card-img-overlay">  <h3 >"ПОСОКИ" <br>2013г.</h3></div>
+            </a>   
+            <a class="card " href="#pdfs" onclick="showPDF('pdf5.pdf')">
+                <img src="images/paper.jpg " class="card-img shadow-lg" >    
+                <div class="card-img-overlay"> <h3 >"90 ГОДИНИ ПГМЕЕ"<br>2015г.</h3></div>
+            </a>        
+        </section>
+  
+        <section>
+            <a class="card " href="#pdfs" onclick="showPDF('pdf75.pdf')">
+                <img src="images/paper.jpg " class="card-img shadow-lg" >    
+                <div class="card-img-overlay">
+                <h3  >"75 ГОДИНИ ПГМЕЕ"<br> май 2000г.</h3></div>
+            </a>
+            <a class="card " href="#pdfs" onclick="showPDF('pdf01.pdf')">
+                <img src="images/paper.jpg " class="card-img shadow-lg" >    
+                <div class="card-img-overlay">
+                <h3  >"Свободен час"<br> юни 2001г.</h3></div>
+            </a>
             <a class="card " href="#pdfs" onclick="showPDF('pdf2.pdf')">
                 <img src="images/paper.jpg " class="card-img shadow-lg" >    
                 <div class="card-img-overlay"> <h3  >"ПОСОКИ" <br>2012г.</h3></div>
             </a>
-            <a class="card " href="#pdfs" onclick="showPDF('pdf3.pdf')">
-                <img src="images/paper.jpg " class="card-img shadow-lg" >    
-                <div class="card-img-overlay">  <h3 >"ПОСОКИ" <br>2013г.</h3></div>
-            </a>           
-        </section>
-  
-        <section>
             <a class="card " href="#pdfs" onclick="showPDF('pdf4.pdf')">
                 <img src="images/paper.jpg " class="card-img shadow-lg" >    
                 <div class="card-img-overlay">  <h3  >"ПОСОКИ" <br>2014г.</h3></div>
             </a>
-            <a class="card " href="#pdfs" onclick="showPDF('pdf5.pdf')">
-                <img src="images/paper.jpg " class="card-img shadow-lg" >    
-                <div class="card-img-overlay"> <h3 >"90 ГОДИНИ ПГМЕЕ"<br>2015г.</h3></div>
-            </a>
+            
             <a class="card " href="#pdfs" onclick="showPDF('pdf6.pdf')">
                 <img src="images/paper.jpg " class="card-img shadow-lg" >    
                 <div class="card-img-overlay"><h3 >"ПОСОКИ"<br> 2016г.</h3></div>
