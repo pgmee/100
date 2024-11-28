@@ -27,8 +27,7 @@ h1{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin:0 auto 7vh;
-   
+    /*margin:0 auto 7vh;*/
   }
   .names{
     height: 10vh;
