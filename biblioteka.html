@@ -203,7 +203,29 @@ p{
     font-size: 1.3vw;
     margin: 0.7vh auto;
 }
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+        margin:1rem auto;
+    }
+    .column {
+        flex: 1 1 calc(50% - 10px); /* Две колони на ред */
+        max-width: calc(50% - 10px);
+    }
+}
 
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+    .column {
+        flex: 1 1 100%; /* Една колона на ред */
+        max-width: 100%;
+    }
+}
 
     </style>
 </head>
