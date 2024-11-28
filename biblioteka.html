@@ -15,23 +15,22 @@
     body{
         background-image: url("images/bgw2.jpg");
         background-position:top;
-        background-attachment: fixed;
-        background-repeat: norepeat;
-       /*  background-repeat: repeat-y;*/
+       /* background-attachment: fixed;*/
+        background-repeat: repeat-y;
         background-size: 100%;
-        font-size: 1rem;
+        font-size: 1.3vw;
         text-align: justify;
         font-family: "Philosopher", sans-serif;
         font-weight: 700;
         font-style: normal;
     }
     main{
-        margin: 1vh 8vw;
-        padding: 1vh 0.5vw;
+        margin: 2vh 8vw;
+        padding: 2vh 0.5vw;
     }      
       h1{
         text-align: center;
-        margin: 4vh auto 4vh;
+        margin: 4vh auto ;
         font-size: 3vw;
       }
       h4{
@@ -62,14 +61,9 @@
 * {
   box-sizing: border-box;
 }
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 3vw; /* Разстояние между колоните */
-}
-.row > .col {
-  padding: 0 8px;
+
+.row > .column {
+  padding: 0 7px;
 }
 
 .row:after {
@@ -77,15 +71,15 @@
   display: table;
   clear: both;
 }
-.col {
-    
-    width: 30%;
-    transition:  transform 2s;
-    margin:1vh auto ;
+
+.column {
+  float: left;
+  width: 20%;
+  transition:  transform 2s;
+  margin:1vh auto ;
 }
-.col:hover{
+.column:hover{
     transform: scale(1.1);   
-    transition: transform 0.3s ease;
 }
 
 /* The Modal (background) */
@@ -99,8 +93,7 @@
   width: 65vw;
   height: 95vh;
  /* overflow: auto;*/
-    max-width: 100%;
-    overflow: hidden;
+  
 }
 
 /* Modal Content */
@@ -114,6 +107,7 @@
   height: auto;
   max-width: 100vw;
 }
+
 /* The Close Button */
 .close {
   color: black;
@@ -133,12 +127,8 @@
 
 .mySlides {
 display: none;
-}
 
-/*.mySlides img {
-    width: 100%;
-    height: auto;
-}*/
+}
 .cursor {
   cursor: pointer;
 }
@@ -184,7 +174,6 @@ display: none;
 
 img {
   margin-bottom: -4px;
- 
 }
 
 .demo {
@@ -207,29 +196,6 @@ p{
     font-size: 1.3vw;
     margin: 0.7vh auto;
 }
-@media (max-width: 768px) {
-    body {
-        font-size: 1rem;
-    }
-    h1 {
-        font-size: 1.3rem;
-        margin: 1vh auto;
-    }
-    .column {
-        flex: 1 1 calc(50% - 10px); /* Две колони на ред */
-        max-width: calc(50% - 10px);
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.2rem;
-    }
-    .column {
-        flex: 1 1 100%; /* Една колона на ред */
-        max-width: 100%;
-    }
-}
 
     </style>
 </head>
@@ -242,20 +208,20 @@ p{
 <p>Библиотеката е разположена в сградата на училището, в помещения, които са се ползвали за учебни занятия. През 2005 г. библиотеката, която дотогава се намира в малката учебна стая № 8 на сутеренния етаж, е преместена в просторно помещение с обособена читалня. </p>
 <p>Двете зали разполат с места за четене, компютърен кът с принтер и мултифункционално устройство и много пространство за творческа и учебна дейност. Фондът е подреден на 4 двустранни стелажи и 7 едностранни. Книжният фонд е разпределен на подръчен, читалня, справочен и периодика. Библиотеката разполага с голямо разнообразие от учебна литература, която улеснява учебния процес и е търсена от преподаватели и ученици. </p>
 <div class="row">
-    <div class="col">
-      <img src="images/bib19.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class=" img-fluid hover-shadow cursor">
+    <div class="column">
+      <img src="images/bib19.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
     </div>
-    <div class="col">
-      <img src="images/bib10.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="img-fluid hover-shadow cursor">
+    <div class="column">
+      <img src="images/bib10.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
     </div>
-    <div class="col">
-      <img src="images/bib11.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="img-fluid hover-shadow cursor">
+    <div class="column">
+      <img src="images/bib11.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
     </div>
-    <div class="col">
-        <img src="images/bib13.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="img-fluid hover-shadow cursor">
+    <div class="column">
+        <img src="images/bib13.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
     </div>
-    <div class="col">
-        <img src="images/bib15.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="img-fluid hover-shadow cursor">
+    <div class="column">
+        <img src="images/bib15.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
     </div>
   </div>
   
@@ -306,11 +272,10 @@ p{
     Станка Петкова Стоянова,  професионален библиотекар  със стаж от библиотеките на Строителен техникум, Бургас и Икономически университет,  Варна. Завършила библиотекознание и библиография в ДБИ – София (сега УниБИТ) и българска филология във Великотърновския университет. 
 </p>
 <h4>ПРОЕКТИ </h4>
-<div class="row g-3" >
-<div class="card col " >
+<div class="row" >
+<div class="card column" style="width: 43%;">
     <img src="images/bib16.jpg" alt="" >
-    </div>
-<div class="card col" >
+    </div><div class="card column" style="width: 45%;">
     <img src="images/bib17.jpg" alt="" >
 </div>
 </div>
@@ -324,9 +289,9 @@ p{
     <p>ДРАМАТА „ИФИГЕНИЯ В ТАВРИДА“ от ЙОХАН  ВОЛФГАНГ  ФОН ГЬОТЕ, издадена през 1921 г. от издателство  „ХЕМУС“ – София.</p>
     <p>По изданието няма запазен печат на училището от датата на придобиването му, но от написаната на ръка номерация на заглавната страница може да се предположи, че това е една от първите книги в библиотечния шкаф на Държавното практическо механо-техническо училище – Бургас.</p></div>
 </div>
-<div class="card col" style="width: 45%;"><img src="images/bib2.jpg" alt=""></div></div>
+<div class="card column" style="width: 45%;"><img src="images/bib2.jpg" alt=""></div></div>
 <div  style="display: flex;flex-direction: row; justify-content: space-evenly;  align-items: center; margin: auto;">
-    <div class="card col" style="width: 45%;"><img src="images/bib5.jpg" alt=""></div>
+    <div class="card column" style="width: 45%;"><img src="images/bib5.jpg" alt=""></div>
     <div class="card" style="width: 40%; margin:0px 6% 0px 1%;">
     <div class="card-body" >
         <h4>МНОГО ЦЕННО ИЗДАНИЕ  </h4>
@@ -341,12 +306,12 @@ p{
     <p>ИЗВАДКИ от „РИБЕН БУКВАР“ на д-р ПЕТЪР БЕРОН</p>
     <p>Издадена през 1936 г. в Пловдив от издателство „Отец Паисий“ под съставителството на Ал. Д. Пиронков, учител в Пловдивската мъжка гимназия.</p></div>
 </div>
-<div class="card col" style="width: 45%;"><img src="images/bib4.jpg" alt=""></div></div>
+<div class="card column" style="width: 45%;"><img src="images/bib4.jpg" alt=""></div></div>
 <div  style="display: flex;flex-direction: row; justify-content: space-evenly;  align-items: center; margin: auto;">
     <div class="card" style="width: 48%; ">   
         <h4>КНИГИ ОТ ПОРЕДИЦАТА „БИБЛИОТЕКА ЗЛАТНИ ЗЪРНА“</h4>   
     <div class="card-body">
-        <div class="card col" style="width: 100%; margin:-2vh auto 1vh;"><img src="images/bib3.jpg" alt=""></div>
+        <div class="card column" style="width: 100%; margin:-2vh auto 1vh;"><img src="images/bib3.jpg" alt=""></div>
     <p>ПЪРЛ БЪК – „КИТАЙСКИ РАЗКАЗИ“ – 1940 г.<br>
         АНТОНИНА ВАЛЕНТИН – „ЛЕОНАРДО ДА ВИНЧИ“ – 1942 г.<br>
         ПОЛ РИВАЛ –„ШЕСТТЕ ЖЕНИ НА ХЕНРИ VIII” – 1943 г.<br>
@@ -354,7 +319,7 @@ p{
         </p></div></div>
         <div class="card" style="width: 47%;">
         <div class="card-body">
-            <div class="card col" style="width: 100%; margin: 0px auto 1vh;"><img src="images/bib1.jpg" alt=""></div>
+            <div class="card column" style="width: 100%; margin: 0px auto 1vh;"><img src="images/bib1.jpg" alt=""></div>
             <h4>„СТРАДАНИЯТА НА МЛАДИЯ ВЕРТЕР“ – 1934г. и 
                  „ХЕРМАН И ДОРОТЕЯ“ – 1942г. от ЙОХАН ВОЛФГАНГ ФОН ГЬОТЕ
             </h4>
