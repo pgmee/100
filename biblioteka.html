@@ -71,12 +71,19 @@
   display: table;
   clear: both;
 }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Разстояние между колоните */
+}
 
 .column {
-  float: left;
-  width: 20%;
-  transition:  transform 2s;
-  margin:1vh auto ;
+    flex: 1 1 calc(20% - 10px); /* Адаптивни колони */
+    max-width: calc(20% - 10px);
+    /*float: left;
+    width: 20%;*/
+    transition:  transform 2s;
+    margin:1vh auto ;
 }
 .column:hover{
     transform: scale(1.1);   
