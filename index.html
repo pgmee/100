@@ -63,17 +63,17 @@
         background-position:top;
         background-size:cover;
         background-repeat: no-repeat;
-        
+        background-attachment: fixed;
         background-color: #000103;
   font-family: "Philosopher", sans-serif;
   font-weight: 700;
   font-style: normal;
     }
     .card-img{
-      position: absolute;
+      position: fixed;
       width: 32%;
-      margin-top: -15%;
-      margin-left: 34%;
+      top: 15%;
+      left: 34%;
     }
     h1{
       position: fixed;
@@ -83,8 +83,9 @@
       font-size: 3.3vw;
     }
     h2{
-      margin-top: 22%;
-      margin-left: 70%;
+      position: fixed;
+      bottom: 15vh;
+      right: 5vw;
       font-size: 4vw;
       text-align: center;
     }
@@ -95,28 +96,53 @@
     width: 1.5vw;
     height:3vh;
    }
-	
+   @media (max-width: 768px) {
+    .card-img{
+      position: absolute;
+      width: 55%;
+      margin-top: 7%;
+      margin-left: 20%;
+    }
+    h1{
+      position: fixed;
+      top: 2vh;
+      left: 2vw;
+      text-align: center;
+      font-size: 6vw;
+    }
+    h2{
+      position: fixed;
+      bottom: 10%;
+      right: 33%;
+      font-size: 6vw;
+      text-align: center;
+    }
+    .card-img{
+      position: fixed;
+      width: 52%;
+      top: 10%;
+      left: 5%;
+    }
+   }
 </style>
 </head>
 <body >
-
+<div class="container-fluid">
        <div >
         <a href="home.html" style="text-decoration: none;  color:#1D7B9C ;"><img src="images/LOGO_PGMEE_1_nov.png" class="card-img kenburns-top object-fit-cover " alt="..." ></a>
     
       </div>
         <div>
           <h1  style=" color:#1D7B9C; " >100 години <br>ПГМЕЕ </h1>
-        <h2  style=" color:#1D7B9C; " >ВЕК НА <br>РАСТЕЖ И<br> ТРАДИЦИИ!</h2>
-        
+        <h2  style=" color:#1D7B9C; " >ВЕК НА <br>РАСТЕЖ И<br> ТРАДИЦИИ!</h2>     
       </div>
-    
-      
+    </div>  
       <audio controls autoplay>
         <source src="MEHANO-MASTER.mp3" type="audio/wav">
      
       Your browser does not support the audio element.
       </audio>  
-  
+    
   </body>
 </body>
 </html>
