@@ -17,7 +17,7 @@
             margin: 0px;
         }
         body{
-  font-size: 1.3vw;
+  font-size: 1.5em;
   text-align: justify;
   font-family: "Philosopher", sans-serif;
   font-weight: 700;
@@ -45,13 +45,55 @@ main{
         height: 95vh; 
         margin: 1vh 7vw 3vh;
     }
-    img{
+    .header{
         width: 100%;
+    }
+    a.previous img, a.next img {
+  width: 90%; /* Увеличаване на ширината за по-добра видимост */
+  max-width: 20vw; /* Може да коригирате стойността според нуждите */}
+  @media (max-width: 768px) {
+  h1{
+    font-size: 3rem;
+  }
+  p{
+    font-size: 1.2rem;
+  }
+  a.previous img {
+    position: fixed;
+        bottom:5vh;
+        right:7vw; 
+        width:9vw;
+        height: 6vh;
+    } 
+    a.next img {
+    position: fixed;
+        bottom:12vh;
+        right: 1vw; 
+        width: 6vw;
+        height: 6vh;
+    } 
+}
+  @media (max-width: 480px) {
+      a.previous img {
+          position: fixed;
+              bottom:5vh;
+              right:7vw; 
+              width:9vw;
+              height: 6vh;
+          }
+          
+          a.next img {
+          position: fixed;
+              bottom:12vh;
+              right: 1vw; 
+              width: 7vw;
+              height: 6vh;
+          }
     }
     </style>
 </head>
 <body>
-    <header><img src="images/stem-banner3.jpg" alt=""></header>
+    <header><img class="header" src="images/stem-banner3.jpg" alt=""></header>
     <main>
     <h1>СТЕМ УЧИЛИЩЕ</h1>
     <p>На 5 май 2022 г. ПГМЕЕ откри свой  STEM център. 
@@ -61,7 +103,7 @@ main{
 <br>
     <iframe  src="https://www.youtube.com/embed/0IPx_TH1YVo?si=8gZ3yvX9TZfY3xtR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </main>
- <a href="#" class="next " ><img src="images/arrow-up-chrome.gif"  style="width:90%;"></a>
-    <a href="hroniki.html" class="previous round"><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
+ <a href="#" class="next " ><img src="images/arrow-up-chrome.gif"  ></a>
+    <a href="hroniki.html" class="previous round"><img src="images/arrow-left-chrome.gif" ></a>
 </body>
 </html>
