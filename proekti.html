@@ -65,6 +65,43 @@ h1{
 padding: 7vh 4vw 1vh;
 color:  #02658E;
 }
+a.previous img, a.next img {
+  width: 100%; /* Увеличаване на ширината за по-добра видимост */
+  max-width: 25vw; /* Може да коригирате стойността според нуждите */}
+
+@media (max-width: 768px) {
+    a.previous img {
+    position: fixed;
+        bottom:15vh;
+        right:7vw; 
+        width:9vw;
+        height: 6vh;
+    }
+    h1{
+    font-size: 3vw;
+    text-align: center;
+    margin: 15% auto;
+}
+.lang{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px auto 1vh;
+}
+.card{
+width: 57%;
+}
+}
+@media (max-width: 480px) {
+     a.previous img {
+          position: fixed;
+              bottom:5vh;
+              right:7vw; 
+              width:9vw;
+              height: 6vh;
+          }
+}
 
     </style>
 </head>
@@ -99,7 +136,7 @@ color:  #02658E;
               </div>   </a> 
           </div> 
     </div>
-        <a href="home.html" class="previous "><img src="images/left.png" style="width:100%;"></a>
+        <a href="home.html" class="previous "><img src="images/left.png" ></a>
         
   </section>
 <section class="container-fluid" id="op">
