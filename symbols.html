@@ -22,7 +22,7 @@
     background-position:top;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: auto;
     font-size: 1.3vw;
     text-align: justify;
     font-family: "Philosopher", sans-serif;
@@ -66,6 +66,10 @@
 .carousel-control-next {
   right: 20px; /* Move the next arrow 20 pixels to the left */
 }
+a.previous img, a.next img {
+  width: 90%; /* Увеличаване на ширината за по-добра видимост */
+  max-width: 20vw; /* Може да коригирате стойността според нуждите */}
+
 @media (max-width: 768px) {
     .carousel-control-prev,
 .carousel-control-next {
@@ -79,6 +83,13 @@
 body{
     background-size:auto;
  }
+ a.previous img {
+    position: fixed;
+        bottom:15vh;
+        right:7vw; 
+        width:9vw;
+        height: 6vh;
+    }
 }
 @media (max-width: 480px) {
     .carousel-control-prev,
@@ -93,6 +104,13 @@ body{
 body{
     background-size:auto;
  }
+ a.previous img {
+          position: fixed;
+              bottom:5vh;
+              right:7vw; 
+              width:9vw;
+              height: 6vh;
+          }
 }
     </style>
 </head>
@@ -212,7 +230,7 @@ body{
 
 </section>
 
-<a href="hroniki.html" class="previous round"><img src="images/arrowW.png" style="width:90%;"></a>
+<a href="hroniki.html" class="previous round"><img src="images/arrowW.png" ></a>
 
 
 <script>
