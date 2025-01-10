@@ -107,8 +107,8 @@ cursor: pointer;
       padding-top: 2.5vh;
   }
   a.previous img, a.next img {
-    width: 100%; /* Увеличаване на ширината за по-добра видимост */
-    max-width: 150px; /* Може да коригирате стойността според нуждите */
+    width: 120%; /* Увеличаване на ширината за по-добра видимост */
+    max-width: 20vw; /* Може да коригирате стойността според нуждите */
   }
   /*.previous {
     width:11vw;
@@ -130,7 +130,7 @@ cursor: pointer;
 }
 @media (max-width: 480px) {
   a.previous img, a.next img {
-    width: 120%;
-    max-width: 200px; /* По-голям размер за много малки екрани */
+    width: 150%;
+    max-width: 30vw; /* По-голям размер за много малки екрани */
   }
 }
