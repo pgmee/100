@@ -196,7 +196,47 @@ p{
     font-size: 1.3vw;
     margin: 0.7vh auto;
 }
-
+a.previousbut img{
+  width: 90%;
+  max-width: 20vw;
+}
+ a.nextbut img {
+  width: 100%; /* Увеличаване на ширината за по-добра видимост */
+  max-width: 20vw; /* Може да коригирате стойността според нуждите */}
+@media (max-width: 768px) {
+  a.previousbut img {
+    position: fixed;
+        bottom:3vh;
+        right:7vw; 
+        width: 6vw;
+        height: auto;
+    }
+    
+    a.nextbut img {
+    position: fixed;
+        bottom:7vh;
+        right: 1vw; 
+        width:6vw;
+        height: auto;
+    }
+}
+@media (max-width: 480px) {
+      a.previousbut img {
+          position: fixed;
+              bottom:5vh;
+              right:7vw; 
+              width: 6vw;
+              height: auto;
+          }
+          
+          a.nextbut img {
+          position: fixed;
+              bottom:12vh;
+              right: 1vw; 
+              width: 6vw;
+              height: auto;
+          }
+    }
     </style>
 </head>
 <body >
@@ -328,8 +368,8 @@ p{
 </div>
 
 </main>
-    <a href="hroniki.html" class="previousbut "><img src="images/arrowB1.png" style="width:90%;"></a>
-    <a href="#" class="nextbut " ><img src="images/arrowB1_1.png"  style="width:100%;"></a>
+    <a href="hroniki.html" class="previousbut "><img src="images/arrowB1.png" ></a>
+    <a href="#" class="nextbut " ><img src="images/arrowB1_1.png"  ></a>
  
         <script>
             function openModal() {
