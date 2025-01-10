@@ -124,3 +124,11 @@ cursor: pointer;
   }
   
 }
+@media (max-width: 480px) {
+  .previous {
+    width:11vw;
+      }
+.next {
+    height: 15vh;
+      }  
+}
