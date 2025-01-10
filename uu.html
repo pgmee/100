@@ -16,12 +16,12 @@
     <style>
 body{
     background-image: url('images/2021.jpg');
-    background-color:#F5F5F1;
+    background-color:#121E36;
    /* background-color: #F7F8F6;*/
-    background-position:top;
+    background-position:center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: auto;
     font-size: 1.3vw;
     text-align: justify;
     font-family: "Philosopher", sans-serif;
@@ -37,7 +37,7 @@ h1{
   .d-block {
         width: 55vw;
         margin: auto;
-       padding-top: 3vh;
+        margin: 2vh auto;
     }
     .main{
         background-color:transparent;
@@ -71,7 +71,52 @@ h1{
 .carousel-control-next {
   right: 7vw; /* Move the next arrow 20 pixels to the left */
 }
+a.previous img, a.next img {
+  width: 90%; /* Увеличаване на ширината за по-добра видимост */
+  max-width: 20vw; /* Може да коригирате стойността според нуждите */}
 
+@media (max-width: 768px) {
+    .carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 25%;
+  transform: translateY(-25%);
+  background: rgba(0, 0, 0, 0.5); /* Optional: Change background color */
+  width: 2vw; /* Optional: Adjust arrow container width */
+  height: 5vh; /* Optional: Adjust arrow container height */
+}
+body{
+    background-size:auto;
+ }
+ a.previous img {
+    position: fixed;
+        bottom:15vh;
+        right:7vw; 
+        width:9vw;
+        height: 6vh;
+    }
+}
+@media (max-width: 480px) {
+    .carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 15%;
+  transform: translateY(-15%);
+  background: rgba(0, 0, 0, 0.5); /* Optional: Change background color */
+  width: 2vw; /* Optional: Adjust arrow container width */
+  height: 5vh; /* Optional: Adjust arrow container height */
+}
+body{
+    background-size:auto;
+ }
+ a.previous img {
+          position: fixed;
+              bottom:5vh;
+              right:7vw; 
+              width:9vw;
+              height: 6vh;
+          }
+}
     </style>
 </head>
 <body >
@@ -208,12 +253,7 @@ h1{
     <span class="carousel-control-next-icon " aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
 </button>
-
-
 </section>
-        <a href="home.html" class="previous "><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
-       
-
-  
+        <a href="home.html" class="previous "><img src="images/arrow-left-chrome.gif" ></a>
 </body>
 </html>
