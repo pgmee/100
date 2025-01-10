@@ -22,6 +22,7 @@
         background-position:top;
         background-size:cover;
         background-repeat: no-repeat;
+        background-attachment: fixed;
         font-family: "Philosopher", sans-serif;
         font-weight: 700;
         font-style: normal;
@@ -74,17 +75,49 @@
     text-align: center;
     color: #F1E39C;
     font-size: 5vw;
-
-    
   }
   img{
     height: 10.5vh;
   }
+  @media (max-width: 768px) {
+        h3 {
+            font-size: 3vw;
+            text-align: center;
+        }
+        main{
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+        height: 100%;
+        margin-top: 2vh;
+       }
+       section{
+        width: 100%;
+        margin: 0px 3vw;
+        }
+        .card{
+         margin: 1vh auto;
+     }
+     h1{
+    text-align: center;
+    color: #001C2C;
+    font-size: 7vw;
+    }
+     img{
+    height: 11.5vh;
+  }
+     }
+     @media (max-width: 480px) {
+        h1{
+    font-size: 8vw;
+    }
+    }
     </style>
 </head>
 <body>
    
-       <main>
+       <main class="container-fluid">
         <section>
             <a class="card " href="direktori.html">
                 <img class="buttons" src="images/buttons.png" >
