@@ -19,7 +19,7 @@ a.previous img {
     position: fixed;
         bottom:5vh;
         right:7vw; 
-        width:7vw;
+        width:9vw;
         height: 6vh;
     }
     
@@ -28,7 +28,7 @@ a.previous img {
         bottom:12vh;
         right: 1vw; 
         width: 6vw;
-        height: 7vh;
+        height: 6vh;
     }
 }
 @media (max-width: 480px) {
@@ -36,7 +36,7 @@ a.previous img {
         position: fixed;
             bottom:5vh;
             right:7vw; 
-            width:7vw;
+            width:9vw;
             height: 6vh;
         }
         
@@ -44,7 +44,7 @@ a.previous img {
         position: fixed;
             bottom:12vh;
             right: 1vw; 
-            width: 6vw;
-            height: 7vh;
+            width: 7vw;
+            height: 6vh;
         }
   }
