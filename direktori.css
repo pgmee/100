@@ -78,6 +78,10 @@ padding-top: 4vh;
 .card{
 cursor: pointer;
 }
+a.previous img, a.next img {
+  width: 80%; /* Увеличаване на ширината за по-добра видимост */
+  max-width: 20vw; /* Може да коригирате стойността според нуждите */}
+
 @media (max-width: 768px) {
   h1{
     font-size: 3rem;
@@ -106,18 +110,6 @@ cursor: pointer;
       height: 9vh;
       padding-top: 2.5vh;
   }
-  a.previous img, a.next img {
-    width: 120%; /* Увеличаване на ширината за по-добра видимост */
-    max-width: 20vw; /* Може да коригирате стойността според нуждите */
-  }
-  /*.previous {
-    width:11vw;
-    height: 7vh;
-      }
-.next {
-    width: 7vw;
-    height: 7vh;
-      }  */
 }
 @media (min-width: 1200px) {
   h1 {
@@ -128,9 +120,4 @@ cursor: pointer;
   }
   
 }
-@media (max-width: 480px) {
-  a.previous img, a.next img {
-    width: 150%;
-    max-width: 30vw; /* По-голям размер за много малки екрани */
-  }
-}
+
