@@ -250,7 +250,6 @@ width: 80%;
 }
 }
 
-
 @media (max-width: 480px) {
 a.previous img {
 position: fixed;
@@ -281,5 +280,9 @@ font-size: 7vw;
 }
 #lang{
 background-size:95%;
+}
+table{
+  width: 97%;
+  margin:1vh 0px;
 }
 }
