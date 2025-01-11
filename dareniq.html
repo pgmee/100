@@ -167,6 +167,43 @@ table, th,td,tr{
 #b{
     background-color: #6E9CD0;
 }
+a.previous img, a.next img {
+  width: 90%; /* Увеличаване на ширината за по-добра видимост */
+  max-width: 20vw; /* Може да коригирате стойността според нуждите */}
+
+@media (max-width: 768px) {
+  a.previous img {
+position: fixed;
+    bottom:3vh;
+    right:7vw; 
+    width: 6vw;
+    height: auto;
+}
+a.next img {
+position: fixed;
+    bottom:7vh;
+    right: 1vw; 
+    width:6vw;
+    height: auto;
+}
+}
+@media (max-width: 480px) {
+  a.previous img {
+      position: fixed;
+          bottom:3vh;
+          right:7vw; 
+          width: 6vw;
+          height: auto;
+      }
+      
+      a.next img {
+      position: fixed;
+          bottom:8vh;
+          right: 1vw; 
+          width: 6vw;
+          height: auto;
+      }
+}
     </style>
 </head>
 <body >
@@ -184,7 +221,7 @@ table, th,td,tr{
         </div>
     </div>
       
-        <a href="home.html" class="previous "><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
+        <a href="home.html" class="previous "><img src="images/arrow-left-chrome.gif" ></a>
         
   </section>
 <section class="container-fluid" id="ae">
@@ -480,8 +517,8 @@ table, th,td,tr{
           </tr>
         </tbody>
     </table>
-        <a href="#lang" class="previous " onclick="hide()"><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
-        <a href="#ae" class="next " ><img src="images/arrow-up-chrome.gif"  style="width:90%;"></a>       
+        <a href="#lang" class="previous " onclick="hide()"><img src="images/arrow-left-chrome.gif" ></a>
+        <a href="#ae" class="next " ><img src="images/arrow-up-chrome.gif"  ></a>       
 </section>
 
 <section class="container-fluid" id="ne">
@@ -645,8 +682,8 @@ table, th,td,tr{
               </div> </div>
           </div>
     </div>  
-    <a href="#ne" class="next " ><img src="images/arrow-up-chrome.gif"  style="width:90%;"></a>
-    <a href="#lang" class="previous " onclick="hide()"><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
+    <a href="#ne" class="next " ><img src="images/arrow-up-chrome.gif"  ></a>
+    <a href="#lang" class="previous " onclick="hide()"><img src="images/arrow-left-chrome.gif" ></a>
 </section>
 
 <div id="popupContainer(1)" class="popup">
