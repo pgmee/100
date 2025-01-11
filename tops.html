@@ -21,6 +21,7 @@
         font-family: "Philosopher", sans-serif;
         font-weight: 700;
         font-style: normal;
+        background-color: #367877;
         }
         #main{
         width: 100%;
@@ -31,15 +32,17 @@
         background-size:cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        z-index: -1;
         }
        main{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
+        margin-top: 5vh;
        }
         section{
-        width: 21%;
+        width: 22%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -70,11 +73,12 @@
      width: 17vw;
      background-color: transparent;
      border: none;
-     margin: 6vh;
+     margin: 7vh auto;
      transition:  transform 1s;
+     z-index: 1;
             }
         .card-img-top{
-            padding: 2vh 1vw;
+          padding: 2vh 1vw;
           transition:  transform 1s;   
           border-radius: 7%;
         }
@@ -134,51 +138,143 @@
     width: 100%;
     margin: auto;
   }
+  .buttons{
+    height: 12vh; 
+  }
+  a.previous img, a.next img {
+  width: 90%; /* Увеличаване на ширината за по-добра видимост */
+  max-width: 20vw; /* Може да коригирате стойността според нуждите */}
+
+  @media (max-width: 768px) {
+        main{
+        display: flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items: center;
+        height: 100%;
+        margin-top: 1vh;
+       }
+       section{
+        width: 70%;
+        margin: 0px;
+        }
+        .card{
+         margin: 2vh auto;
+        width: 70%;
+     }
+     .buttons{
+    height: 8vh; 
+  }
+     h1{
+        font-size: 7vw;
+    }
+    h3 {
+            font-size: 3vw;
+            text-align: center;
+        }
+   
+        a.previous img {
+    position: fixed;
+        bottom:5vh;
+        right:7vw; 
+        width:9vw;
+        height: 6vh;
+    } 
+    a.next img {
+    position: fixed;
+        bottom:12vh;
+        right: 1vw; 
+        width: 6vw;
+        height: 6vh;
+    
+  }
+     }
+     @media (max-width: 480px) {
+        h1{
+        font-size: 10vw;
+    }
+    h3 {
+            font-size: 7vw;
+        }
+    
+    .card{
+         margin: 1vh auto;
+        width: 100%;
+     }
+    .buttons{       
+          height:7vh;
+      }  
+      section{
+        width: 90%;
+        margin: 0px 3vw;
+        }
+        a.previous img {
+          position: fixed;
+              bottom:5vh;
+              right:7vw; 
+              width:9vw;
+              height: 6vh;
+          }
+          a.next img {
+          position: fixed;
+              bottom:12vh;
+              right: 1vw; 
+              width: 7vw;
+              height: 6vh;
+          }
+    }
     </style>
 </head>
 <body>
-    <div id="main">
+    <div id="main" class="container-fluid">
     <h1>Покорени върхове</h1>
        <main >
         <section>
+         
             <a class="card " href="math.html">
                 <img class="buttons" src="images/buttons2.png" >
-                <h3 class="card-img-overlay shadow-lg " style="padding-top:3.5vh ;" >Математика и ИТ</h3>
+                <h3 class="card-img-overlay shadow-lg "  >Математика и ИТ</h3>
             </a>
             <a class="card " href="nauki.html">
                 <img class="buttons" src="images/buttons2.png">
                 <h3 class="card-img-overlay shadow-lg"  style="padding-top:1.2vh ;">Обществени и природни науки</h3>
             </a>
             <a class="card " href="fvs.html">
-                <img class="buttons" src="images/buttons2.png">
-                <h3 class="card-img-overlay shadow-lg" style="padding-top:3.5vh ;"  >Спорт</h3>
-            </a>
+              <img class="buttons" src="images/buttons2.png">
+              <h3 class="card-img-overlay shadow-lg"  >Спорт</h3>
+          </a>
+            
+          </a>
         </section>
-        <div>
-            <img src="images/LOGO_PGMEE_1_nov.png" style="width: 15vw;height: auto;  position:fixed; bottom: 45%; left: 42%; ">
-        <a class="card " href="#teachers" onclick="show()"  style="width: 23vw;  position:fixed; bottom: 0px; left: 35%; margin-bottom: 0px;">
+        <section style="justify-content:flex-end;">
+          <img src="images/LOGO_PGMEE_1_nov.png" style="width: 15vw;height: auto;  position:fixed; bottom: 45%; left: 42%; z-index: 0;">
+          <a class="card " href="professional.html">
             <img class="buttons" src="images/buttons2.png">
-            <h3 class="card-img-overlay shadow-lg" style="padding-top:1.2vh;" >Почетни награди и отличия на учители</h3>
+            <h3 class="card-img-overlay shadow-lg" style="padding-top:1.2vh;"  >Професионална подготовка</h3>
         </a>
-        </div>
+        
+        </section>
         <section>       
             <a class="card " href="bel.html">
                 <img class="buttons" src="images/buttons2.png">
-                <h3 class="card-img-overlay shadow-lg" style="padding-top:3.5vh ;"  >Литература</h3>
+                <h3 class="card-img-overlay shadow-lg"  >Литература</h3>
             </a>
             <a class="card " href="languages.html">
-                <img class="buttons" src="images/buttons2.png">
-                <h3 class="card-img-overlay shadow-lg" style="padding-top:3.5vh ;"  >Езици</h3>
-            </a>
-            <a class="card " href="professional.html">
-                <img class="buttons" src="images/buttons2.png">
-                <h3 class="card-img-overlay shadow-lg" style="padding-top:1.2vh;"  >Професионална подготовка</h3>
-            </a>
-           
+              <img class="buttons" src="images/buttons2.png">
+              <h3 class="card-img-overlay shadow-lg" >Езици</h3>
+             
+            <a class="card"  href="#teachers" onclick="show()"  >
+              <img class="buttons" src="images/buttons2.png">
+              <h3 class="card-img-overlay shadow-lg" style="padding-top:1.2vh;" >Почетни награди и отличия на учители</h3>
+          </a>
+            
         </section>
+        
+         
+    
     </main>
     
-    <a href="home.html" class="previous round"><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
+    <a href="home.html" class="previous round"><img src="images/arrow-left-chrome.gif" ></a>
 </div> 
 <div id="teachers">
     <h1 style="font-size: 3vw; padding-top: 2vh;">Почетни награди и отличия на учители</h1> 
@@ -263,8 +359,8 @@
    </div>
 </div>   
           
-    <a href="tops.html" class="previous "><img src="images/arrow-left-chrome.gif" style="width:80%;"></a>
-    <a href="#" class="next " ><img src="images/arrow-up-chrome.gif"  style="width:80%;"></a>
+    <a href="tops.html" class="previous "><img src="images/arrow-left-chrome.gif" ></a>
+    <a href="#" class="next " ><img src="images/arrow-up-chrome.gif"  ></a>
 </div>
     <script>
        
