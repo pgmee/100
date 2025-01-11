@@ -150,6 +150,12 @@ table, th,td,tr{
 a.previous img, a.next img {
   width: 90%; /* Увеличаване на ширината за по-добра видимост */
   max-width: 20vw; /* Може да коригирате стойността според нуждите */}
+  .cols img{
+    width: 20%;
+  }
+  .cols p{
+    width: 40%;
+  }
 .title{
   position: fixed;
       top: 30%;
@@ -170,7 +176,9 @@ a.previous img, a.next img {
       font-size: 3vw;
       font-weight: 900;
     }
-    
+    .big{
+      width: 77%; 
+    }
 @media (max-width: 768px) {
     .title{
     position: fixed;
@@ -198,12 +206,12 @@ a.previous img, a.next img {
     color: white;
 }
 h4{
-    font-size: 2.5vw;
+    font-size: 3vw;
     font-weight: 700; 
     cursor: pointer;
 }
 body{
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
   a.previous img {
 position: fixed;
@@ -233,10 +241,30 @@ position: fixed;
     justify-content: space-evenly;
     align-items: center;
 }
-.card{
+.card {
   width: 90%;
 }
+.big{
+      width: 90%; 
+    }
+    .column{
+  width: 90%; 
+  }
+  .cols{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .cols img{
+    width: 80%;
+  }
+  .cols p{
+    width: 80%;
+  }
 }
+
 
 @media (max-width: 480px) {
   a.previous img {
@@ -613,14 +641,14 @@ position: fixed;
             </div>
     </div>        
     <div class="lang" >          
-        <div class="card  shadow-lg" style="background-color: #E6B167 ; width: 77%; " >
+        <div class="card  shadow-lg big" style="background-color: #E6B167 ;" >
         <div class="card-title">
           <h4>„Да дариш усмивка“ - За пореден път ученици от ПГМЕЕ показаха най – великата човешка добродетел, а именно – СЪПРИЧАСТНОСТ! </h4> 
-          <div class="row">
-         <img src="images/снимка5.jpg" style="width: 20%;">
-         <img src="images/снимка5_7.jpg" style="width: 20%;">
-         <img src="images/снимка7.jpg" style="width: 20%;">
-         <p style="width: 40%;">Всички осмокласниците на Механото отвориха своите сърца и се включиха в благотворителната кампания на сдружение “Усмивка”. Те вярват, че са успели да зарадват децата и възрастните хора в нужда, като се надяват тази Коледа да е незабравима. Нашите възпитаници дариха усмивки, доброта и надежда….Надежда, че ДОБРОТО РАЖДА ДОБРО! </p>
+          <div class="row cols">
+         <img src="images/снимка5.jpg" >
+         <img src="images/снимка5_7.jpg" >
+         <img src="images/снимка7.jpg" >
+         <p >Всички осмокласниците на Механото отвориха своите сърца и се включиха в благотворителната кампания на сдружение “Усмивка”. Те вярват, че са успели да зарадват децата и възрастните хора в нужда, като се надяват тази Коледа да е незабравима. Нашите възпитаници дариха усмивки, доброта и надежда….Надежда, че ДОБРОТО РАЖДА ДОБРО! </p>
             </div> </div>
         </div> 
     </div>   
