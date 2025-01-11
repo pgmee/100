@@ -248,6 +248,10 @@ width: 80%;
 .cols p{
 width: 80%;
 }
+table{
+  width: 90%;
+  margin:1vh 0px;
+}
 }
 
 @media (max-width: 480px) {
@@ -280,9 +284,5 @@ font-size: 7vw;
 }
 #lang{
 background-size:95%;
-}
-table{
-  width: 97%;
-  margin:1vh 0px;
 }
 }
