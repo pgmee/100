@@ -20,10 +20,9 @@
     } 
         body{
         background-image: url("images/math5.jpg");
-        
         background-position:top;
         background-size:100%;
-        background-repeat: no-repeat;
+        background-repeat: repeat-y;
         background-attachment: fixed;
         font-family: "Philosopher", sans-serif;
         font-weight: 700;
@@ -31,27 +30,27 @@
         }
         h1{
             text-align: center;
-            margin: 3vh auto;
+            margin: 3vh auto ;
             font-size: 2.7vw;
         }
         .card{
             border: 2px inset grey;
             width: 40%;
-            margin: auto;
+            margin:1vh auto;
             background-color: transparent;
         }
-        .row{
-            margin: 6vh auto;
-        }
+       
         .card-body{
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-evenly;
+            align-items: center;
             width: 100%;
         }
         
         .big{
             width: 80%;
+            margin: 2vh auto;
         }
         .card-title{
         text-align: center;
@@ -62,7 +61,8 @@
         }
         p{
             font-size: 1.2vw;
-            padding: 1vw;
+            padding: 0px 1vw;
+            text-align: justify;
         }
     img{
         transition: transform 2s;
@@ -70,6 +70,83 @@
     img:hover{
                 transform: scale(1.1);    
             }
+    .mt{
+        height: 50vh;
+        width:  auto;
+     }
+     .pic{
+        height: 60vh;
+        width:  auto;
+     }
+    a.previous img, a.next img {
+  width: 90%; /* Увеличаване на ширината за по-добра видимост */
+  max-width: 20vw; /* Може да коригирате стойността според нуждите */}
+ 
+  @media (max-width: 768px) {
+    h1{
+        font-size: 3.5vw;
+        }
+        .card-title{
+font-size: 3vw;
+        }
+        p{
+            font-size: 2.5vw;
+        }
+    a.previous img {
+    position: fixed;
+        bottom:5vh;
+        right:7vw; 
+        width:9vw;
+        height: 6vh;
+    } 
+    a.next img {
+    position: fixed;
+        bottom:12vh;
+        right: 1vw; 
+        width: 6vw;
+        height: 6vh;
+  }
+  .card-body{
+            display: flex;
+            flex-direction: column;
+        }
+  .mt{
+        height: auto;
+        width:  90%;
+        margin: 1vh auto;
+     }
+     .pic{
+        height: auto;
+        width:  90%;
+        margin: 1vh auto;
+     }
+     .row{
+        flex-direction: column;
+     }
+     .card{
+        width: 70%;
+        margin: 1vh auto;
+     }
+     .big{
+        width: 80%;
+     }
+  }
+  @media (max-width: 480px) {
+        a.previous img {
+          position: fixed;
+              bottom:5vh;
+              right:5vw; 
+              width:9vw;
+              height: 6vh;
+          }
+          a.next img {
+          position: fixed;
+              bottom:12vh;
+              right: 1vw; 
+              width: 7vw;
+              height: 6vh;
+          }
+    }
 </style>
 </head>
 <body>
@@ -78,12 +155,12 @@
     <h4 class="card-title">Национално математическо състезание „Европейско кенкуру” <br> 2023-2024г.</h4>
     <p class="card-text ">Грамоти за постигнати високи постижения в Национално математическо състезание „Европейско кенкуру” 2023-2024 учебна година получиха Себастиян Киров от Хз клас и неговият учител Даниела Живкова, които за поредна година постигнаха високи постижения в това престижно математическо състезание.
     </p> 
-    <div class="card-body ">
-    <img  src="images/d1.jpg" style="width: auto; height: 55vh; margin-right: 2vw;">
-    <img  src="images/d3.jpg" style="width: auto; height:55vh;margin-right: 2vw;">
-    <img  src="images/d2.jpg" style="width: auto; height:55vh;">
-    
-</div></div>
+    <div class="card-body">
+    <img  class="mt" src="images/d1.jpg" >
+    <img  class="mt" src="images/d3.jpg" >
+    <img class="mt"  src="images/d2.jpg" >
+    </div>
+</div>
 
 <div class="row row-cols-1 row-cols-md-4 " >
 <div class="card">
@@ -95,13 +172,12 @@
     <p class="card-text">ДИМИТЪР ИВАНОВ ОТ 12и КЛАС СЕ КЛАСИРА НА ПЪРВО МЯСТО В категория „Приложни програми“ със своя проект MuzikBox </p>
     </div>
 </div>
-
-    <div class="row row-cols-1 row-cols-md-4 " >
+<div class="row row-cols-1 row-cols-md-4 " >
         <div class="card big">
             <h4 class="card-title">2020г. -  НАЦИОНАЛНО СЪСТЕЗАНИЕ ПО ИТ - гр.Пазарджик </h4>
             <div class="card-body">
-            <img class="pic" src="images/ИТ2.jpg" style="width: 60%; margin-right: 2vw;">
-            <img class="pic" src="images/ИТ1.jpg" style="width: 40%;">
+            <img class="pic" src="images/ИТ2.jpg" >
+            <img class="pic" src="images/ИТ1.jpg" >
         </div>
             <p class="card-text">На 20.02.2020г. в ПГМЕТ гр.Пазарджик се проведе Националното състезание по Информационни технологии. Състезанието бе с практическа насоченост – изработка на макетен проект на уебсайт. Учениците от 9з клас Кристиан Илиев и Максим Евтимов, които представяха ПГМЕЕ се представиха отлично и категорично завоюваха I място. </p>
             </div>
@@ -139,15 +215,15 @@
             </div>   
             </div>
             <div class="row row-cols-1 row-cols-md-4 " >
-                <div class="card big">
-                    <h4 class="card-title">МАТЕМАТИЧЕСКОТО СЪСТЕЗАНИЕ „СВ. НИКОЛАЙ ЧУДОТВОРЕЦ“ В БУРГАС </h4>
-                    <div class="card-body">
-                    <img class="pic" src="images/НЧ3.jpg" style="width: 50%; margin-right: 2vw;">
-                    <img class="pic" src="images/НЧ1.jpg" style="width: 50%;">
-                </div>
+            <div class="card big">
+                <h4 class="card-title">МАТЕМАТИЧЕСКОТО СЪСТЕЗАНИЕ „СВ. НИКОЛАЙ ЧУДОТВОРЕЦ“ В БУРГАС </h4>
                 <div class="card-body">
-                    <img class="pic" src="images/НЧ2.jpg" style="width: 50%; margin-right: 2vw;">
-                    <img class="pic" src="images/НЧ4.jpg" style="width: 50%;">
+                <img class="mt" src="images/НЧ3.jpg" >
+                <img class="mt" src="images/НЧ1.jpg" ">
+            </div>
+            <div class="card-body">
+                <img class="pic" src="images/НЧ2.jpg" >
+                <img class="pic" src="images/НЧ4.jpg" >
                 </div>
                 </div>
             </div>
@@ -174,7 +250,7 @@
                     
                         </div>   
                 </div>
-                <h4 class="card-title">НАЦИОНАЛНО ВЕЛИКДЕНСКО МАТЕМАТИЧЕСКО СЪСТЕЗАНИЕ:</h4>
+                <h4 class="card-title" style="width: 80%; margin: auto;">НАЦИОНАЛНО ВЕЛИКДЕНСКО МАТЕМАТИЧЕСКО СЪСТЕЗАНИЕ:</h4>
             <div class="row row-cols-1 row-cols-md-4 " >
                 <div class="card">
                     <h4 class="card-title">2016г.</h4>
@@ -204,9 +280,9 @@
             <p class="card-text">Резултатите от тестовете на сформираните два отбора - DIGITALE (осмокласници) и DECONOMY (единадесетокласници) , ги класират за Втори етап. Отбор DIGITALE постига ТРЕТО място в крайното класиране на Националния кръг. 
             </p> 
             <div class="card-body">
-            <img class="pic" src="images/СТ1.jpg" style="width: 50%; margin-right: 2vw;">
-            <img class="pic" src="images/СТ2.jpg" style="width: 50%;">
-        </div>
+            <img class="pic" src="images/СТ1.jpg" >
+            <img class="pic" src="images/СТ2.jpg" >
+            </div>
         <h4 class="card-title">2020г.</h4>
                         <p class="card-text">Първия етап на националния кръг завършиха успешно 226 отбора от Категория А и 82 отбора от Категория Б, сред които и отборите на ПГМЕЕ- 2 отбора от категория А и един отбор от категория Б. До втория етап бяха допуснати и направиха своите презентации 185 отбора от Категория А и 64 отбора от Категория Б. 
                             </p> 
@@ -220,7 +296,7 @@
         </div>
 
                 
-<a href="tops.html" class="previous "><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
-<a href="#" class="next " ><img src="images/arrow-up-chrome.gif"  style="width:90%;"></a>
+<a href="tops.html" class="previous "><img src="images/arrow-left-chrome.gif" ></a>
+<a href="#" class="next " ><img src="images/arrow-up-chrome.gif"  ></a>
 </body>
 </html>
