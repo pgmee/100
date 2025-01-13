@@ -81,6 +81,8 @@
           padding: 2vh 1vw;
           transition:  transform 1s;   
           border-radius: 7%;
+          width: 50%;
+          height: auto;
         }
     h1{
     text-align: center;
@@ -93,9 +95,7 @@
     color: #F5E283;
 }
 
-  img{
-    height: 10.5vh;
-  }
+ 
   #teachers{
     display: none;
     width: 100%;
@@ -108,20 +108,24 @@
         background-attachment: fixed;
   }
   .big{
-    margin: auto;
+    display: flex;
+    flex-direction: row;
+    
     background-color: #12474F;
     color: white;
     margin: 2vh auto;
     padding: 2vh 1vw;
     border-radius: 5%;
 }
+
 .col{
     width: 45%;
     height: auto;
     display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  margin: 2vh 4vw;
   }
 .title{
   width: 100%;
@@ -172,6 +176,12 @@
             font-size: 3vw;
             text-align: center;
         }
+        h2{
+          font-size: 3.5vw;
+        }
+        .title{
+          font-size: 3vw;
+        }
    
         a.previous img {
     position: fixed;
@@ -186,8 +196,19 @@
         right: 1vw; 
         width: 6vw;
         height: 6vh;
-    
   }
+  .big{
+    flex-direction: column;
+    align-items: center;
+  }
+  .col{
+    width: 80%;
+    margin: auto;
+  }
+  .card-img-top{
+          width: 80%;
+          height: auto;
+        }
      }
      @media (max-width: 480px) {
         h1{
@@ -279,20 +300,19 @@
 <div id="teachers" class="container-fluid">
     <h2 style="font-size: 3vw; padding-top: 2vh;">Почетни награди и отличия на учители</h2> 
     <div class=" big " style="width: 80%;">          
-      <div class="row " > 
-      <div class="column" style="width: 45%; margin: auto;">    
-      <h2 style="margin-bottom: 3vh;">2024г.</h2>
+      <div class="col" >    
+      <h2 >2024г.</h2>
       <h4  class="title" >Номинирана единодушно от целия колектив на ПГМЕЕ, инж. Елена Томицина получи Наградата на МОН- “Неофит Рилски” за доказан висок професионализъм и всеотдайност в педагогическата дейност и за постигнати значими резултати в процеса на обучението.</h4>
     </div> 
-      <img src="images/nrET.jpg" class="card-img-top shadow-lg " style="width: 50%; height: auto;" >
+      <img src="images/nrET.jpg" class="card-img-top shadow-lg "  >
      </div>
-    </div> 
-    <div class=" big " style="width: 90%;">   
+  
+    <div class=" big col" style="width: 90%;">   
       <h2  >2021г.</h2>
-      <h4  class="title" style="padding: 1vh 2vw;" >ПГМЕЕ  получава ГРАМОТА ЗА ИЗКЛЮЧИТЕЛНИ ЗАСЛУГИ и постигнати високи резултати  в областта на международните и национални научни и просветни проекти.</h4>    
+      <h4  class="title"  >ПГМЕЕ  получава ГРАМОТА ЗА ИЗКЛЮЧИТЕЛНИ ЗАСЛУГИ и постигнати високи резултати  в областта на международните и национални научни и просветни проекти.</h4>    
       <div class="row " > 
-        <img src="images/грамота 1.JPG" class="card-img-top shadow-lg " style="height: 57vh; width: auto; " >
-        <img src="images/грамота2.JPG" class="card-img-top shadow-lg " style="height: 57vh; width: auto;" >
+        <img src="images/грамота 1.JPG" class="card-img-top shadow-lg " style="width: 45%;" >
+        <img src="images/грамота2.JPG" class="card-img-top shadow-lg " style="width: 53%;"  >
      </div>
     </div>
     <div class=" big " style="width: 90%;">          
