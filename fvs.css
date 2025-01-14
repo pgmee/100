@@ -1,4 +1,9 @@
 body{
+  background-image: url('images/sport10.jpg');
+  background-position:top;
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-size: cover;
    background-color:#F5F5F1;
    font-size: 1.3vw;
   text-align: justify;
@@ -7,13 +12,7 @@ body{
   font-style: normal;   
 }
 main{
-  height: 110vh;
-  background-image: url('images/sport10.jpg');
-  background-position:top;
-  background-attachment: fixed;
-  background-color:#E5E5E5;
-  background-repeat: repeat-y;
-  background-size: cover;
+  background-color:transparent;
   padding-bottom: 2vh;
 }
 #voleyball{
@@ -222,7 +221,5 @@ h1{
           font-size: 7vw;
           margin-bottom: 0px;
         }
-        main{
-          height: auto;       
-        }
+      
   }
