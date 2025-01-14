@@ -67,12 +67,61 @@
   height: 5vh; /* Optional: Adjust arrow container height */
 }
 .carousel-control-prev {
-  left: 20px; /* Move the previous arrow 20 pixels to the right */
+  left: 15px; /* Move the previous arrow 20 pixels to the right */
 }
 .carousel-control-next {
-  right: 20px; /* Move the next arrow 20 pixels to the left */
+  right: 15px; /* Move the next arrow 20 pixels to the left */
 }
+.carousel-indicators {
+   margin: 3rem 15% 0px;
+}
+a.previous img, a.next img {
+  width: 120%; /* Увеличаване на ширината за по-добра видимост */
+  max-width: 20vw; /* Може да коригирате стойността според нуждите */}
 
+@media (max-width: 768px) {
+    .carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-25%);
+  background: rgba(0, 0, 0, 0.5); /* Optional: Change background color */
+  width: 2vw; /* Optional: Adjust arrow container width */
+  height: 5vh; /* Optional: Adjust arrow container height */
+}
+body{
+    background-size:auto;
+ }
+ a.previous img {
+    position: fixed;
+        bottom:15vh;
+        right:7vw; 
+        width:12vw;
+        height: 7vh;
+       
+    }
+}
+@media (max-width: 480px) {
+    .carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 15%;
+  transform: translateY(-15%);
+  background: rgba(0, 0, 0, 0.5); /* Optional: Change background color */
+  width: 2vw; /* Optional: Adjust arrow container width */
+  height: 5vh; /* Optional: Adjust arrow container height */
+}
+body{
+    background-size:auto;
+ }
+ a.previous img {
+          position: fixed;
+              bottom:5vh;
+              right:7vw; 
+              width:12vw;
+              height: 7vh;
+          }
+}
     </style>
 </head>
 <body >
@@ -198,7 +247,7 @@
      </div>
 
 </section>
-<a href="fvs.html" class="next " ><img src="images/left.png"  style="width:120%;"></a>
+<a href="fvs.html" class="previous" ><img src="images/left.png"  ></a>
 
 
 </body>
