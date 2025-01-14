@@ -40,19 +40,21 @@ body{
 }
 #on{
   display: none;
+  height:auto;
   background-image: url('images/s5.jpg');
   background-position:center;
-  background-repeat: no-repeat;
-  background-size:100%;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:cover;  
 }
 #pn{
   display: none;
+  height:auto;
   background-image: url('images/pn4.jpg');
   background-position:top;
-  background-repeat: no-repeat;
-  background-size:100%;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:cover; 
 }
 .card{
   width: 35vw;
@@ -96,7 +98,8 @@ div.card a{
   flex-wrap: nowrap;
   justify-content: space-evenly; 
   align-items: center;
-  margin: auto;
+  margin: 2vh auto;
+  width: 90%;
 }
 .card-text{
   width: 70%;
@@ -106,12 +109,33 @@ div.card a{
 p{
   color: white;
 }
+section#on div.card{
+  width: 45%;
+}
+.column{
+  width:60%;
+   padding: 2vh auto; 
+}
+.vert{
+  width: 80%;
+  margin: auto;
+}
 a.previous img, a.next img {
   width: 90%; /* Увеличаване на ширината за по-добра видимост */
   max-width: 20vw; /* Може да коригирате стойността според нуждите */}
   @media (max-width: 768px) {
-           a.previous img {
-    position: fixed;
+    h4{
+  font-size: 3vw;
+}
+p{
+  font-size: 2.5vw;
+}
+.card-text{
+  width: 95%;
+  margin: auto;
+}
+      a.previous img {
+      position: fixed;
         bottom:5vh;
         right:7vw; 
         width:9vw;
@@ -127,10 +151,23 @@ a.previous img, a.next img {
   div.nauki div.card {
     margin-top: 25%;
   }
+  .row{
+    flex-direction: column;
+  }
+  section#on div.card{
+  width: 85%;
+margin: 1vh auto;
+}
+.column{
+  width: 85%;
+}
   h1{
     font-size: 5vw;
     text-align: center;
     margin: 4% auto ;
+}
+.vert{
+  width: 100%;
 }
 }
      @media (max-width: 480px) {
@@ -176,10 +213,10 @@ a.previous img, a.next img {
         </p>
     </div>
     <div  class="row">
-      <div class="card shadow-lg" style="width: 47%; height: auto;"  >
+      <div class="card shadow-lg"  >
         <img src="images/z1.jpg"  >     
       </div> 
-      <div class="card shadow-lg" style="width: 40%; height: auto;"  >
+      <div class="card shadow-lg"  >
        <img src="images/z2.jpg"   >         
       </div>    
   </div>
@@ -188,16 +225,16 @@ a.previous img, a.next img {
     <p>Участие в конкурс за най-добра мултимедийна презентация на тема „Будителите на моя роден край“. Конкурсът се организира от евродепутата от ЕНП -Асим Адемов, съвместно с РУО. Трима ученика взеха участие, като Гергана Димитрова от 12 ж получи грамота и поощрителна награда и бе избрана непосредствено преди победителката. Участие взеха и Дилян Папанчев от 12з и Патрик Петков от 12д клас ,които получиха сертификати за участие.  </p>
     </div>
   <div  class="row">
-    <div class="card shadow-lg" style="width: 43%; height: auto;"  >
+    <div class="card shadow-lg"  >
       <img src="images/z3.jpg"  >     
     </div> 
-    <div class="card shadow-lg" style="width: 43%; height: auto;"  >
+    <div class="card shadow-lg"  >
      <img src="images/z4.jpg"   >     
         
     </div>  
 </div>
-<div class="row" style="align-items: center; margin-top: 2vh;">
-<div  style="width:60%; padding: 2vh auto;" >
+<div class="row" >
+<div  class ="card column" style="border: none;">
   <p>19.11-20.11.2021г година ПГМЕЕ – гр. Бургас взе участие в Пети национален ученически конкурс за историческа памет „Будител“ и в Национална ученическа конференция „200 години от рождението на Георги С. Раковски“ „…Мисъл и желязо, лира и тръба“ под патронажа на кмета на община Варна господин Иван Портних. От общо 250 участници от
     цялата страна, ученикът Христо Минчев от 10 „ а“ клас успя да се класира сред 8-те най-добри в категория „ЕСЕ“ и бе удостоен с грамота .Той показа изследователски умения , вникване в  дълбочината на материята и добра аргументация , за да пресъздаде през своя поглед образа на великия Георги Раковски-идеологът на българското националноосвободително движение. Ръководител на ученика е г-н Светозар Люцканов - учител по история и цивилизации в
     гимназията.
@@ -205,56 +242,55 @@ a.previous img, a.next img {
     <p>В периода 05.02-06.02.2023   ПГМЕЕ – гр. Бургас  взе участие в Национална ученическа конференция, организирана от СУ "Георги Раковски" гр. Котел и РУО Сливен, по случай 150 години от смъртта на Васил Левски . Темата бе  “Васил Левски-вулкан от човечност“  Нашата гимназия бе представена от 10 ученика, които изготвиха видео клипове свързани с Апостола на свободата.<br>Специалната награда на журито бе спечелена от Стоян Стоянов от 11 "а" клас, който написа  поема  в чест на  Васил Левски.    
     </p>
   </div>
-  <div class="card shadow-lg" style="width: 26%; height: auto;"  >
-    <img src="images/z5.png"  >     
+  <div class="card  " style="border: none;" >
+    <img class="vert" src="images/z5.png"  >     
   </div>  
 </div>
-
   <div  class="row">
-    <div class="card shadow-lg" style="width: 47%; height: auto;"  >
+    <div class="card shadow-lg"  >
       <img src="images/z7.jpg"  >     
     </div> 
-    <div class="card shadow-lg" style="width: 39%; height: auto;"  >
+    <div class="card shadow-lg"  >
      <img src="images/z6.jpg"   >            
     </div>    
 </div>
-<div  class="row" style="margin-top: 2vh;">
-    <div  style="width: 54%; height: auto; display: block;"  >
+<div  class="row" >
+    <div  class="column" >
         <p >13.03.2024 Участие на ПГМЕЕ  в Националния ученически конкурс "Наследник съм на...", организиран от Министерство на отбраната, Централно военно окръжие и Съюзът на ветераните от войните на България. Калоян Колев от 11 И клас заслужи второ място. 
         </p>
         <div class="card " style="width: 100%; height: auto; "  >
       <img class="shadow-lg" src="images/z9.jpg"  >   </div>  
     </div> 
-    <div class="card shadow-lg" style="width: 33%; height: auto;"  >
-     <img src="images/z8.jpg"   >            
+    <div class="card "  style="border: none;" >
+     <img class="vert" src="images/z8.jpg"   >            
     </div>    
 </div>
-<div  class="row" style="margin-top: 2vh; align-items: center;">
-    <div  style="width: 34%; height: auto; display: block;"  >       
+<div  class="row" >
+    <div  class="card column" style="border: none;">       
         <p  >Участие в областен кръг на Олимпиада по История и цивилизация 2020г. - Стоян Стоянов  10 з клас<br>Участие на областен кръг на Олимпиада по История и цивилизация 2024г. - Христо Ненов 
         </p> <br><hr style="color: white;"><br>
-        <p>Участие в изложба по повод: “110 год.  от Балканските войни”- 10 кл./ 2023г.      >>></p></div>
-    <div class="card shadow-lg" style="width: 40%; height: auto; margin-top: 1vh;"  >
+        <p>Участие в изложба по повод: “110 год.  от Балканските войни”- 10 кл./ 2023г.      </p>
+        <hr style="color: white;"></div>
+    <div class="card shadow-lg"  >
      <img src="images/z12.jpg"   >            
     </div>      
 </div>
-<div  class="row" style="margin-top: 2vh; padding-bottom: 4vh;">
-    <div  style="width: 47%; height: auto; display: block;"  >       
+<div  class="row" style=" padding-bottom: 4vh;">
+    <div  class="card column" style="border: none;">       
         <p >Национален  конкурс „Мадарски конник - Символ на историческото минало и европейското бъдеще на България“-  II място Юлиан Киров 10з клас.</p>
-        <div class="card " style="width: 95%; height: auto; "  >
-      <img class="shadow-lg" src="images/z11.jpg"  >   </div>  
+      <img class="shadow-lg" style="width: 100%; height: auto; " src="images/z11.jpg"  >  
     </div> 
-    <div class="card shadow-lg" style="width: 27%; height: auto; margin-top: 2vh;"  >
-     <img src="images/z10.jpg"   >            
+    <div class="card" style="border: none;">
+     <img class="vert" src="images/z10.jpg"   >            
     </div>    
 </div>
-<div  class="row" style="margin-top: 2vh; align-items: center; justify-content: center;">
-  <div class="card shadow-lg" style="width: 30%; height: auto; margin: 1vh 0px 2vh;"  >
-   <img src="images/z13.jpg"   >            
+<div  class="row" style="width: 80%;" >
+  <div class="card " >
+   <img  src="images/z13.jpg"   >            
   </div>  
-  <div class="card-text" style="width: 30%; margin-right: 15%; "  >       
-    <h4  >2024 г.</h4><p >Николай Колев 9 б клас - Първо място на  VIII Национална ученическа конференция  „Пространство и време“- ВТУ
-      </p> </div>    
+  <div class="card" style="border: none;" > <div class="card-text">
+    <h4 >2024 г.</h4><p >Николай Колев 9 б клас - Първо място на  VIII Национална ученическа конференция  „Пространство и време“- ВТУ
+      </p> </div>  </div>    
 </div>
 
 <a href="#nauki" class="previous " onclick="hide()"><img src="images/arrow-left-chrome.gif" ></a>
