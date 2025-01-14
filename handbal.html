@@ -22,7 +22,7 @@
     background-position:top;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     font-size: 1.3vw;
     text-align: justify;
     font-family: "Philosopher", sans-serif;
@@ -75,6 +75,11 @@
 .carousel-indicators {
    margin: 3rem 15% 0px;
 }
+.previous  {
+    position: fixed;
+        bottom:11vh;
+        right:3vw; 
+    }
 a.previous img, a.next img {
   width: 120%; /* Увеличаване на ширината за по-добра видимост */
   max-width: 20vw; /* Може да коригирате стойността според нуждите */}
@@ -89,16 +94,12 @@ a.previous img, a.next img {
   width: 2vw; /* Optional: Adjust arrow container width */
   height: 5vh; /* Optional: Adjust arrow container height */
 }
-body{
-    background-size:auto;
- }
  a.previous img {
     position: fixed;
         bottom:15vh;
         right:7vw; 
         width:12vw;
-        height: 7vh;
-       
+        height: 7vh;     
     }
 }
 @media (max-width: 480px) {
@@ -111,9 +112,6 @@ body{
   width: 2vw; /* Optional: Adjust arrow container width */
   height: 5vh; /* Optional: Adjust arrow container height */
 }
-body{
-    background-size:auto;
- }
  a.previous img {
           position: fixed;
               bottom:5vh;
