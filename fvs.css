@@ -52,7 +52,7 @@ main{
 h1{
     text-align: center;
     color: black;
-    font-size: 2.7vw;
+    font-size: 3vw;
     margin: 1vh;
   }
   h4{
@@ -67,13 +67,12 @@ h1{
     align-items: center;
     margin:2vh auto 5vh;
     width:100%;
-  
   }
- 
   .card{
     width: 23vw;
     padding: 0px;
     transition:  transform 2s;
+    margin: 1vh 2vw;
   }
   .half{
     width: 49%;
@@ -128,22 +127,18 @@ h1{
     height: 1px; /* Височина на линията */
     background-color:  #172029; /* Цвят на линията */
     width: 50%; /* Ширина на линията */
-   
   }
-  
   .left {
     left: 0; /* Поставете левия край на линията в началото на контейнера */
     transform: translateX(-50%); /* Центрирайте линията хоризонтално */
   }
-  
   .right {
     right: 0; /* Поставете десния край на линията в края на контейнера */
     transform: translateX(50%); /* Центрирайте линията хоризонтално */
   }
   a.previous img, a.next img {
     width: 100%; /* Увеличаване на ширината за по-добра видимост */
-    max-width: 20vw; /* Може да коригирате стойността според нуждите */}
-    
+    max-width: 20vw; /* Може да коригирате стойността според нуждите */}  
   .previous {
     position: fixed;
         bottom:6vh;
@@ -158,7 +153,9 @@ h1{
         width: 5vw;
         height: 4vh;
     }
-
+.row{
+  flex-wrap: wrap;
+}
     @media (max-width: 768px) {
       section #atletika a.previous img, section #atletika a.next img {
         width: 140%; /* Увеличаване на ширината за по-добра видимост */
@@ -178,7 +175,7 @@ h1{
             height: 6vh;
       }
       h1{
-        font-size: 4vw;
+        font-size: 4.5vw;
       }
       h4{
         font-size: 3vw;
@@ -199,6 +196,9 @@ h1{
       .half{
         width: 90%;
       }
+      .card{
+        width: 45%;
+      }
     }
     @media (max-width: 480px) {
       a.previous img {
@@ -214,5 +214,8 @@ h1{
             right: 1vw; 
             width: 7vw;
             height: 6vh;
+        }
+        .card{
+          width: 70%;
         }
   }
