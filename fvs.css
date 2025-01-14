@@ -7,7 +7,7 @@ body{
   font-style: normal;   
 }
 main{
-  height: 110vh;
+   height: auto;
   background-image: url('images/sport10.jpg');
   background-position:top;
   background-attachment: fixed;
