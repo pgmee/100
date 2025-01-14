@@ -30,17 +30,17 @@
     font-style: normal;   
     color: #172029;
  }
+ .main{
+        background-color:transparent;
+        width: 100%;
+        margin: 1vh auto 3vh  ;
+    }
   .d-block {
         width: 48vw;
         margin: 3vh auto;
     }
     .tx{
         width: 37%;
-    }
-    .main{
-        background-color:transparent;
-        width: 100vw;
-        margin: 1vh auto 3vh  ;
     }
    .inn{
     display:flex;
@@ -101,6 +101,12 @@ a.previous img, a.next img {
   width: 2vw; /* Optional: Adjust arrow container width */
   height: 5vh; /* Optional: Adjust arrow container height */
 }
+.carousel-control-prev {
+  left: 1vw; /* Move the previous arrow 20 pixels to the right */
+}
+.carousel-control-next {
+  right: 1vw; /* Move the next arrow 20 pixels to the left */
+}
  a.previous img {
     position: fixed;
         bottom:15vh;
@@ -118,6 +124,12 @@ a.previous img, a.next img {
   background: rgba(0, 0, 0, 0.5); /* Optional: Change background color */
   width: 2vw; /* Optional: Adjust arrow container width */
   height: 5vh; /* Optional: Adjust arrow container height */
+}
+.carousel-control-prev {
+  left: 1vw; /* Move the previous arrow 20 pixels to the right */
+}
+.carousel-control-next {
+  right: 1vw; /* Move the next arrow 20 pixels to the left */
 }
  a.previous img {
           position: fixed;
