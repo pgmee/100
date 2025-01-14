@@ -7,7 +7,7 @@ body{
   font-style: normal;   
 }
 main{
-   height: auto;
+  height: auto;
   background-image: url('images/sport10.jpg');
   background-position:top;
   background-attachment: fixed;
@@ -53,7 +53,7 @@ h1{
     text-align: center;
     color: black;
     font-size: 3vw;
-    margin: 1vh;
+    margin: 1vh auto;
   }
   h4{
     margin:1vh auto;
@@ -175,7 +175,7 @@ h1{
             height: 6vh;
       }
       h1{
-        font-size: 4.5vw;
+        font-size: 5vw;
       }
       h4{
         font-size: 3vw;
