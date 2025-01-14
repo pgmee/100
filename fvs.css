@@ -7,7 +7,7 @@ body{
   font-style: normal;   
 }
 main{
-  height: 100vh;
+  height: 110vh;
   background-image: url('images/sport10.jpg');
   background-position:top;
   background-attachment: fixed;
@@ -221,5 +221,8 @@ h1{
         h1{
           font-size: 7vw;
           margin-bottom: 0px;
+        }
+        main{
+          height: auto;       
         }
   }
