@@ -12,46 +12,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 <link rel="icon" href="images/LOGO_PGMEE_1_nov.png">
-    <style>
-main{
-  background-image: url('images/sport10.jpg');
-  background-position:top;
-  background-color:#E5E5E5;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  padding-bottom: 2vh;
-}
-#voleyball{
-  background-image: url('sport/vb2.jpg');
-  background-position:center;
-  background-attachment: fixed;
-  background-color:#E5E5E5;
-  background-size:100%; 
-  margin:-1vh auto 0px;
-  padding-top: 1vh;
-}
-#atletika{
-  background-image: url('sport/atl.avif');
-  background-position:center;
-  background-attachment: fixed;
-  background-color:#E5E5E5;
-  background-size:cover; 
-  margin:-1vh auto 0px;
-  padding-top: 1vh;
-}
-#tenis{
-  background-image: url('sport/ttb.jpg');
-  background-position:center;
-  background-attachment: fixed;
-  background-color:#E5E5E5;
-  background-size:cover; 
-  margin: -1vh auto 0px;
-  padding-top: 1vh;
-}
-    </style>
+   
 </head>
 <body >
-  <main id="sports" >
+  <main id="sports" class="container-fluid">
     <h1 style="margin-top: 0px;">Покорени спортни върхове</h1>  
     <div class="row row-cols-1 row-cols-md-3  pics ">      
         <div class="card shadow-lg"  >
@@ -82,10 +46,9 @@ main{
           </div>  
       </div>
       
-        <a href="tops.html" class="previous "><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
-        
+        <a href="tops.html" class="previous "><img src="images/arrow-left-chrome.gif"></a>       
 </main>
-<section class="container-fluid " id="voleyball" style="display: none;" >
+<section class="container-fluid " id="voleyball"  >
   <div class="container">
     <div class="divider left"></div>
     <h1 >ВОЛЕЙБОЛ</h1> 
@@ -108,7 +71,7 @@ main{
   </div></div></div>
   <div class="atletika">
   <div class="voley"class="shadow-lg">
-  <div class="card-title" >
+  <div class="card-title " >
     <h1>2015/2016г.</h1>
   <h4>Трето място на Републиканско първенство на ученически игри по волейбол 11-12 клас<br> Първо място на Областно първенство по волейбол 11-12 клас<br>Първо място на Общинско първенство по волейбол 11-12 клас <br>Първо място на Зонално първенство по волейбол 11-12 клас<br></h4>
   </div></div>
@@ -140,9 +103,9 @@ main{
   <h4>Първо място на Областно първенство по волейбол 8-10 клас <br>Второ място на Зонално първенство по волейбол 8-10 клас </h4>
   </div>
 </div></div>
-<a href="#" class="next " onclick="showSports()"><img src="images/left.png"  style="width:120%;"></a>
+<a href="fvs.html" class="previous" onclick="showSports()"><img src="images/arrow-left-chrome.gif"></a>
 </section>
-<section class="container-fluid " id="atletika" >
+<section class="container-fluid " id="atletika"  >
   <div class="container">
     <div class="divider left"></div>
     <h1 >ЛЕКА АТЛЕТИКА</h1> 
@@ -169,21 +132,21 @@ main{
   <h4>Първо място Зонално първенство по лека атлетика 8-10 клас</h4>
   <br>   <br>  
 </div>
-<a href="#" class="next " onclick="showSports()"><img src="images/left.png"  style="width:120%;"></a>
+<a href="#" class="previous" onclick="showSports()"><img src="images/arrow-left-chrome.gif"></a>
 </section>
 
-<section class="container-fluid " id="tenis" style="display: none;">
+<section class="container-fluid " id="tenis" >
   <div class="container">
     <div class="divider left"></div>
     <h1 >ТЕНИС НА МАСА</h1> 
     <div class="divider right"></div>
   </div>
-  
+ 
 <div class="atletika">
-  <div class="card-img-top" style="width: 50%;">
+  <div class="card-img-top half" >
     <img src="sport/tenis.png" >
   </div>
-  <div class="card-title" style="width: 45%;">
+  <div class="card-title half" >
   <h4>Общинско първенство по тенис на маса 8-10 клас – I място за отбора на ПГМЕЕ – 2011г. </h4><br>
   <h4>Първо място Областно първенство по тенис на маса 8-10 клас – 2011г.</h4><br>
   <h4>Общинско първенство по тенис на маса 8-10 клас – I място за отбора на ПГМЕЕ – 2010г. </h4><br>
@@ -197,7 +160,7 @@ main{
     <div class="divider right"></div>
   </div>
   <h4 style="text-align: center; margin-bottom: 3vh;">Общинско първенство по шахмат – II място за отбора на ПГМЕЕ – 2013/2014г.</h4><br>
-  <a href="#" class="next " onclick="showSports()"><img src="images/left.png"  style="width:120%;"></a>
+  <a href="#" class="previous" onclick="showSports()"><img src="images/arrow-left-chrome.gif" ></a>
   </section>
 <script>
   let index

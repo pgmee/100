@@ -6,6 +6,48 @@ body{
   font-weight: 700;
   font-style: normal;   
 }
+main{
+  height: 110vh;
+  background-image: url('images/sport10.jpg');
+  background-position:top;
+  background-attachment: fixed;
+  background-color:#E5E5E5;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 2vh;
+}
+#voleyball{
+  display: none;
+  background-image: url('sport/vb2.jpg');
+  background-position:center;
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-color:#E5E5E5;
+  background-size:100%; 
+  margin:-1vh auto 0px;
+  
+}
+#atletika{
+  display: none;
+  height: auto;
+  background-image: url('sport/atl.avif');
+  background-position:center;
+  background-attachment: fixed;
+  background-color:#E5E5E5;
+  background-size:cover; 
+  margin:-1vh auto 0px;
+  padding-top: 1vh;
+}
+#tenis{
+  display: none;
+  background-image: url('sport/ttb.jpg');
+  background-position:center;
+  background-attachment: fixed;
+  background-color:#E5E5E5;
+  background-size:cover; 
+  margin: -1vh auto 0px;
+  padding-top: 1vh;
+}
 
 h1{
     text-align: center;
@@ -33,6 +75,10 @@ h1{
     padding: 0px;
     transition:  transform 2s;
   }
+  .half{
+    width: 49%;
+  }
+  
  img{
     width:100%;
  }
@@ -44,10 +90,6 @@ h1{
  .card:hover{
                 transform: scale(1.1);    
             }
-   #atletika{
-    display: none;
-    margin: 3vh auto;
-  }
   .atletika{
     display: flex;
     flex-direction: row;
@@ -98,21 +140,79 @@ h1{
     right: 0; /* Поставете десния край на линията в края на контейнера */
     transform: translateX(50%); /* Центрирайте линията хоризонтално */
   }
-
+  a.previous img, a.next img {
+    width: 100%; /* Увеличаване на ширината за по-добра видимост */
+    max-width: 20vw; /* Може да коригирате стойността според нуждите */}
+    
   .previous {
     position: fixed;
         bottom:6vh;
-        right:2vw; 
+        right:1vw; 
         width:5vw;
         height: 4vh;
     }
-    
-    .next {
-    
+    .next {  
     position: fixed;
         bottom:10vh;
         right: 1.5vw; 
         width: 5vw;
         height: 4vh;
     }
-    
+
+    @media (max-width: 768px) {
+      section #atletika a.previous img, section #atletika a.next img {
+        width: 140%; /* Увеличаване на ширината за по-добра видимост */
+        max-width: 20vw; /* Може да коригирате стойността според нуждите */}
+      a.previous img {
+        position: fixed;
+            bottom:5vh;
+            right:3vw; 
+            width:9vw;
+            height: 6vh;
+        } 
+        a.next img {
+        position: fixed;
+            bottom:12vh;
+            right: 1vw; 
+            width: 6vw;
+            height: 6vh;
+      }
+      h1{
+        font-size: 4vw;
+      }
+      h4{
+        font-size: 3vw;
+      }
+      .atletika{
+        flex-direction: column;
+      }
+      .atletika2{
+        width: 90%;
+      }
+      .voley{
+        width: 90%;
+      }
+      #voleyball{
+        background-position:top;
+        background-size: cover;
+      }
+      .half{
+        width: 90%;
+      }
+    }
+    @media (max-width: 480px) {
+      a.previous img {
+        position: fixed;
+            bottom:5vh;
+            right:5vw; 
+            width:9vw;
+            height: 6vh;
+        }
+        a.next img {
+        position: fixed;
+            bottom:12vh;
+            right: 1vw; 
+            width: 7vw;
+            height: 6vh;
+        }
+  }
