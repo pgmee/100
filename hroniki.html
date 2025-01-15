@@ -80,6 +80,11 @@
   img{
     height: 10.5vh;
   }
+  .previous  {
+    position: fixed;
+        bottom:9vh;
+        right:3vw; 
+    }
   @media (max-width: 768px) {
         main{
         display: flex;
@@ -105,10 +110,14 @@
             font-size: 3vw;
             text-align: center;
         }
-   
-  .previous{
-    width: 10vw;
-  }
+        a.previous img {
+    position: fixed;
+        bottom:3vh;
+        right:3vw; 
+        width:9vw;
+        height: 7vh;     
+    }
+
      }
      @media (max-width: 480px) {
         h1{
@@ -179,7 +188,7 @@
         </section>
     </main>
    
-    <a href="home.html" class="previous round"><img src="images/arrowB.png" style="width:90%;"></a>
+    <a href="home.html" class="previous round"><img src="images/arrowB.png"></a>
     
 </body>
 </html>
