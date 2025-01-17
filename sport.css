@@ -47,7 +47,7 @@ transition: transform 1.5s ease, opacity .5s ease-out;
 margin-bottom: 2vh;
 }
 h1{
-    font-size: 5vh;
+    font-size: 6vh;
     text-align: center;
     font-weight: 900;
 }
@@ -111,6 +111,9 @@ position: fixed;
     width:12vw;
     height: 7vh;     
 }
+h1{
+    font-size: 3vh;
+}
 h2{
     font-size: 3vw;
 }
@@ -143,6 +146,9 @@ a.previous img {
           width:12vw;
           height: 7vh;
       }
+      h1{
+        font-size: 3.5vh;
+    }
 h2{
     font-size: 3.5vw;
 }
