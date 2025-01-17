@@ -22,7 +22,7 @@
     background-position:top;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     font-size: 1.3vw;
     text-align: justify;
     font-family: "Philosopher", sans-serif;
@@ -30,20 +30,30 @@
     font-style: normal;   
     color: #172029;
  }
-  .d-block {
-        width: 48vw;
-        margin: 3vh auto;
-    }
-    .main{
+ .main{
         background-color:transparent;
         width: 100vw;
         margin: 1vh auto 3vh  ;
     }
+  .d-block {
+        width: 47vw;
+        margin: 3vh auto;
+    }
+    .tx{
+        width: 43%;
+    }
+    .vert{
+        width: 70%;
+    }
+    .card-title{
+        width:100%;  
+    }
    .inn{
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    flex-wrap: nowrap;
    }
    .carousel-inner{
     width: 90%;
@@ -53,9 +63,14 @@
    transition-duration: 5s;
    transition: transform 1.5s ease, opacity .5s ease-out;
    }
-  
+   h2{
+    font-size: 2.5vw;
+    font-weight: 900;
+    text-align: center;
+  }
    h4{
     font-size: 1.8vw;
+    margin: 3vh auto;
    }
 .carousel-control-prev,
 .carousel-control-next {
@@ -67,12 +82,86 @@
   height: 5vh; /* Optional: Adjust arrow container height */
 }
 .carousel-control-prev {
-  left: 20px; /* Move the previous arrow 20 pixels to the right */
+  left: 15px; /* Move the previous arrow 20 pixels to the right */
 }
 .carousel-control-next {
-  right: 20px; /* Move the next arrow 20 pixels to the left */
+  right: 15px; /* Move the next arrow 20 pixels to the left */
 }
+.carousel-indicators {
+   margin: 3rem 15% 0px;
+}
+.previous  {
+    position: fixed;
+        bottom:11vh;
+        right:3vw; 
+    }
+a.previous img, a.next img {
+  width: 120%; /* Увеличаване на ширината за по-добра видимост */
+  max-width: 20vw; /* Може да коригирате стойността според нуждите */}
 
+@media (max-width: 768px) {
+    .carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 25%;
+  transform: translateY(-25%);
+  background: rgba(0, 0, 0, 0.5); /* Optional: Change background color */
+  width: 2vw; /* Optional: Adjust arrow container width */
+  height: 5vh; /* Optional: Adjust arrow container height */
+}
+.carousel-control-prev {
+  left: 1vw; /* Move the previous arrow 20 pixels to the right */
+}
+.carousel-control-next {
+  right: 1vw; /* Move the next arrow 20 pixels to the left */
+}
+ a.previous img {
+    position: fixed;
+        bottom:15vh;
+        right:7vw; 
+        width:12vw;
+        height: 7vh;     
+    }
+    h2{
+        font-size: 3vw;
+    }
+    h4{
+        font-size: 2.3vw;
+        margin: 2vh auto;
+    }
+ 
+}
+@media (max-width: 480px) {
+    .carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-20%);
+  background: rgba(0, 0, 0, 0.5); /* Optional: Change background color */
+  width: 2vw; /* Optional: Adjust arrow container width */
+  height: 5vh; /* Optional: Adjust arrow container height */
+}
+.carousel-control-prev {
+  left: 1vw; /* Move the previous arrow 20 pixels to the right */
+}
+.carousel-control-next {
+  right: 1vw; /* Move the next arrow 20 pixels to the left */
+}
+ a.previous img {
+          position: fixed;
+              bottom:3vh;
+              right:3vw; 
+              width:12vw;
+              height: 7vh;
+          }
+    h2{
+        font-size: 3.5vw;
+    }
+    h4{
+        font-size: 2.5vw;
+        margin: 1vh auto;
+    }
+}
     </style>
 </head>
 <body >
@@ -92,64 +181,64 @@
                     aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
                     aria-label="Slide 4"></button>
-                
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
             </div>
             <div class="carousel-inner" >
                 <div class="carousel-item active " >
                     <div class="inn"> 
                     <div> <img src="sport/f2.jpg"
                         class="d-block " alt="..."></div>
-                    <div style="width: 37vw; ">
-                        <h1>2023/2024г.</h1><br>
+                    <div class="tx">
+                        <h2>2023/2024г.</h2>
                         <div class="card-title" >
-                            <h4>Първо място Общинско първенство по футбол 8-10 клас</h4><br>
+                            <h4>Първо място Общинско първенство по футбол 8-10 клас</h4>
                             <h4>Първо място Зонално първенство по футбол 8-10 клас</h4> 
                             </div>
                     </div>
                     </div>
                 </div>
                 <div class="carousel-item " >
-                    <div class="inn"> 
+                    <div class="inn" > 
                     <div> <img src="sport/f12_1.jpg"
-                        class="d-block " style="height:80vh; width: auto;" alt="..."></div>
-                    <div style="width: 55vw; ">
-                        <div class="card-title" >
-                            <h1> 2018/2019г. </h1>
-                            <h4>Първо място Общинско първенство по футбол 11-12 клас</h4>
-                            <h4>Първо място Общинско първенство по футбол 8-10 клас </h4>
-                           <h1>2016/2017г. </h1>
+                        class="vert "  alt="..."></div>
+                        <div class="card-title " style="margin: -4vh 2vw 1vh -7vw;">
+                            <h2> 2018/2019г. </h2>
+                            <h4>Първи мяста на Общинско първенство по футбол 8-10 клас и 11-12 клас</h4>
+                           <h2>2016/2017г. </h2>
                             <h4>Първо място Областно първенство по футбол 8-10 клас</h4>
-                            <h1>2011/2012г. </h1>
+                            <h2>2011/2012г. </h2>
                             <h4>Трето място Финали на ученически игри по футбол юноши <br>11-12 клас </h4>
-                            <h1>2010/2011г. </h1>
-                            <h4>Първо място Областно първенство по футбол 11-12 клас</h4>
-                            <h4>Първо място Общинско първенство по футбол 11-12 клас</h4>
-                            </div>
-                    </div>
-                    </div>
+                        </div>
+                </div>
+                </div>
+                <div class="carousel-item " >
+                    <div class="inn" > 
+                        <div class="card-title " style="margin: -7vh -7vw 2vh 2vw ;">
+                            <h2>2010/2011г. </h2>
+                            <h4>Първи мяста на Общинско и Областно първенство по футбол 11-12 клас</h4>
+                            <br><br>
+                                <h2 > 2021/2022г. </h2>
+                                <h4 style="text-align: center;">Механо тийм взе купата на БМФ - Порт Бургас </h4>
+                                <h2> 2016/2017г. </h2>
+                                <h4>Трето място в турнира за купата на БМФ - Порт Бургас </h4></div>
+                            <div> <img src="sport/bmf3.jpg"
+                                class="vert " style="float: right;"  alt="..."></div>
+                    
+                </div>
                 </div>
                 <div class="carousel-item ">
                     <div class="inn"> 
-                        <div> <img src="sport/bmf3.jpg"
-                            class="d-block " style="height:80vh; width: auto;"></div>
-                        <div style="width: 50vw; ">
-                            <img src="sport/bmf2.jpg" style="width: 45vw;">
-                               <div class="card-title" >
-                                <h1 > 2021/2022г. </h1>
-                                <h4 style="text-align: center;">Механо тийм взе купата на БМФ - Порт Бургас </h4>
-                                <h1> 2016/2017г. </h1>
-                                <h4>Трето място в турнира за купата на БМФ - Порт Бургас </h4>
-                                </div>
-                                
-                        </div>
+                         <img src="sport/bmf2.jpg" class="vert"
+                             >     
                 </div>
             </div>
             <div class="carousel-item ">
                 <div class="inn"> 
                     <div> <img src="sport/bmf1.jpg"
                         class="d-block " alt="..."></div>
-                    <div style="width: 37vw; ">
-                        <h1> 2023/2024г. </h1><br>
+                    <div class="tx">
+                        <h2> 2023/2024г. </h2>
                         <div class="card-title">
                             <h4>Купата на БМФ - Порт Бургас е в Механото за пореден път.</h4>
                             </div>
@@ -172,7 +261,7 @@
      </div>
 
 </section>
-<a href="fvs.html" class="next " ><img src="images/left.png"  style="width:120%;"></a>
+<a href="fvs.html" class="previous" ><img src="images/left.png"  ></a>
 
 </body>
 </html>
