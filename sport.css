@@ -47,8 +47,9 @@ transition: transform 1.5s ease, opacity .5s ease-out;
 margin-bottom: 2vh;
 }
 h1{
-    font-size: 4vh;
+    font-size: 5vh;
     text-align: center;
+    font-weight: 900;
 }
 h2{
 font-size: 2.5vw;
