@@ -47,6 +47,7 @@ transition: transform 1.5s ease, opacity .5s ease-out;
 margin-bottom: 2vh;
 }
 h1{
+    font-size: 4vh;
     text-align: center;
 }
 h2{
@@ -76,27 +77,6 @@ right: 15px; /* Move the next arrow 20 pixels to the left */
 .carousel-indicators {
 margin: 3rem 15% 0px;
 }
-
-.container {
-    position: relative; /* Настройте контейнера като относително позициониран */
-    max-width: 50%;
-  }
-  
-  .divider {
-    position: absolute; /* Настройте линиите като абсолютно позиционирани */
-    top: 50%; /* Поставете горната част на линията в средата на контейнера */
-    height: 1px; /* Височина на линията */
-    background-color:  #172029; /* Цвят на линията */
-    width: 50%; /* Ширина на линията */
-  }
-  .left {
-    left: 0; /* Поставете левия край на линията в началото на контейнера */
-    transform: translateX(-50%); /* Центрирайте линията хоризонтално */
-  }
-  .right {
-    right: 0; /* Поставете десния край на линията в края на контейнера */
-    transform: translateX(50%); /* Центрирайте линията хоризонтално */
-  }
   
 .previous  {
 position: fixed;
