@@ -34,13 +34,15 @@ h1{
     text-align: center;
     color: black;
     font-size: 3vw;
-    margin: 1vh;
+    margin: 1vh auto;
   }
   h4{
-    margin: 7vh 4vw 3vh 3vw ;
+    /*margin: 7vh 4vw 3vh 3vw ;*/
     font-size: 1.8vw;
     font-weight: 600;
-    width: 67%;
+    width: 87%;
+    margin:7vh auto 0;
+    text-align: justify;
   }
   .pics{
     display: flex;
@@ -53,21 +55,30 @@ h1{
   .names{
     width: 100%;
     text-align: center;
-    margin-top: 4vh;
+    margin:auto;
   }
   .col{
+    display:block;
     width: 44vw;
     background-image: url('images/litbg.jpeg');
-    background-size: 100%;
-    height: 100%;
+    background-size: cover;
+    height: 97vh;
   }
  .card{
-    margin: auto;
     background-color: transparent;
     border: none;
  }
+ .small{
+  height: 70vh;
+ }
  .tx{
-    width: 28.5vw;
+     width: 25vw;
+    height: 40vh;
+    background-size: cover;
+ }
+ .card-img-top{
+  width: 77%; 
+  margin-left:10% ;
  }
  img{
   transition:  transform 0.5s;
@@ -75,89 +86,132 @@ h1{
  img:hover{
                 transform: scale(1.3);    
             }
+    a.previous img, a.next img {
+  width: 90%; /* Увеличаване на ширината за по-добра видимост */
+  max-width: 20vw; /* Може да коригирате стойността според нуждите */}
+  @media (max-width: 768px) {
+    .pics{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:-1vh auto 5vh;
+    width: 97%;
+  }
+  .col{
+    width: 95%;
+    background-size: cover;
+    height: auto;
+  }
+    h1{
+        font-size: 4vw;
+        }
+        .card-title{
+    font-size: 3vw;
+        }
+    a.previous img {
+    position: fixed;
+        bottom:5vh;
+        right:7vw; 
+        width:9vw;
+        height: 6vh;
+    } 
+    a.next img {
+    position: fixed;
+        bottom:12vh;
+        right: 1vw; 
+        width: 6vw;
+        height: 6vh;
+  }
+}
+@media (max-width: 480px) {
+    h1{
+        font-size: 5vw;
+        font-weight: 800;
+        }
+        a.previous img {
+          position: fixed;
+              bottom:5vh;
+              right:8vw; 
+              width:9vw;
+              height: 6vh;
+          }
+          a.next img {
+          position: fixed;
+              bottom:12vh;
+              right: 3vw; 
+              width: 7vw;
+              height: 6vh;
+          }
+    }
     </style>
 </head>
 <body >
     <h1>ПЕКК по БЕЛ – „Покорени върхове“</h1>
    
     <div class="row row-cols-1 row-cols-md-2 g-4 pics ">
-       <div class="col "  >
-          <div class="card h-100 ">   
-                  
+          <div class="col card ">         
             <div class="card-body names">
               <h4 class="card-title" > Второ място на Теодора Славова в 26-тото издание на Национален литературен конкурс "Любовта в нас" 2023 г.</h4>
             </div>  
-            <img src="images/b4.jpg" class="card-img-top shadow-lg " style="width: 63%; margin: 4vh 10vw 20vh 3vw;" > 
+            <img src="images/b4.jpg" class="card-img-top shadow-lg " > 
           </div>
-        </div>
-        <div class="col " >
-            <div class="card  ">
-              
+              <div class="col card  ">   
               <div class="card-body names">
                 <h4 class="card-title" >Първо място в Националния конкурс за православна поезия, проза и видео – изпълнение на стих на тема: „Рождество на Спасителя” 2022 г.</h4>
               </div> 
-              <img src="images/b6.jpg" class="card-img-top shadow-lg " style="width: 63%; margin: 2vh 10vw 14vh 3vw;">     
+              <img src="images/b6.jpg" class="card-img-top shadow-lg " >     
             </div>
-          </div>
+          
     </div>
     <div class="row row-cols-1 row-cols-md-2 g-4 pics ">
-        <div class="col "  >
-            <div class="card ">   
+            <div class="col card ">   
                 <div class="card-body names">
                    <h4 class="card-title" >Награда за Петър Мирчев в конкурс за написване на есе, посветен на Деня на Бургас на тема: „Бургас – моят роден град” през 2019 г.</h4>
                 </div>  
-                <img src="images/b7.jpg" class="card-img-top shadow-lg " style="width: 63%; margin: 2vh 10vw 14vh 3vw;" >    
+                <img src="images/b7.jpg" class="card-img-top shadow-lg "  >    
             </div>
-        </div>
-     <div class="col " >
-            <div class="card  ">
-                
+            <div class="col card ">
                 <div class="card-body names">
-                 <h4 class="card-title" style="width: 77%;">Второ място на Мартин Михалев на Четвъртия ученически литературен конкурс „Който спаси един човешки живот, спасява цяла вселена” от трибуната, която им предостави Центърът за еврейско-българско сътрудничество „Алеф” през 2017г.</h4>
+                 <h4 class="card-title" >Второ място на Мартин Михалев на Четвъртия ученически литературен конкурс „Който спаси един човешки живот, спасява цяла вселена” от трибуната, която им предостави Центърът за еврейско-българско сътрудничество „Алеф” през 2017г.</h4>
                 </div>  
-                <img src="images/b9.jpg" class="card-img-top shadow-lg " style="width: 63%; margin: 2vh 10vw 4vh 3vw;">    
+                <img src="images/b9.jpg" class="card-img-top shadow-lg " >    
             </div>
-        </div>  
     </div>
-    <div class="row row-cols-1 row-cols-md-2 g-4 pics ">
-        <div class="col "  >
-            <div class="card ">
+    <div class="row row-cols-1 row-cols-md-2 g-4 pics " >
+            <div class="col card small">
                 <div class="card-body names">
-                   <h4 class="card-title" style="margin: 13vh 4vw 23vh 3vw ;" >Второ място за Димитър Даниелов Атанасов и <br>трето място за Димитър Вълков Димитров на конкурс за есе на тема  “Училището – територия на етническа толерантност”, организиран от Община Бургас - 2017г.</h4>
-                   
-                </div>      
+                   <h4 class="card-title" >Второ място за Димитър Даниелов Атанасов и <br>трето място за Димитър Вълков Димитров на конкурс за есе на тема  “Училището – територия на етническа толерантност”, организиран от Община Бургас - 2017г.</h4>    
             </div>
         </div>
-     <div class="col " >
-            <div class="card  ">    
+       <div class="col card small ">    
                 <div class="card-body names">            
                  <h4 class="card-title" >Второ място на Димитър Димитров на Националния конкурс „Морето, морето, морето” през 2015г.</h4>
                 </div>      
-            </div>
-            <img src="images/b10.jpg" class="card-img-top shadow-lg "  style="width: 70%; margin: 2vh 10vw 13vh 3vw;">
+            <img src="images/b10.jpg" class="card-img-top shadow-lg "  >
         </div>  
     </div>
     <div class="row row-cols-1 row-cols-md-2 g-4 pics ">
         <div class="col tx" >                 
-                <div class="card-body names" style=" margin: 10vh auto 15vh;">
-                    <h4 class="card-title" >Трето място на Теодора Славова в литературен конкурс за млади творци “Бургас-моят град” през 2022 г.</h4>
+                <div class="card-body names" >
+                    <h4 class="card-title">Трето място на Теодора Славова в литературен конкурс за млади творци “Бургас-моят град” през 2022 г.</h4>
                 </div>    
           
         </div>  
         <div class="col tx"  >        
-                <div class="card-body names" style=" margin: 12vh auto 18vh;">      
+                <div class="card-body names" >      
                    <h4 class="card-title" >Грамота за Димитър Димитров на Национален поетичен конкурс „Непознати улици“ през 2014 г.</h4>        
                 </div>           
         </div>
      <div class="col tx" >       
-            <div class="card-body names" style=" margin: 16vh auto 19vh;">
+            <div class="card-body names" >
                     <h4 class="card-title" >Първо място на Аделин Кадиев на Национален конкурс за есе - 2008 г.</h4>
                 </div>                      
         </div>   
     </div>
        
-        <a href="tops.html" class="previous "><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
-        <a href="#" class="next " ><img src="images/arrow-up-chrome.gif"  style="width:90%;"></a>
+        <a href="tops.html" class="previous "><img src="images/arrow-left-chrome.gif" ></a>
+        <a href="#" class="next " ><img src="images/arrow-up-chrome.gif"  ></a>
 
   
 </body>
