@@ -31,7 +31,14 @@ section{
     height: 100vh;
     /*background-color: #f0f0f0;*/
 }
-
+.pics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:2vh auto 5vh;
+    width:100%;
+  }
 .image-container {
     width: 90%;
     height: 90%;
@@ -182,7 +189,7 @@ max-width: 20vw; /* Може да коригирате стойността сп
 </head>
 <body>
     <main  class="container-fluid">
-        <h1 style="margin: 0px auto;">Празници и традиции</h1>  
+        <h1 style="margin: 0px auto;">Празници и традиции в Механото</h1>  
         <div class="row row-cols-1 row-cols-md-3  pics ">      
             <div class="card shadow-lg" onclick="openPopup(1)" > 
               <h4 class="card-title " >1</h4> 
