@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="icon" href="images/LOGO_PGMEE_1_nov.png">
+<title>Празници и традиции в Механото </title>
+<style>
+   body {
+        background-image: url("images/202.jpg");
+        background-position:top;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: "Philosopher", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        background-color: #0C172B;
+        }
+section{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*background-color: #f0f0f0;*/
+}
+
+.image-container {
+    width: 90%;
+    height: 90%;
+    position: relative;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Запазва пропорциите на изображението */
+    object-position: center; /* Центрира изображението в контейнера */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    border: 3px inset #FDE486;
+}
+h1{
+    text-align: center;
+    margin:0px auto -2vh;
+    color: #FDE486;
+    font-size: 3vw;
+}
+  h4{
+    margin:1vh auto;
+    font-size: 1.5vw;
+    font-weight: 700;
+  }
+  .card{
+    width: 20vw;
+    height: 13vh;
+    max-height: auto;
+    padding: 0px;
+    transition:  transform 2s;
+    margin: 2vh 2vw;
+    background-color: transparent;
+    background-image: url("images/buttons3.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .card:hover{
+                transform: scale(1.1);    
+            }
+            .row{
+  flex-wrap: wrap;
+}
+.card-title{
+    text-align: center;
+    margin: auto;
+}
+.popup {
+    background-image: url("images/202.jpg");
+    background-position:top;
+    background-size:cover;
+display: none;
+position: fixed;
+width: 100%;
+height: 100%;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+/*border: 1px solid #ccc;
+padding: 7vh 1vw ;*/
+/*z-index: 1000;*/
+/* max-height: 100vh;  Ограничение за височината на прозореца */
+/*overflow: hidden;  Скриване на излизащото съдържание */
+color: #FDE486; /* Цвят на текста */
+    padding: 10px;
+    text-align: center; /* Центриране на заглавието */
+    border: 3px solid #FDE486;
+}
+.popup-title {
+    font-size: 2vw;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.close {
+position: absolute;
+bottom:40%;
+right: 3vw;
+font-size: 2vw;
+color: #FDE486;
+cursor: pointer;
+text-align: center;
+border: 2px inset #FDE486;
+padding: 1vh 1vw;
+z-index: 2000;
+}
+.previous  {
+    position: fixed;
+        bottom:7vh;
+        right:3vw; 
+        z-index: -1;
+    }
+a.previous img, a.next img {
+width: 90%; /* Увеличаване на ширината за по-добра видимост */
+max-width: 20vw; /* Може да коригирате стойността според нуждите */}
+@media (max-width: 768px) {
+    a.previous img {
+    position: fixed;
+        bottom:3vh;
+        right:3vw; 
+        width:9vw;
+        height: 7vh;     
+    }
+    h1{
+        font-size: 5vw;
+      }
+      h4{
+        font-size: 3vw;
+      }
+      .card{
+        width: 45%;
+        max-height: 10vh;
+      }
+      .popup-title {
+    font-size: 5vw;
+    margin-bottom: 10px;
+}
+}
+@media (max-width: 480px) {
+      a.previous img {
+        position: fixed;
+            bottom:5vh;
+            right:5vw; 
+            width:9vw;
+            height: 6vh;
+        }
+        a.next img {
+        position: fixed;
+            bottom:12vh;
+            right: 1vw; 
+            width: 7vw;
+            height: 6vh;
+        }
+        .card{
+          width: 70%;
+        }
+        h1{
+          font-size: 7vw;
+          margin-bottom: 0px;
+        }
+      
+  }
+</style>
+</head>
+<body>
+    <main  class="container-fluid">
+        <h1 style="margin: 0px auto;">Празници и традиции</h1>  
+        <div class="row row-cols-1 row-cols-md-3  pics ">      
+            <div class="card shadow-lg" onclick="openPopup(1)" > 
+              <h4 class="card-title " >1</h4> 
+            </div> 
+            <div class="card shadow-lg" onclick="openPopup(2)" >
+                <h4 class="card-title" >2</h4> 
+            </div> 
+            <div class="card shadow-lg" onclick="openPopup(2)" >
+                <h4 class="card-title" >3</h4> 
+            </div> 
+            <div class="card shadow-lg" onclick="openPopup(2)" >
+                <h4 class="card-title" >4</h4> 
+            </div> 
+            <div class="card shadow-lg" onclick="openPopup(2)" >
+                <h4 class="card-title" >5</h4>  
+            </div> 
+            <div class="card shadow-lg" onclick="openPopup(2)" >
+                <h4 class="card-title" >6</h4> 
+            </div> 
+            <div class="card shadow-lg" onclick="openPopup(2)" >
+                <h4 class="card-title" >7</h4> 
+            </div> 
+            <div class="card shadow-lg" onclick="openPopup(2)" >
+                <h4 class="card-title" >8</h4> 
+            </div> 
+       
+          </div>
+          <a href="home.html" class="previous round"><img src="images/arrowB.png" ></a>             
+    </main>
+      
+    <div id="popupContainer1" class="popup">
+        <h4 class="popup-title">12345</h4> 
+        <div class="image-container" id="imageContainer1"></div>
+        <div class="close" onclick="closePopup(1)">Close</div>
+    </div>
+    
+    
+    <div id="popupContainer2" class="popup">
+        <h4 class="popup-title">12345</h4> 
+        <div class="image-container" id="imageContainer2"></div>
+        <div class="close" onclick="closePopup(2)">Close</div>
+    </div>
+    
+    <div id="popupContainer3" class="popup">
+        <h4 class="popup-title">12345</h4> 
+        <div class="image-container" id="imageContainer3"></div>
+        <div class="close" onclick="closePopup(3)">Close</div>
+    </div>
+    
+<a href="home.html" class="previous round"><img src="images/arrowB.png" ></a>
+</div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    // Обект с масиви от изображения за всяко pop-up прозорче
+    const popupImages = {
+        1: ['images/1.jpg', 'images/3.jpg', 'images/9.jpg'],
+        2: ['images/25.jpg', 'images/36.jpg', 'images/6.jpg'],
+        3: ['images/7.jpg', 'images/8.jpg', 'images/9.jpg']
+    };
+
+    let activeSlideshows = {}; // Обект за активни слайдшоута
+
+    function startSlideshow(index) {
+        if (activeSlideshows[index]) return; // Ако вече върви, не го стартирай отново
+
+        const imageContainer = document.getElementById(`imageContainer${index}`);
+        const images = popupImages[index];
+
+        if (!images || images.length === 0) return; // Ако няма снимки, не прави нищо
+
+        let currentIndex = 0;
+
+        function showNextImage() {
+            imageContainer.innerHTML = ''; // Изчистваме предишното изображение
+
+            const img = document.createElement('img');
+            img.src = images[currentIndex];
+            img.style.opacity = '0';
+            img.style.transition = 'opacity 1s';
+            imageContainer.appendChild(img);
+
+            setTimeout(() => {
+                img.style.opacity = '1';
+            }, 100);
+
+            currentIndex = (currentIndex + 1) % images.length;
+            activeSlideshows[index] = setTimeout(showNextImage, 3000);
+        }
+
+        showNextImage();
+    }
+
+    function stopSlideshow(index) {
+        if (activeSlideshows[index]) {
+            clearTimeout(activeSlideshows[index]);
+            delete activeSlideshows[index];
+        }
+    }
+
+    window.openPopup = function (index) {
+        document.getElementById(`popupContainer${index}`).style.display = 'block';
+        startSlideshow(index);
+    };
+
+    window.closePopup = function (index) {
+        document.getElementById(`popupContainer${index}`).style.display = 'none';
+        stopSlideshow(index);
+    };
+});
+
+  </script>  
+ 
+</body>
+</html>
