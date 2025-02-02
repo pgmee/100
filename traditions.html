@@ -75,7 +75,7 @@ h1{
     max-height: auto;
     padding: 0px;
     transition:  transform 2s;
-    margin: 2vh 2vw;
+    margin: 4vh 2vw;
     background-color: transparent;
     background-image: url("images/buttons3.png");
     background-size: 100%;
@@ -209,12 +209,12 @@ max-width: 20vw; /* Може да коригирате стойността сп
             </div> 
             <div class="card shadow-lg" onclick="openPopup(6)" >
                 <h4 class="card-title" >Седмицата на четенето</h4> 
-            </div> 
-            <div class="card shadow-lg" onclick="openPopup(7)" >
-                <h4 class="card-title" > Ден на Розовата фланелка</h4> 
-            </div> 
+            </div>            
             <div class="card shadow-lg" onclick="openPopup(8)" >
                 <h4 class="card-title" >Празнична седмица</h4> 
+            </div> 
+            <div class="card shadow-lg" onclick="openPopup(12)" >
+                <h4 class="card-title" >Зелена Странджа</h4> 
             </div> 
             <div class="card shadow-lg" onclick="openPopup(9)" >
                 <h4 class="card-title" >Ежегодни математически състезания по повод деня на числото ПИ - 14.03.</h4> 
@@ -223,13 +223,25 @@ max-width: 20vw; /* Може да коригирате стойността сп
                 <h4 class="card-title" >9-ти май - Ден на ученическото самоуправление
                     </h4> 
             </div> 
+            <div class="card shadow-lg" onclick="openPopup(7)" >
+                <h4 class="card-title" > Ден на Розовата фланелка</h4> 
+            </div> 
             <div class="card shadow-lg" onclick="openPopup(11)" >
                 <h4 class="card-title" >Шествие по повод 24-ти май</h4> 
             </div> 
-            <div class="card shadow-lg" onclick="openPopup(12)" >
-                <h4 class="card-title" >Зелена Странджа</h4> 
+        
+            <div class="card shadow-lg" onclick="openPopup(13)" >
+                <h4 class="card-title" >Концерт 90 години ПГМЕЕ</h4> 
             </div> 
-       
+            <div class="card shadow-lg" onclick="openPopup(14)" >
+                <h4 class="card-title" >Концерти на 12-тите класове</h4> 
+            </div> 
+            <div class="card shadow-lg" onclick="openPopup(15)" >
+                <h4 class="card-title" >Състезания</h4> 
+            </div> 
+            <div class="card shadow-lg" onclick="openPopup(16)" >
+                <h4 class="card-title" >Почит към историята и героите на България </h4> 
+            </div> 
           </div>
           <a href="home.html" class="previous round"><img src="images/arrowB.png" ></a>             
     </main>
@@ -296,6 +308,26 @@ max-width: 20vw; /* Може да коригирате стойността сп
         <h4 class="popup-title">Зелена Странджа</h4> 
         <div class="image-container" id="imageContainer12"></div>
         <div class="close" onclick="closePopup(12)">Close</div>
+    </div>
+    <div id="popupContainer13" class="popup">
+        <h4 class="popup-title">Концерт 90 години ПГМЕЕ</h4> 
+        <div class="image-container" id="imageContainer13"></div>
+        <div class="close" onclick="closePopup(13)">Close</div>
+    </div>
+    <div id="popupContainer14" class="popup">
+        <h4 class="popup-title">Концерти на 12-тите класове</h4> 
+        <div class="image-container" id="imageContainer14"></div>
+        <div class="close" onclick="closePopup(14)">Close</div>
+    </div>
+    <div id="popupContainer15" class="popup">
+        <h4 class="popup-title">Състезания</h4> 
+        <div class="image-container" id="imageContainer15"></div>
+        <div class="close" onclick="closePopup(15)">Close</div>
+    </div>
+    <div id="popupContainer16" class="popup">
+        <h4 class="popup-title">Почит към историята и героите на България </h4> 
+        <div class="image-container" id="imageContainer16"></div>
+        <div class="close" onclick="closePopup(16)">Close</div>
     </div>
     
 <a href="home.html" class="previous round"><img src="images/arrowB.png" ></a>
