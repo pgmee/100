@@ -28,11 +28,10 @@ body{
 .lang{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
-
 .card{
 width: 30%;
 margin-top: 7%;
@@ -47,15 +46,19 @@ margin-top: 7%;
     background-position:bottom;  
     background-color: #162538;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #ae, #ne{
     display: none;
     width: 100%;
-    height: auto; 
+    height: 100vh; 
     background-image: url('images/languages.png');
     background-position:center;
     background-color: #162538;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-bottom: 3vh;
 }
 h1{
@@ -82,10 +85,10 @@ h4{
 }
 /*.ne:hover{
     transform: scale(1.1)
-}*/
+}
 .card-img-overlay{
 padding: 7vh 4vw 1vh;
-}
+}*/
 
 .popup {
             display: none;
@@ -124,6 +127,10 @@ padding: 7vh 4vw 1vh;
             opacity: 0;
             animation: fadeIn 2s ease forwards;
         }
+.popup-content img{
+  width: 100%;
+}
+
     @keyframes fadeIn {
   from {
     opacity: 0;
@@ -132,6 +139,67 @@ padding: 7vh 4vw 1vh;
     opacity: 1;
   }
 }
+
+a.previous img, a.next img {
+  width: 90%; /* Увеличаване на ширината за по-добра видимост */
+  max-width: 20vw; }
+
+  @media (max-width: 768px) {
+    a.previous img {
+      position: fixed;
+        bottom:5vh;
+        right:7vw; 
+        width:9vw;
+        height: 6vh;
+    } 
+    a.next img {
+    position: fixed;
+        bottom:12vh;
+        right: 1vw; 
+        width: 6vw;
+        height: 6vh;
+  }
+  .card{
+width: 50%;
+margin-top: 7%;
+margin: 5vh 5vw;
+}
+
+h1{
+    font-size: 5vw;
+    text-align: center;
+    margin: 35% 1vw;
+}
+h2{
+    font-size: 4vw;
+    padding:  0px 0px 2vh;
+    margin-bottom: -5vh;
+}
+h4{
+    font-size: 3vw;
+    padding: 2vh auto 0px;
+}
+p{
+  font-size: 2vw;
+  padding: 2vh 5vw;
+}
+  }
+  @media (max-width: 480px) {
+    a.previous img {
+          position: fixed;
+              bottom:5vh;
+              right:5vw; 
+              width:9vw;
+              height: 6vh;
+          }
+          a.next img {
+          position: fixed;
+              bottom:12vh;
+              right: 1vw; 
+              width: 7vw;
+              height: 6vh;
+          }
+  }
     </style>
 </head>
 <body >
@@ -146,12 +214,12 @@ padding: 7vh 4vw 1vh;
         <div class="card text-bg-dark shadow-lg"  >
           <a href="#ne" onclick="show(2)">  <img src="images/bgcard.jpg " class="card-img shadow-lg "  >    
             <div class="card-img-overlay">
-          <h1 class="card-title" >НЕМСКИ ЕЗИК</h1> 
+          <h1 class="card-title" >НЕМСКИ <br>ЕЗИК</h1> 
             </div> </a> 
         </div>
     </div>
       
-        <a href="tops.html" class="previous "><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
+        <a href="tops.html" class="previous "><img src="images/arrow-left-chrome.gif" ></a>
         
   </section>
 <section class="container-fluid" id="ae">
@@ -182,8 +250,7 @@ padding: 7vh 4vw 1vh;
                 <img src="images/величко2.jpg"  onmouseover="openPopup(1)" onmouseout="closePopup(1)"  style="width:25%; margin:-6vh 40% 6vh; cursor: pointer;">
               </div> 
           </div>
-    </div>
-    <div class="lang" >      
+      
         <div class="card pic text-bg-dark shadow-lg"  >
            <img src="images/bgcard.jpg " class="card-img shadow-lg "  >    
            <div class="card-img-overlay" >
@@ -210,8 +277,7 @@ padding: 7vh 4vw 1vh;
                 <p>Състезание по английски език „Pearson Competition” – класирани на национален кръг: Александър Ристовски 8б, Александър Йорданов 8и, Мартин Домусчиев 9и клас.</p>  
               </div> 
           </div>
-    </div>
-    <div class="lang" >      
+        
         <div class="card pic text-bg-dark shadow-lg"  >
            <img src="images/bgcard.jpg " class="card-img shadow-lg "  >    
             <div class="card-img-overlay" >
@@ -236,8 +302,8 @@ padding: 7vh 4vw 1vh;
         </div>
     </div>
 
-        <a href="#lang" class="previous " onclick="hide()"><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
-        <a href="#ae" class="next " ><img src="images/arrow-up-chrome.gif"  style="width:90%;"></a>
+        <a href="#lang" class="previous " onclick="hide()"><img src="images/arrow-left-chrome.gif" ></a>
+        <a href="#ae" class="next " ><img src="images/arrow-up-chrome.gif"  ></a>
 
         
 </section>
@@ -299,64 +365,64 @@ padding: 7vh 4vw 1vh;
         
     </div>
 
-    <a href="#ne" class="next " ><img src="images/arrow-up-chrome.gif"  style="width:90%;"></a>
-    <a href="#lang" class="previous " onclick="hide()"><img src="images/arrow-left-chrome.gif" style="width:90%;"></a>
+    <a href="#ne" class="next " ><img src="images/arrow-up-chrome.gif"  ></a>
+    <a href="#lang" class="previous " onclick="hide()"><img src="images/arrow-left-chrome.gif" ></a>
 
 </section>
 
 <div id="popupContainer(1)" class="popup">
     <div class="popup-content">
-      <img src="images/величко2.jpg" alt="" style="width: 100%;">
+      <img src="images/величко2.jpg" alt="" >
     </div>
 </div>
 <div id="popupContainer(2)" class="popup">
     <div class="popup-content">
-      <img src="images/СертификатИвета.jpg" alt="" style="width: 100%;">
+      <img src="images/СертификатИвета.jpg" alt="" >
     </div>
 </div>
 <div id="popupContainer(3)" class="popupNe">
     <div class="popup-content">
-      <img src="images/prevodachi.webp" alt="" style="width: 100%;">
+      <img src="images/prevodachi.webp" alt="" >
     </div>
 </div>
 <div id="popupContainer(4)" class="popup">
     <div class="popup-content">
-      <img src="images/Чучулиев.png" alt="" style="width: 100%;">
+      <img src="images/Чучулиев.png" alt="">
     </div>
 </div>
 <div id="popupContainer(5)" class="popup">
     <div class="popup-content">
-      <img src="images/състезаниеАйтос.jpg" alt="" style="width: 100%;">
+      <img src="images/състезаниеАйтос.jpg" alt="" >
     </div>
 </div>
 <div id="popupContainer(6)" class="popup">
     <div class="popup-content">
-      <img src="images/n1.jpg" alt="" style="width: 100%; ">
+      <img src="images/n1.jpg" alt="" >
     </div>
 </div>
 <div id="popupContainer(7)" class="popupNe">
     <div class="popup-content">
-      <img src="images/n3.jpg" alt="" style="width: 100%;">
+      <img src="images/n3.jpg" alt="" >
     </div>
 </div>
 <div id="popupContainer(8)" class="popup">
     <div class="popup-content">
-      <img src="images/n2.jpg" alt="" style="width: 100%;">
+      <img src="images/n2.jpg" alt="" >
     </div>
 </div>
 <div id="popupContainer(9)" class="popup">
     <div class="popup-content">
-      <img src="images/n4.jpg" alt="" style="width: 100%;">
+      <img src="images/n4.jpg" alt="" >
     </div>
 </div>
 <div id="popupContainer(10)" class="popupNe">
     <div class="popup-content">
-      <img src="images/n6.jpg" alt="" style="width: 100%;">
+      <img src="images/n6.jpg" alt="" >
     </div>
 </div>
 <div id="popupContainer(11)" class="popup">
     <div class="popup-content">
-      <img src="images/n5.jpg" alt="" style="width: 100%;">
+      <img src="images/n5.jpg" alt="" >
     </div>
 </div>
 
