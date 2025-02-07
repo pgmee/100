@@ -157,13 +157,13 @@ body{
                   height: 6vh;
               }
               h1{
-                font-size: 7.5vw;
+                font-size: 8vw;
                 top: 33%;
-                left:25%;        
+                left:26%;        
               }
               h4{
                 margin:1vh auto;
-                font-size:6vw;
+                font-size:7vw;
               }
               .card{
                 width: 60vw;
@@ -171,6 +171,6 @@ body{
               #logo{
                 width: 70%;
                 top: 43%;
-                left:12%;
+                left:9%;
                 }
             }
