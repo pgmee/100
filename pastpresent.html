@@ -15,8 +15,9 @@
         background-image: url("images/vintage1.jpg");
         background-position:center;
         background-attachment: fixed;
-        background-repeat: repeat-y;
-        background-size: 100%;
+        /*background-repeat: repeat-y;
+        background-size: 100%;*/
+        background-size: cover;
         font-size: 1.3vw;
         text-align: justify;
         font-family: "Philosopher", sans-serif;
@@ -42,11 +43,14 @@
 .card {
   background-color: transparent;
   border: none;
-  width: 40%;
   transition:  transform 2s;
   margin:4vh auto;
-  height: 95vh;
-  width: auto;
+  width: 45%;
+  height: auto;
+}
+.s{
+  width: 30%; 
+  height: auto;
 }
 .card:hover{
     transform: scale(1.1);   
@@ -134,9 +138,6 @@ padding: 0px 8%;
   top: 0;
 }
 .hover-shadow{
-  margin-bottom: -4px;
-  height: 94vh;
-  width: auto;
   border-radius: 2%;
 }
 .demo {
@@ -228,6 +229,9 @@ padding: 0px ;
     h1{
       font-size: 5vw;
     }
+    .card{
+      width: 85%;
+    }
 }
 @media (max-width: 480px) {
   .close{
@@ -306,13 +310,13 @@ padding: 0px ;
     <div class="card">
         <img src="pastpresent/14fvs.jpg"  onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
     </div>
-    <div class="card" style="width: 30%; height: auto; padding-bottom: 1vh;">
+    <div class="card s" style=" padding-bottom: 1vh;">
         <img src="pastpresent//15fvs2.jpg"  onclick="openModal();currentSlide(15)" class="hover-shadow cursor" style=" height: auto;">
     </div>
-    <div class="card" style="width: 32%; height: auto;">
+    <div class="card s" >
       <img src="pastpresent/16sport.jpg" onclick="openModal();currentSlide(16)" class="hover-shadow cursor" style=" height: auto;">
   </div>
-  <div class="card" style="width: 30%; height: auto;">
+  <div class="card s" >
       <img src="pastpresent/17koridor.jpg"  onclick="openModal();currentSlide(17)" class="hover-shadow cursor" style=" height: auto;">
   </div>
   </div>
