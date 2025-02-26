@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Иновативно училище</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="icon" href="images/LOGO_PGMEE_1_nov.png">
+<link rel="stylesheet" href="buttons.css">
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+body{
+  font-size: 1.3vw;
+  text-align: justify;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-style: normal;   
+  
+}
+.lang{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card{
+width: 30%;
+height: auto;
+margin-top: 7%;
+}
+.container-fluid{ 
+    width: 100%;
+    height: 100vh; 
+    background-size:cover;
+}
+#lang{
+    background-image: url('images/2021.jpg');
+    background-position:bottom;  
+    background-color: #162538;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ae {
+    display: none;
+    width: 100%;
+    height: auto; 
+    background-image: url('images/2021.jpg');
+    background-position:center;
+    background-color: #162538;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 3vh;
+}
+h1{
+    font-size: 3vw;
+    text-align: center;
+    margin: 35% 1vw;
+}
+h2{
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: 700;
+    padding: 5vh 0px 0px;
+    margin-bottom: -5vh;
+    color: white;
+}
+h4{
+    text-align: center;
+    font-size: 1.7vw;
+    font-weight: 700;
+}
+a{
+    color: #F5E283;
+}
+.card-img {
+  width: 100%;
+}
+
+.pic{
+  cursor: pointer;
+  height: 30%;
+  margin: -2vh auto 0;
+}
+
+    @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+a.previous img, a.next img {
+  width: 90%; /* Увеличаване на ширината за по-добра видимост */
+  max-width: 20vw; }
+
+  @media (max-width: 768px) {
+    a.previous img {
+      position: fixed;
+        bottom:5vh;
+        right:7vw; 
+        width:9vw;
+        height: 6vh;
+    } 
+    a.next img {
+    position: fixed;
+        bottom:12vh;
+        right: 1vw; 
+        width: 6vw;
+        height: 6vh;
+  }
+  .card{
+width: 50%;
+margin: 5vh 5vw;
+}
+h1{
+    font-size: 5vw;
+    text-align: center;
+    margin: 35% 1vw;
+}
+h2{
+    font-size: 5vw;
+    padding:  0px 0px 2vh;
+    margin-bottom: -3vh;
+}
+h4{
+    font-size: 3vw;
+}
+p{
+  font-size: 2.5vw;
+  padding: 0px 4vw;
+}
+  }
+  @media (max-width: 480px) {
+    a.previous img {
+          position: fixed;
+              bottom:5vh;
+              right:5vw; 
+              width:9vw;
+              height: 6vh;
+          }
+          a.next img {
+          position: fixed;
+              bottom:12vh;
+              right: 1vw; 
+              width: 7vw;
+              height: 6vh;
+          }
+          .card{
+width: 60%;
+margin: 7vh auto;
+}
+  
+h1{
+  font-size: 7vw;
+}
+h2{
+    font-size: 7vw;
+    margin-bottom:-1vh;
+}
+h4{
+  font-size: 4vw;
+}
+p{
+  font-size:3.3vw ;
+}
+  }
+    </style>
+</head>
+<body >
+  <section class="container-fluid" id="lang" > 
+    <div class="lang" >      
+         <div class="card text-bg-dark shadow-lg"  >
+          <a href="#ae" onclick="show(1)">  <img src="images/bgcard.jpg " class="card-img shadow-lg "  >    
+            <div class="card-img-overlay">
+          <h1 class="card-title" >ИНОВАЦИИ<br>В ДЕЙСТВИЕ</h1> 
+            </div> </a> 
+        </div>
+        <div class="card text-bg-dark shadow-lg"  >
+            <a href="stem.html" >  <img src="images/bgcard.jpg " class="card-img shadow-lg "  >    
+              <div class="card-img-overlay">
+            <h1 class="card-title" >STEM<br> УЧИЛИЩЕ</h1> 
+              </div>   </a> 
+          </div>  
+    </div>
+      
+        <a href="home.html" class="previous "><img src="images/arrow-left-chrome.gif" ></a>
+        
+  </section>
+<section class="container-fluid" id="ae">
+    
+        <a href="#lang" class="previous " onclick="hide()"><img src="images/arrow-left-chrome.gif" ></a>
+        <a href="#ae" class="next " ><img src="images/arrow-up-chrome.gif"  ></a>    
+</section>
+
+
+   <script >
+    let sec
+    function show(sec){
+      if(sec==1){
+      document.getElementById('ae').style.display = 'block'; 
+      document.getElementById('lang').style.display = 'none'; 
+    }
+  
+  }
+  function hide(){
+      document.getElementById('ae').style.display = 'none';  
+      document.getElementById('lang').style.display = 'block'; 
+  }
+      </script> 
+ 
+</body>
+</html>
