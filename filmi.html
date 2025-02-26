@@ -53,7 +53,7 @@ border: transparent;
     background-color:white;
     background-attachment: fixed;
 }
-#op, #ek, #np, #obp{
+#op, #ek, #np, #obp, #pre{
     display: none;
     width: 100%;
     height: auto; 
@@ -140,8 +140,16 @@ width: 57%;
         </h1> 
             </div> </a> 
         </div>
+        
     </div>
-    <div class="lang" >      
+    <div class="lang" >  
+      <div class="card text-bg-dark shadow-lg"  >
+        <a href="#pre" onclick="show(5)">  <img src="images/film1.jpg" class="card-img shadow-lg "  >    
+          <div class="card-img-overlay">
+        <h1 class="card-title" >90 години ПГМЕЕ
+      </h1> 
+          </div> </a> 
+      </div>    
         <div class="card text-bg-dark shadow-lg"  >
             <a href="#np" onclick="show(3)">  <img src="images/film1.jpg" class="card-img shadow-lg "  >    
               <div class="card-img-overlay">
@@ -165,6 +173,11 @@ width: 57%;
 
 <section class="container-fluid" id="ek">
   <iframe style="position:absolute;border:none;width:100%;height:100%;left:0;top:0;" src="https://www.youtube.com/embed/h265pIvp4cc?si=ZuuUFvBvcvpJYyXX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+    <a href="#lang" class="previous " onclick="hide()"><img src="images/left.png" ></a>
+</section>
+
+<section class="container-fluid" id="pre">
+  <iframe style="position:absolute;border:none;width:100%;height:100%;left:0;top:0;" src="https://www.youtube.com/embed/TrBsq50sKGY?si=8fP5JPo8JPQPP3DA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
     <a href="#lang" class="previous " onclick="hide()"><img src="images/left.png" ></a>
 </section>
 <section class="container-fluid" id="np">
@@ -194,12 +207,17 @@ width: 57%;
       document.getElementById('obp').style.display = 'block';
       document.getElementById('lang').style.display = 'none';  
     }
+    if(sec==5){
+      document.getElementById('pre').style.display = 'block';
+      document.getElementById('lang').style.display = 'none';  
+    }
   }
   function hide(){
       document.getElementById('op').style.display = 'none';  
       document.getElementById('ek').style.display = 'none'; 
       document.getElementById('np').style.display = 'none';  
-      document.getElementById('obp').style.display = 'none';     
+      document.getElementById('obp').style.display = 'none';  
+      document.getElementById('pre').style.display = 'none';    
       document.getElementById('lang').style.display = 'block'; 
   }
 </script>
