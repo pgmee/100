@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="icon" href="images/LOGO_PGMEE_1_nov.png">
+<title>Личностите на МЕХАНОТО</title>
+<style>
+  
+   body {
+        background-image: url("images/202.jpg");
+        background-position:top;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: "Philosopher", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        background-color: #0C172B;
+        }
+     
+    h1 {
+      text-align: center;
+      color: #FDE486;
+      padding-top: 1rem;
+    }
+    h4 {
+      text-align: center;
+      color: #FDE486;
+    }
+
+    .gallery {
+        width: 95%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 4vw;
+      padding: 2vw;
+      
+      margin: auto;
+    }
+
+    .video-thumbnail img {
+      width: 100%;
+      cursor: pointer;
+      border: 3px solid #FDE486;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .video-thumbnail img:hover {
+      transform: scale(1.05);
+    }
+
+    .popup-overlay {
+  position: fixed;
+  inset: 0;
+  background-image: url("images/202.jpg");
+  /*background-color: rgba(0, 0, 0, 0.9);*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-overlay.hidden {
+  display: none;
+}
+
+.popup-video {
+  position: relative;
+  width: 90vw;
+  max-width: 1280px;
+  aspect-ratio: 16 / 9;
+  
+}
+
+.popup-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 90%;
+  height: 90%;
+  border: none;
+  margin: auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  font-size: 72px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+a.previous img, a.next img {
+width: 90%; /* Увеличаване на ширината за по-добра видимост */
+max-width: 20vw; /* Може да коригирате стойността според нуждите */}
+
+    @media (max-width: 600px) {
+      .close-btn {
+        right: 10px;
+        top: 10px;
+      }
+      a.previous img {
+        position: fixed;
+            bottom:5vh;
+            right:5vw; 
+            width:9vw;
+            height: 6vh;
+        }
+    }
+  </style>
+</head>
+<body>
+  <h1>Личностите на МЕХАНОТО</h1>
+  <div class="gallery">
+    <div class="video-thumbnail" data-video-id="2sLhzrAhdls">
+        <img src="https://img.youtube.com/vi/2sLhzrAhdls/hqdefault.jpg" alt="Видео 1">
+        <h4>Трейлър</h4>
+      </div>
+      <div class="video-thumbnail" data-video-id="MBb7Xqgnuyk">
+        <img src="https://img.youtube.com/vi/MBb7Xqgnuyk/hqdefault.jpg" alt="Видео 2">
+        <h4>инж.Румяна Момчилова</h4>
+      </div>
+      <div class="video-thumbnail" data-video-id="R9h5nmuEL8o">
+        <img src="https://img.youtube.com/vi/R9h5nmuEL8o/hqdefault.jpg" alt="Видео 3">
+        <h4>Алберт Калдерон</h4>
+      </div>
+      <div class="video-thumbnail" data-video-id="KDnvCE3UuQs">
+        <img src="https://img.youtube.com/vi/KDnvCE3UuQs/hqdefault.jpg" alt="Видео 4">
+        <h4>Надежда Йорданова</h4>
+      </div>
+      <div class="video-thumbnail" data-video-id="T2Sgp2K-Lfk">
+        <img src="https://img.youtube.com/vi/T2Sgp2K-Lfk/hqdefault.jpg" alt="Видео 4">
+        <h4>Тодор Койчев</h4>
+      </div>
+      <div class="video-thumbnail" data-video-id="f5YLlVoPwVg">
+        <img src="https://img.youtube.com/vi/f5YLlVoPwVg/hqdefault.jpg" alt="Видео 4">
+        <h4>Мария Харбалиева</h4>
+      </div>
+      <div class="video-thumbnail" data-video-id="PFC3IhBKbnc">
+        <img src="https://img.youtube.com/vi/PFC3IhBKbnc/hqdefault.jpg" alt="Видео 4">
+        <h4>инж.Янчо Желев</h4>
+      </div>
+      <div class="video-thumbnail" data-video-id="tGQAsbSrYME">
+        <img src="https://img.youtube.com/vi/tGQAsbSrYME/hqdefault.jpg" alt="Видео 4">
+        <h4>инж.Роза Желева</h4>
+      </div>
+      <div class="video-thumbnail" data-video-id="z3ggjM1r1JE">
+        <img src="https://img.youtube.com/vi/z3ggjM1r1JE/hqdefault.jpg" alt="Видео 4">
+        <h4>инж.Aлбена Kолева</h4>
+      </div>
+      <div class="video-thumbnail" data-video-id="k3H0PMI99a8">
+        <img src="https://img.youtube.com/vi/k3H0PMI99a8/hqdefault.jpg" alt="Видео 4">
+        <h4>инж.Тома Кудев</h4>
+      </div>
+  </div>
+
+  <div class="popup-overlay hidden">
+    <div class="popup-video">
+      <button class="close-btn">×</button>
+      <iframe width="960" height="540" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <a href="home.html" class="previous round"><img src="images/arrowB.png" ></a>
+  <script>
+    
+    document.addEventListener("DOMContentLoaded", () => {
+      const videos = document.querySelectorAll(".video-container");
+      const overlay = document.querySelector(".popup-overlay");
+      const popupVideo = document.querySelector(".popup-video");
+      const closeBtn = document.querySelector(".close-btn");
+      const leftArrow = document.querySelector(".arrow.left");
+      const rightArrow = document.querySelector(".arrow.right");
+
+      let currentIndex = 0;
+
+      const showVideo = (index) => {
+        if (index < 0 || index >= videos.length) return;
+        const videoId = videos[index].dataset.videoId;
+        popupVideo.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+        overlay.classList.remove("hidden");
+        currentIndex = index;
+      };
+
+      const closePopup = () => {
+        overlay.classList.add("hidden");
+        popupVideo.src = "";
+      };
+
+      const showPrev = () => {
+        const newIndex = (currentIndex - 1 + videos.length) % videos.length;
+        showVideo(newIndex);
+      };
+
+      const showNext = () => {
+        const newIndex = (currentIndex + 1) % videos.length;
+        showVideo(newIndex);
+      };
+
+      videos.forEach((video, index) => {
+        video.addEventListener("click", () => {
+          showVideo(index);
+        });
+      });
+
+      closeBtn.addEventListener("click", closePopup);
+      overlay.addEventListener("click", (e) => {
+        if (e.target === overlay) closePopup();
+      });
+
+      leftArrow.addEventListener("click", (e) => {
+        e.stopPropagation();
+        showPrev();
+      });
+
+      rightArrow.addEventListener("click", (e) => {
+        e.stopPropagation();
+        showNext();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (overlay.classList.contains("hidden")) return;
+        if (e.key === "Escape") closePopup();
+        else if (e.key === "ArrowLeft") showPrev();
+        else if (e.key === "ArrowRight") showNext();
+      });
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+    const thumbnails = document.querySelectorAll(".video-thumbnail");
+    const overlay = document.querySelector(".popup-overlay");
+    const iframe = document.querySelector(".popup-video iframe");
+    const closeBtn = document.querySelector(".close-btn");
+
+    thumbnails.forEach((thumb) => {
+      thumb.addEventListener("click", () => {
+        const videoId = thumb.dataset.videoId;
+        iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+        overlay.classList.remove("hidden");
+      });
+    });
+
+    closeBtn.addEventListener("click", () => {
+      overlay.classList.add("hidden");
+      iframe.src = ""; // спира видеото
+    });
+
+    overlay.addEventListener("click", (e) => {
+      if (e.target === overlay) {
+        overlay.classList.add("hidden");
+        iframe.src = "";
+      }
+    });
+  });
+  </script>
+</body>
+</html>
