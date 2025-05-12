@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="icon" href="images/LOGO_PGMEE_1_nov.png">
+<title>Поздравителни адреси и плакети</title>
+<style>
+  
+   body {
+        background-image: url("images/202.jpg");
+        background-position:top;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: "Philosopher", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        background-color: #0C172B;
+        }
+        h1{
+    text-align: center;
+    margin:0px auto -2vh;
+    color: #FDE486;
+    font-size: 3vw;
+} 
+  .gallery {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5vw;
+  padding: 2vw;
+  margin: auto;
+}
+.image-container img {
+  width: 100%;
+  height:100%;
+  display: block;
+  object-fit: 70%;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+/* Popup overlay */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+ /* background-color: rgba(0, 123, 255, 0.95);   */
+ background-image: url("images/202.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+.popup-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.popup-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*padding: 40px;  добавено разстояние за бутони */
+  max-width: 100vw;
+  max-height: 100vh;
+  box-sizing: border-box;
+}
+
+.popup-img {
+  max-height: 100vh;
+  max-width: 100vw;
+  object-fit: contain;
+  box-shadow: 0 0 30px #FDE486;
+}
+
+/* Buttons (обновени) */
+.close-btn,
+.arrow {
+  background: none;
+  border: none;
+  color: #FDE486; 
+  font-size: 36px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px; /* Над изображението */
+  right: -50px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow.left {
+  left: -60px; /* вляво извън изображението */
+}
+
+.arrow.right {
+  right: -60px; /* вдясно извън изображението */
+}
+a.previous img, a.next img {
+width: 90%; /* Увеличаване на ширината за по-добра видимост */
+max-width: 20vw; /* Може да коригирате стойността според нуждите */}
+/* Responsive позициониране */
+@media (max-width: 600px) {
+  .arrow {
+    font-size: 28px;
+    left: -40px;
+    right: -40px;
+  }
+
+  .close-btn {
+    font-size: 28px;
+    top: -20px;
+  }
+  h1{
+        font-size: 5vw;
+      }
+      a.previous img {
+        position: fixed;
+            bottom:5vh;
+            right:5vw; 
+            width:9vw;
+            height: 6vh;
+        }
+}
+</style>
+</head>
+<body>
+    <h1 style="margin: 0px auto;">Поздравителни адреси и плакети</h1>  
+    <div class="gallery">
+        <div class="image-container">
+          <img src="congrats/Президент.jpg" alt="1">
+        </div>
+        <div class="image-container">
+          <img src="congrats/Президент - плакет.jpg" alt="2">
+        </div>
+        <div class="image-container">
+          <img src="congrats/МОН.jpg" alt="3">
+        </div>
+        <div class="image-container">
+            <img src="congrats/Кмет.jpg" alt="1">
+          </div>
+          <div class="image-container">
+            <img src="congrats/Кмет - плакет.jpg" alt="2">
+          </div>
+          <div class="image-container">
+            <img src="congrats/Областен управител - заповед.jpg" alt="2">
+          </div>
+          <div class="image-container">
+            <img src="congrats/Областен управител - грамота.jpg" alt="3">
+          </div>
+          <div class="image-container">
+            <img src="congrats/Областен управител - плакет.jpg" alt="1">
+          </div>
+          <div class="image-container">
+            <img src="congrats/Областен управител 1.jpg" alt="3">
+          </div>
+          <div class="image-container">
+            <img src="congrats/Областен управител 2.jpg" alt="3">
+          </div>
+          <div class="image-container">
+            <img src="congrats/РУО.jpg" alt="3">
+          </div>
+          <div class="image-container">
+            <img src="congrats/РУО - плакет.jpg" alt="3">
+          </div>
+          <div class="image-container">
+            <img src="congrats/Общински съвет.jpg" alt="3">
+          </div>
+         
+          <div class="image-container">
+            <img src="congrats//ТИК-БУРГАС.jpg" alt="3">
+          </div>
+          <div class="image-container">
+            <img src="congrats/БТПП - ГРАМОТА.jpg" alt="3">
+          </div>
+          <div class="image-container">
+            <img src="congrats/ТИК - Бургас - плакет.jpg" alt="3">
+          </div>
+          <div class="image-container">
+            <img src="congrats//ЗАЕДНОСТ ЗА БЪЛГАРИЯ.jpg" alt="3">
+          </div>
+          <div class="image-container">
+            <img src="congrats/КРОНОШПАН.jpg" alt="3">
+          </div>
+          <div class="image-container">
+            <img src="congrats/БТПП.jpg" alt="3">
+          </div>
+          <div class="image-container">
+            <img src="congrats/СБУ.jpg" alt="3">
+          </div>
+          <div class="image-container">
+            <img src="congrats/БСУ.jpg" alt="3">
+          </div>
+          <div class="image-container">
+            <img src="congrats/БДУ.jpg" alt="3">
+          </div>
+          <div class="image-container">
+            <img src="congrats//Драгомир Добруджалиев.jpg" alt="3">
+          </div>
+          <div class="image-container">
+            <img src="congrats/БНР БУРГАС.jpg" alt="3">
+          </div>
+          <div class="image-container">
+            <img src="congrats/ПРОСВЕТА.jpg" alt="3">
+          </div>
+          <div class="image-container">
+            <img src="congrats/Маргарита Колева.jpg" alt="3">
+          </div>
+          <div class="image-container">
+            <img src="congrats/Випуск 1996.jpg" alt="3">
+          </div>
+          <div class="image-container">
+            <img src="congrats/Черноморие БГ.jpg" alt="3">
+          </div>
+          <div class="image-container">
+            <img src="congrats/Романтик холидейз.jpg" alt="3">
+          </div>
+          <div class="image-container">
+            <img src="congrats/Пейо Стоянов.jpg" alt="3">
+          </div>
+          <div class="image-container">
+            <img src="congrats/ММКЦ.jpg" alt="3">
+          </div>
+      </div>
+   <!-- Popup overlay -->
+<div class="popup-overlay hidden">
+    <div class="popup-content">
+      <button class="close-btn">×</button>
+      <button class="arrow left">←</button>
+      <img class="popup-img" src="" alt="">
+      <button class="arrow right">→</button>
+    </div>
+  </div>
+  <a href="home.html" class="previous round"><img src="images/arrowB.png" ></a>
+<script>
+   document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll(".image-container img");
+  const overlay = document.querySelector(".popup-overlay");
+  const popupImg = document.querySelector(".popup-img");
+  const closeBtn = document.querySelector(".close-btn");
+  const leftArrow = document.querySelector(".arrow.left");
+  const rightArrow = document.querySelector(".arrow.right");
+
+  let currentIndex = 0;
+
+  const showImage = (index) => {
+    if (index < 0 || index >= images.length) return;
+    popupImg.src = images[index].src;
+    overlay.classList.remove("hidden");
+    currentIndex = index;
+  };
+
+  const closePopup = () => {
+    overlay.classList.add("hidden");
+  };
+
+  const showPrev = () => {
+    const newIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(newIndex);
+  };
+
+  const showNext = () => {
+    const newIndex = (currentIndex + 1) % images.length;
+    showImage(newIndex);
+  };
+
+  images.forEach((img, index) => {
+    img.addEventListener("click", () => {
+      showImage(index);
+    });
+  });
+
+  closeBtn.addEventListener("click", closePopup);
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) closePopup(); // клик извън изображението
+  });
+
+  leftArrow.addEventListener("click", (e) => {
+    e.stopPropagation();
+    showPrev();
+  });
+
+  rightArrow.addEventListener("click", (e) => {
+    e.stopPropagation();
+    showNext();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (overlay.classList.contains("hidden")) return;
+
+    if (e.key === "Escape") closePopup();
+    else if (e.key === "ArrowLeft") showPrev();
+    else if (e.key === "ArrowRight") showNext();
+  });
+});
+
+
+</script>
+ 
+</body>
+</html>
